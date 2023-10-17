@@ -10,3 +10,6 @@ Repeat 3 times max
      authResult.success = Call cdiUtil authenticate creds.username creds.password
      authResult.uid = creds.username
      When authResult.success is true
+          Log "@info Successfully authenticate uid : %" authResult.uid
+          it_vuznz = {success: true, data{userId: authResult.uid}}
+          Finish it_vuznz
