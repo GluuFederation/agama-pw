@@ -17,6 +17,8 @@
             "community"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "agama.pw": {}
+        }
     }
 }
