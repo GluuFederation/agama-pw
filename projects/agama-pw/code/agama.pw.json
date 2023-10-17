@@ -66,7 +66,8 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": true
 			},
 			"selected": true,
 			"dragging": false,
@@ -140,7 +141,8 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -193,7 +195,7 @@
 					"Agama-when-Node-a2b6585c-b1f7-42f0-b23f-91932c000cd1.FAILURE",
 					"Agama-when-Node-a2b6585c-b1f7-42f0-b23f-91932c000cd1.SUCCESS"
 				],
-				"skake": true
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
