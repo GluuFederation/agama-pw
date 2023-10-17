@@ -11,5 +11,5 @@ Repeat 3 times max
      authResult.uid = creds.username
      When authResult.success is true
           Log "@info Successfully authenticate uid : %" authResult.uid
-          it_vuznz = {success: true, data{userId: authResult.uid}}
-          Finish it_vuznz
+          it_fcxwl = {success: true, data{userId: authResult.uid}}
+          Finish it_fcxwl
