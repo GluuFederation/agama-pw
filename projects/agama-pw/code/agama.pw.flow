@@ -1,3 +1,5 @@
 Flow agama.pw
      Basepath ""
 Log "@info Import necessary class and packages"
+// Create authentication service instance.
+authService = Call io.jans.as.server.service.AuthenticationService#class 
