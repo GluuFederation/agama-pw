@@ -65,7 +65,8 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"dragging": false,
@@ -1457,8 +1458,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1111,
-		"y": -72,
+		"x": 10,
+		"y": 15,
 		"zoom": 1
 	}
 }
