@@ -11,5 +11,8 @@ Repeat 3 times max
      authResult.uid = creds.username
      When authResult.success is true
           Log "@info Successfully authenticate uid : %" authResult.uid
-          it_otslw = {success: true, data:{userId: authResult.uid}}
-          Finish it_otslw
+          it_aoojl = {success: true, data:{userId: authResult.uid}}
+          Finish it_aoojl
+Log "@info Login attempt failed"
+it_yndlh = {success: false, error: "Authentication failed"}
+Finish it_yndlh
