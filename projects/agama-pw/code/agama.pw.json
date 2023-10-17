@@ -60,7 +60,8 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -74,8 +75,8 @@
 			"height": 122,
 			"id": "Agama-log-Node-1f901f03-4294-4d02-bc99-45bd7251e721",
 			"position": {
-				"x": 2042.4561827958655,
-				"y": 497.92721718653763
+				"x": 2067.0117968543786,
+				"y": 495.38698124945006
 			},
 			"type": "log",
 			"data": {
@@ -85,8 +86,8 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 2042.4561827958655,
-					"y": 497.92721718653763
+					"x": 2067.0117968543786,
+					"y": 495.38698124945006
 				},
 				"agamaData": {
 					"id": "Agama-log-Node-1f901f03-4294-4d02-bc99-45bd7251e721",
@@ -134,13 +135,14 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 2042.4561827958655,
-				"y": 497.92721718653763
+				"x": 2067.0117968543786,
+				"y": 495.38698124945006
 			}
 		},
 		{
@@ -177,16 +179,13 @@
 					"variableField": "authResult.success",
 					"conditionInputField": "is",
 					"valueField": "true",
-					"hasComment": true,
-					"hasSuccess": "",
-					"hasFailure": "",
-					"hasNoRepeat": false,
-					"hasRepeat": false
+					"hasComment": true
 				},
 				"handles": [
 					"Agama-when-Node-a2b6585c-b1f7-42f0-b23f-91932c000cd1.FAILURE",
 					"Agama-when-Node-a2b6585c-b1f7-42f0-b23f-91932c000cd1.SUCCESS"
-				]
+				],
+				"skake": true
 			},
 			"selected": false,
 			"dragging": false,
@@ -260,7 +259,8 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -1173,8 +1173,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1824.2202861929945,
-		"y": -200.25974233997715,
-		"zoom": 1.1809926614295305
+		"x": -1823.4540127548075,
+		"y": -199.9532329647023,
+		"zoom": 1.1809926614295307
 	}
 }
