@@ -4,3 +4,5 @@ Log "@info Import necessary class and packages"
 authService = Call io.jans.as.server.service.AuthenticationService#class 
 cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
 authResult = {}
+Repeat 3 times max
+     creds = RRF "login.ftlh" authResult
