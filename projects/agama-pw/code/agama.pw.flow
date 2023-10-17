@@ -3,3 +3,4 @@ Flow agama.pw
 Log "@info Import necessary class and packages"
 authService = Call io.jans.as.server.service.AuthenticationService#class 
 cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
+authResult = {}
