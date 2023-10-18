@@ -1,80 +1,6 @@
 {
 	"nodes": [
 		{
-			"width": 170,
-			"height": 122,
-			"id": "Agama-log-Node-cc91940d-6d93-42d1-b6f0-c973c45714e7",
-			"position": {
-				"x": 791.4909310458524,
-				"y": 511.2971984721547
-			},
-			"type": "log",
-			"data": {
-				"id": "Agama-log-Node-cc91940d-6d93-42d1-b6f0-c973c45714e7",
-				"type": "Agama-log-Node",
-				"parentId": "Agama-when-Node-b87d0103-a427-4d38-b995-06828b5e6f6a",
-				"whenCondition": "WhenFalse",
-				"inRepeatBlock": true,
-				"position": {
-					"x": 791.4909310458524,
-					"y": 511.2971984721547
-				},
-				"agamaData": {
-					"id": "Agama-log-Node-cc91940d-6d93-42d1-b6f0-c973c45714e7",
-					"type": "Agama-log-Node",
-					"hasSuccess": false,
-					"hasFailure": false,
-					"hasRepeat": false,
-					"hasComment": true,
-					"hasNoRepeat": false,
-					"isTopLevelFlow": true,
-					"whenCondition": "WhenFalse",
-					"inRepeatBlock": true,
-					"parentId": "Agama-when-Node-b87d0103-a427-4d38-b995-06828b5e6f6a",
-					"name": "",
-					"basepath": "",
-					"comment": "info log",
-					"notes": "",
-					"flowfilename": "",
-					"assignments": [
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "",
-							"assignedVariableName": ""
-						}
-					],
-					"callType": "Call static method",
-					"arguments": "",
-					"logMessage": "\"Login failed for % attempting for retry\" creds.username\"",
-					"templatePath": "",
-					"maxIteration": "",
-					"idpAuthEndpoint": "",
-					"variableField": "",
-					"conditionInputField": "",
-					"valueField": "",
-					"returnVariable": "",
-					"javaClassName": "",
-					"javaMethodName": "",
-					"javaVariableName": "",
-					"maxIterationVariableName": "",
-					"logLevel": "info",
-					"assignCallbackResult": "",
-					"displayName": "login failed log",
-					"nodeColor": "",
-					"exceptionVariableField": "",
-					"hasExtraData": false,
-					"configParams": "{}",
-					"nodeIcon": "octicon:log-16"
-				}
-			},
-			"selected": true,
-			"positionAbsolute": {
-				"x": 791.4909310458524,
-				"y": 511.2971984721547
-			},
-			"dragging": false
-		},
-		{
 			"width": 210,
 			"height": 140,
 			"id": "Agama-when-Node-b87d0103-a427-4d38-b995-06828b5e6f6a",
@@ -110,8 +36,10 @@
 					"valueField": "true",
 					"comment": "check if authentication is successful",
 					"hasComment": true,
-					"hasSuccess": true,
-					"hasFailure": true
+					"hasSuccess": "",
+					"hasFailure": "",
+					"hasNoRepeat": false,
+					"hasRepeat": false
 				},
 				"handles": [
 					"Agama-when-Node-b87d0103-a427-4d38-b995-06828b5e6f6a.FAILURE",
@@ -879,7 +807,8 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -1035,7 +964,8 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -1431,29 +1361,11 @@
 				"color": "#fff",
 				"fillOpacity": 0.7
 			}
-		},
-		{
-			"id": "Agama-when-Node-b87d0103-a427-4d38-b995-06828b5e6f6a-Agama-log-Node-cc91940d-6d93-42d1-b6f0-c973c45714e7-919fb228-d709-4080-9b79-410bc73e57e9",
-			"type": "straight",
-			"source": "Agama-when-Node-b87d0103-a427-4d38-b995-06828b5e6f6a",
-			"target": "Agama-log-Node-cc91940d-6d93-42d1-b6f0-c973c45714e7",
-			"label": "",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"labelBgStyle": {
-				"fill": "#FFCC00",
-				"color": "#fff",
-				"fillOpacity": 0.7
-			},
-			"sourceHandle": "Agama-when-Node-b87d0103-a427-4d38-b995-06828b5e6f6a.FAILURE"
 		}
 	],
 	"viewport": {
 		"x": -8.07015077026881,
-		"y": -27.885395513646586,
+		"y": -27.88539551364653,
 		"zoom": 0.6255901900714614
 	}
 }
