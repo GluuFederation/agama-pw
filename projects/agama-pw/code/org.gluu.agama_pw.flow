@@ -22,10 +22,10 @@ Repeat 3 times max
           // info for authentication result
           Log "@info Authentication successful for %" authResult.uid
           // End flow after successful authentication
-          it_glwaz = { success: true, data: { userId: authResult.uid } }
-          Finish it_glwaz
+          it_ycpjr = { success: true, data: { userId: authResult.uid } }
+          Finish it_ycpjr
 // log message
 Log "@info Maximum unsuccessful authentication attempt"
 // auth failed message
-it_xwnrt = { success: false, error: "Authentication Unsuccessfull" }
-Finish it_xwnrt
+it_keqpa = { success: false, error: "Authentication Unsuccessfull" }
+Finish it_keqpa
