@@ -4,7 +4,7 @@
         "description": "agama-pw is a basic password authentication project. You can deploy it in your Janssen server for user authentication.",
         "type": "community",
         "author": "GluuFederation",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "authorWebsite": "https://github.com/GluuFederation/agama-pw",
         "githubUri": "https://github.com/GluuFederation/agama-pw",
         "license": "MIT",
@@ -20,7 +20,7 @@
         "configs": {
             "gluufederation.wise.org.gluu.agama_pw": {},
             "gluufederation.hypnotic.org.gluu.agama.pw": {},
-            "org.gluu.agama.pw": {}
+            "gluufederation.sly.org.gluu.agama.pw": {}
         }
     }
 }
