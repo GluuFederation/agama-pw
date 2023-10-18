@@ -18,8 +18,10 @@ Repeat 3 times max
      // check if authentication is successful
      When authResult.success is true
           // End flow after successful authentication
-          it_prtwn = { success: true, data: { userId: authResult.uid } }
-          Finish it_prtwn
+          it_jjiaj = { success: true, data: { userId: authResult.uid } }
+          Finish it_jjiaj
+// log message
+Log "@info Maximum unsuccessful authentication attempt"
 // auth failed message
-it_dgjzh = { success: false, error: "Authentication Unsuccessfull" }
-Finish it_dgjzh
+it_zbqfq = { success: false, error: "Authentication Unsuccessfull" }
+Finish it_zbqfq
