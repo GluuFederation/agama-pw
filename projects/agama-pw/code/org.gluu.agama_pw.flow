@@ -1,2 +1,3 @@
+// Agama-pw is a basic password authentication
 Flow org.gluu.agama_pw
      Basepath ""
