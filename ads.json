@@ -20,5 +20,23 @@
         "configs": {
             "mmrraju.horned.agama.pw": {}
         }
+    },
+    "hello-world": {
+        "projectName": "hello-world",
+        "description": "hello-world is basic password authentication project. You can deploy it in your Janssen server for user authentication",
+        "type": "community",
+        "author": "mmrraju",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/mmrraju/agama-pw",
+        "githubUri": "https://github.com/mmrraju/agama-pw",
+        "license": "MIT",
+        "lastUpdated": "1697669897932",
+        "tags": [
+            "authentication",
+            "authorization",
+            "jans"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
