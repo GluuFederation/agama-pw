@@ -17,6 +17,8 @@
             "authorization"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "org.gluu.agama_pw": {}
+        }
     }
 }
