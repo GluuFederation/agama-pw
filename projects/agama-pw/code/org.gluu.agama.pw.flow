@@ -1,4 +1,0 @@
-Flow org.gluu.agama.pw
-     Basepath ""
-// call existing flow
-authResult = Trigger org.gluu.agama_pw 
