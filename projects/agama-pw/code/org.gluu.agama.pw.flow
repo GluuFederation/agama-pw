@@ -1,5 +1,5 @@
 // Agama-pw is a basic password authentication
-Flow org.gluu.agama_pw
+Flow org.gluu.agama.pw
      Basepath ""
 // creating an instance of AuthenticationService class
 authService = Call io.jans.as.server.service.AuthenticationService#class 
