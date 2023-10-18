@@ -1,3 +1,25 @@
 // Agama-pw is a basic password authentication
 Flow org.gluu.agama_pw
      Basepath ""
+// creating an instance of AuthenticationService class
+authService = Call io.jans.as.server.service.AuthenticationService#class 
+// initiated cdiUtil object
+cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
+// declared an empty object
+authResult = {}
+// Retry authentication for 3 times
+Repeat 3 times max
+     // load the login page to ask the credentials
+     creds = RRF "login.flth" authResult
+     // validate user authentication
+     authResult.success = Call cdiUtil authenticate creds.username creds.password
+     // assigned creds.username to authResult
+     authResult.uid = creds.username
+     // check if authentication is successful
+     When authResult.success is true
+          // End flow after successful authentication
+          it_prtwn = { success: true, data: { userId: authResult.uid } }
+          Finish it_prtwn
+// auth failed message
+it_dgjzh = { success: false, error: "Authentication Unsuccessfull" }
+Finish it_dgjzh
