@@ -565,7 +565,7 @@
 					"exceptionVariableField": "",
 					"hasExtraData": false,
 					"configParams": "{}",
-					"flowname": "org.gluu.agama_pw",
+					"flowname": "org.gluu.agama.pw",
 					"nodeIcon": "material-symbols:line-start-square"
 				},
 				"skake": false
