@@ -18,7 +18,8 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "gluufederation.wise.org.gluu.agama_pw": {}
+            "gluufederation.wise.org.gluu.agama_pw": {},
+            "org.gluu.agama.pw": {}
         }
     }
 }
