@@ -574,7 +574,7 @@
 				"x": 34,
 				"y": 90
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 34,
@@ -1364,8 +1364,8 @@
 		}
 	],
 	"viewport": {
-		"x": 110.97276441601457,
-		"y": 13.8746014159843,
-		"zoom": 0.8588429872289
+		"x": 10,
+		"y": 15,
+		"zoom": 1
 	}
 }
