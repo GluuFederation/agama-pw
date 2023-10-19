@@ -20,7 +20,8 @@
         "configs": {
             "gluufederation.wise.org.gluu.agama_pw": {},
             "gluufederation.hypnotic.org.gluu.agama.pw": {},
-            "gluufederation.sly.org.gluu.agama.pw": {}
+            "gluufederation.sly.org.gluu.agama.pw": {},
+            "org.gluu.agama.pw": {}
         }
     }
 }
