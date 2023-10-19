@@ -35,6 +35,7 @@ Allow to authenticate a user or obtain the current authenticated user. To know m
 
 To design user interface. We use Freemaker Template. There have multiple default template. 
 
+![template](https://github.com/mmrraju/agama-pw/assets/43112579/7f6ba44c-efc5-43c1-a6bc-d23b3169a4ed)
 
 ## Engine and Bridge Configuration
 To know about Engine and Bridge Configuration please [visit](https://docs.jans.io/head/admin/developer/agama/engine-bridge-config/)
