@@ -26,7 +26,7 @@
         "description": "hello-world is basic password authentication project. You can deploy it in your Janssen server for user authentication",
         "type": "community",
         "author": "mmrraju",
-        "version": "0.0.1",
+        "version": "1.0.0",
         "authorWebsite": "https://github.com/mmrraju/agama-pw",
         "githubUri": "https://github.com/mmrraju/agama-pw",
         "license": "MIT",
@@ -38,7 +38,7 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "agama.pw": {}
+            "mmrraju.pragmatic.agama.pw": {}
         }
     }
 }
