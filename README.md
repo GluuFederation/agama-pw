@@ -177,6 +177,11 @@ Please ensure that `Agama engine` and `scripts` are`enabled` in Janssen Server d
 2. Open TUI using following commands on Janssen Server
   `/opt/jans/jans-cli/jans_cli_tui.py`
 3. Navigate to Auth `Server > Agama > Upload Project`. Select the `.gama` file to upload.
+4. Tap `Ctrl`+ `d` to see the details of the project
+   
+![Screenshot from 2023-10-19 22-29-33](https://github.com/mmrraju/agama-pw/assets/43112579/7e87ecf2-fb18-4687-858b-c98cb3b1379d)
+
+   
 
 #### Test
 
@@ -185,7 +190,7 @@ Keep your `ACR` value `agama` and need to pass your agama flow name as `ADDITION
 ```
 ACR_VALUES = "agama"
 
-ADDITIONAL_PARAMS = {'agama_flow': 'agama.pw'}
+ADDITIONAL_PARAMS = {"agama_flow": "mmrraju.pragmatic.agama.pw"}
 
 ```
 
