@@ -7,3 +7,9 @@ authResult = {}
 Repeat 3 times max
      creds = RRF "login.ftlh" authResult
      Log "@info Authenticating for uid : %" creds.username
+     authResult.success = Call cdiUtil authenticate creds.username creds.password
+     authResult.uid = creds.username
+     When authResult.success is true
+          Log "@info Successfully authenticate uid : %" authResult.uid
+          it_krelo = {success: true, data:{userId: authResult.uid}}
+          Finish it_krelo
