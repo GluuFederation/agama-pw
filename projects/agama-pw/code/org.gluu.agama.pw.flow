@@ -10,7 +10,7 @@ authResult = {}
 // Retry authentication for 3 times
 Repeat 3 times max
      // load the login page to ask the credentials
-     creds = RRF "login.flth" authResult
+     creds = RRF "login.ftlh" authResult
      // logging info
      Log "@info Authenticating for %" creds.username
      // validate user authentication
@@ -22,10 +22,10 @@ Repeat 3 times max
           // info for authentication result
           Log "@info Authentication successful for %" authResult.uid
           // End flow after successful authentication
-          it_trwgx = { success: true, data: { userId: authResult.uid } }
-          Finish it_trwgx
+          it_mihge = { success: true, data: { userId: authResult.uid } }
+          Finish it_mihge
 // log message
 Log "@info Maximum unsuccessful authentication attempt"
 // auth failed message
-it_vhghv = { success: false, error: "Authentication Unsuccessfull" }
-Finish it_vhghv
+it_hjyfy = { success: false, error: "Authentication Unsuccessfull" }
+Finish it_hjyfy
