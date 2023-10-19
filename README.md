@@ -185,7 +185,7 @@ Keep your `ACR` value `agama` and need to pass your agama flow name as `ADDITION
 ```
 ACR_VALUES = "agama"
 
-ADDITIONAL_PARAMS = {'agama_flow': 'co.acme.password.flow'}
+ADDITIONAL_PARAMS = {'agama_flow': 'agama.pw'}
 
 ```
 
