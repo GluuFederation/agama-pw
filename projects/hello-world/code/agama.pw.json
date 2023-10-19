@@ -45,7 +45,7 @@
 					],
 					"callType": "Call static method",
 					"arguments": "",
-					"logMessage": "Authenticating for uid : %\" creds.username",
+					"logMessage": "\"Authenticating for uid : %\" creds.username",
 					"templatePath": "",
 					"maxIteration": "",
 					"idpAuthEndpoint": "",
@@ -722,8 +722,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1171.4248438416141,
-		"y": -18.785430534321222,
+		"x": -877.4248438416141,
+		"y": -16.785430534321222,
 		"zoom": 1.0281138266560663
 	}
 }
