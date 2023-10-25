@@ -22,10 +22,11 @@ Repeat 3 times max
      // check successful authentication
      When authResult.success is true
           // return log statement for successful authentication
-          Log "@info Authenticate success for %" creds.username
+          Log "@info Authenticate successful"
           // End successful authentication flow
-          it_kfubs = { success: true, data: { userId: authResult.uid } }
-          Finish it_kfubs
+          it_jxnht = { success: true, data: { userId: authResult.uid } }
+          Finish it_jxnht
+     Log "@debug Username or Password is wrong"
 // User failed to authenticate for 3 times
-it_nbolp = { success: false, error: "Your error message here" }
-Finish it_nbolp
+it_pccgm = { success: false, error: "Your error message here" }
+Finish it_pccgm
