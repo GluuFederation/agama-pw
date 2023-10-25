@@ -1,2 +1,31 @@
+// hello-agama is an external identity provider integration for social logins
 Flow coop.hello.agama
      Basepath ""
+// creating an instance of AuthenticationService class
+authService = Call io.jans.as.server.service.AuthenticationService#class 
+// initiated cdiUtil object
+cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
+// Declared an empty result object
+authResult = {}
+// Retry 3 times for failed attempts
+Repeat 3 times max
+     // assigned rfac url
+     url = "https://wallet.hello.coop/authorize?scope=openid+name+email+profile_update&client_id=e16042a2-3da8-40da-83f1-331748d5c966&nonce=ebq20G2UPtl-E4aYxyfUf&redirect_uri=https%3A%2F%2Fimshakil-ample-sailfish.gluu.info%2Fjans-auth%2Frestv1%2Fauthorize&response_type=id_token"
+     // login to external identity provider
+     creds = RFAC url
+     // display username in the login attempt
+     Log "@info Attempt to authenticate for %" creds.username
+     // validate user credentials
+     authResult.success = Call cdiUtil authenticate creds.username creds.password
+     // assigned creds.username to authResult
+     authResult.uid = creds.username
+     // check successful authentication
+     When authResult.success is true
+          // return log statement for successful authentication
+          Log "@info Authenticate success for %" creds.username
+          // End successful authentication flow
+          it_mlrlw = { success: true, data: { userId: authResult.uid } }
+          Finish it_mlrlw
+// User failed to authenticate for 3 times
+it_ztbtz = { success: false, error: "Your error message here" }
+Finish it_ztbtz
