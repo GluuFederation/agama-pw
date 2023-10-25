@@ -63,7 +63,9 @@
             "jans"
         ],
         "noDirectLaunch": [],
-        "configs": {},
+        "configs": {
+            "coop.hello.agama": {}
+        },
         "name": "hello-agama"
     }
 }
