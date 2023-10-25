@@ -937,12 +937,14 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "https://wallet.hello.coop/authorize?scope=openid+name+email+profile_update&client_id=e16042a2-3da8-40da-83f1-331748d5c966&nonce=ebq20G2UPtl-E4aYxyfUf&redirect_uri=https%3A%2F%2Fimshakil-ample-sailfish.gluu.info%2Fjans-auth%2Frestv1%2Fauthorize&response_type=id_token",
+							"assignmentExpression": "https://wallet.hello.coop/authorize?scope=openid+name+email&client_id=e16042a2-3da8-40da-83f1-331748d5c966&nonce=ebq20G2UPtl-E4aYxyfUf&redirect_uri=https%3A%2F%2Ftestjans.imshakil.gluu%2Fjans-auth%2Frestv1%2Fauthorize.htm&response_type=code&code_challenge=RE4uhrxnwYA-P0Ra4U2_BCrJMuZQJW06kAVErHqTKjY&response_mode=query",
 							"assignedVariableName": "url"
 						}
 					],
 					"callType": "Call static method",
-					"arguments": "",
+					"arguments": [
+						""
+					],
 					"logMessage": "",
 					"templatePath": "",
 					"maxIteration": "",
@@ -1431,8 +1433,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5.314437737270396,
-		"y": -20.271461602538295,
-		"zoom": 0.6797747417705474
+		"x": 118.40452303335633,
+		"y": 35.65220858676176,
+		"zoom": 0.5547138583977839
 	}
 }
