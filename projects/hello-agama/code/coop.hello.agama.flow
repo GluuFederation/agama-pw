@@ -24,8 +24,8 @@ Repeat 3 times max
           // return log statement for successful authentication
           Log "@info Authenticate success for %" creds.username
           // End successful authentication flow
-          it_mlrlw = { success: true, data: { userId: authResult.uid } }
-          Finish it_mlrlw
+          it_xokkd = { success: true, data: { userId: authResult.uid } }
+          Finish it_xokkd
 // User failed to authenticate for 3 times
-it_ztbtz = { success: false, error: "Your error message here" }
-Finish it_ztbtz
+it_qowds = { success: false, error: "Your error message here" }
+Finish it_qowds
