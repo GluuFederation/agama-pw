@@ -65,9 +65,10 @@
 					"hasExtraData": false,
 					"configParams": "{}",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1329.2888654326478,
@@ -1043,7 +1044,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 48.492590961273095,
 				"y": 305.18867091947146
@@ -1526,8 +1527,8 @@
 		}
 	],
 	"viewport": {
-		"x": 119.40452303335633,
-		"y": 35.65220858676173,
+		"x": 120.40452303335633,
+		"y": 34.65220858676173,
 		"zoom": 0.5547138583977839
 	}
 }
