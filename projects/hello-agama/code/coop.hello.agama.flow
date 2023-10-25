@@ -24,9 +24,9 @@ Repeat 3 times max
           // return log statement for successful authentication
           Log "@info Authenticate successful"
           // End successful authentication flow
-          it_jxnht = { success: true, data: { userId: authResult.uid } }
-          Finish it_jxnht
+          it_dgynq = { success: true, data: { userId: authResult.uid } }
+          Finish it_dgynq
      Log "@debug Username or Password is wrong"
 // User failed to authenticate for 3 times
-it_pccgm = { success: false, error: "Your error message here" }
-Finish it_pccgm
+it_jorje = { success: false, error: "Your error message here" }
+Finish it_jorje
