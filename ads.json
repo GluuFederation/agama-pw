@@ -63,9 +63,7 @@
             "jans"
         ],
         "noDirectLaunch": [],
-        "configs": {
-            "org.gluu.agama.hello": {}
-        },
+        "configs": {},
         "name": "hello-agama"
     }
 }
