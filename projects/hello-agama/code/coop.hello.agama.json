@@ -3,6 +3,80 @@
 		{
 			"width": 170,
 			"height": 122,
+			"id": "Agama-log-Node-dc5ef720-be9e-4e50-96cd-32e5e98d09dd",
+			"position": {
+				"x": 1329.2888654326478,
+				"y": 328.0106300068875
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-dc5ef720-be9e-4e50-96cd-32e5e98d09dd",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-when-Node-e13b73a9-349e-4c40-8e29-facb692b9513",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": true,
+				"position": {
+					"x": 1329.2888654326478,
+					"y": 328.0106300068875
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-dc5ef720-be9e-4e50-96cd-32e5e98d09dd",
+					"type": "Agama-log-Node",
+					"hasSuccess": false,
+					"hasFailure": false,
+					"hasRepeat": false,
+					"hasComment": true,
+					"hasNoRepeat": false,
+					"isTopLevelFlow": true,
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": true,
+					"parentId": "Agama-when-Node-e13b73a9-349e-4c40-8e29-facb692b9513",
+					"name": "",
+					"basepath": "",
+					"comment": "",
+					"notes": "",
+					"flowfilename": "",
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "",
+							"assignedVariableName": ""
+						}
+					],
+					"callType": "Call static method",
+					"arguments": [],
+					"logMessage": "\"Username or Password is wrong\"",
+					"templatePath": "",
+					"maxIteration": "",
+					"idpAuthEndpoint": "",
+					"variableField": "",
+					"conditionInputField": "",
+					"valueField": "",
+					"returnVariable": "",
+					"javaClassName": "",
+					"javaMethodName": "",
+					"javaVariableName": "",
+					"maxIterationVariableName": "",
+					"logLevel": "debug",
+					"assignCallbackResult": "",
+					"displayName": "invalid",
+					"nodeColor": "",
+					"exceptionVariableField": "",
+					"hasExtraData": false,
+					"configParams": "{}",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1329.2888654326478,
+				"y": 328.0106300068875
+			}
+		},
+		{
+			"width": 170,
+			"height": 122,
 			"id": "finish-b104f6b3-9069-4680-b492-fab95b2eea28",
 			"position": {
 				"x": 1411.9132839337813,
@@ -122,7 +196,7 @@
 					],
 					"callType": "Call static method",
 					"arguments": "",
-					"logMessage": "\"Authenticate success for %\" creds.username",
+					"logMessage": "\"Authenticate successful\"",
 					"templatePath": "",
 					"maxIteration": "",
 					"idpAuthEndpoint": "",
@@ -187,7 +261,8 @@
 					"conditionInputField": "is",
 					"valueField": "true",
 					"comment": "check successful authentication",
-					"hasComment": true
+					"hasComment": true,
+					"hasFailure": true
 				},
 				"handles": [
 					"Agama-when-Node-e13b73a9-349e-4c40-8e29-facb692b9513.FAILURE",
@@ -736,7 +811,7 @@
 			"height": 122,
 			"id": "Agama-log-Node-089bdc97-2c2b-415b-b36c-380ab3e283e6",
 			"position": {
-				"x": 445.0397639328413,
+				"x": 446.8424951696062,
 				"y": 380.3084919662125
 			},
 			"type": "log",
@@ -747,7 +822,7 @@
 				"whenCondition": "",
 				"inRepeatBlock": "",
 				"position": {
-					"x": 445.0397639328413,
+					"x": 446.8424951696062,
 					"y": 380.3084919662125
 				},
 				"agamaData": {
@@ -804,7 +879,7 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 445.0397639328413,
+				"x": 446.8424951696062,
 				"y": 380.3084919662125
 			},
 			"dragging": false,
@@ -1430,11 +1505,29 @@
 				"color": "#fff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-when-Node-e13b73a9-349e-4c40-8e29-facb692b9513-Agama-log-Node-dc5ef720-be9e-4e50-96cd-32e5e98d09dd-3dafdcff-ab9c-4464-b08d-120ed1ee6769",
+			"type": "straight",
+			"source": "Agama-when-Node-e13b73a9-349e-4c40-8e29-facb692b9513",
+			"target": "Agama-log-Node-dc5ef720-be9e-4e50-96cd-32e5e98d09dd",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "Agama-when-Node-e13b73a9-349e-4c40-8e29-facb692b9513.FAILURE"
 		}
 	],
 	"viewport": {
-		"x": 118.40452303335633,
-		"y": 35.65220858676176,
+		"x": 119.40452303335633,
+		"y": 35.65220858676173,
 		"zoom": 0.5547138583977839
 	}
 }
