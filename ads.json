@@ -43,8 +43,10 @@
             "gluufederation.sly.org.gluu.agama.pw": {},
             "gluufederation.rainbow.org.gluu.agama.pw": {},
             "": {},
-            "gluufederation.acoustic.org.gluu.agama.pw": {}
-        }
+            "gluufederation.acoustic.org.gluu.agama.pw": {},
+            "org.gluu.agama.pw": {}
+        },
+        "name": "agama-pw"
     },
     "hello-agama": {
         "projectName": "hello-agama",
