@@ -22,10 +22,10 @@ Repeat 3 times max
           // info for authentication result
           Log "@info Authentication successful for %" authResult.uid
           // End flow after successful authentication
-          it_oelpg = { success: true, data: { userId: authResult.uid } }
-          Finish it_oelpg
+          it_byzmc = { success: true, data: { userId: authResult.uid } }
+          Finish it_byzmc
 // log message
 Log "@info Maximum unsuccessful authentication attempt"
 // auth failed message
-it_ccqjc = { success: false, error: "Authentication Unsuccessfull" }
-Finish it_ccqjc
+it_htdfm = { success: false, error: "Authentication Unsuccessfull" }
+Finish it_htdfm
