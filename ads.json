@@ -47,27 +47,5 @@
             "org.gluu.agama.pw": {}
         },
         "name": "agama-pw"
-    },
-    "hello-agama": {
-        "projectName": "hello-agama",
-        "description": "integration with hello.coop for social logins",
-        "type": "community",
-        "author": "GluuFederation",
-        "version": "0.0.1",
-        "authorWebsite": "https://github.com/GluuFederation/agama-pw",
-        "githubUri": "https://github.com/GluuFederation/agama-pw",
-        "license": "apache-2.0",
-        "lastUpdated": "1698217343557",
-        "tags": [
-            "authentication",
-            "authorization",
-            "social-logins",
-            "jans"
-        ],
-        "noDirectLaunch": [],
-        "configs": {
-            "coop.hello.agama": {}
-        },
-        "name": "hello-agama"
     }
 }
