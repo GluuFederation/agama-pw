@@ -17,7 +17,9 @@ Welcome to the **"Hello-World"** project! This project serves as an ideal starti
 # Overview
 
 This project is a sample of password-based authentication. Authentication flow designed and developed using Agama and Agama Lab. If you are interested in low-code development and eager to create your authentication flow with drag-and-drop features, then Agama Lab is the right choice for you.
+
 What is Agama? To gain a better understanding, please visit [here](https://docs.jans.io/head/agama/introduction). 
+
 The **"Hello-World"** project can be constructed using Agama Lab. To learn more about Agama Lab, please visit [here](https://gluu.org/agama-lab).
 
 # Pre-requisite
