@@ -1,5 +1,5 @@
-<p align="center">
-  <img width="600" height="400" src="">
+<p align="left">
+  <img width="600" height="400" src="https://github.com/GluuFederation/agama-pw/assets/43112579/b6e12bd2-81d5-4cff-860d-ad784d3390d3">
 </p>
 
 [![Contributors][contributors-shield]](contributors-url)
@@ -29,7 +29,7 @@ Let's take a look at what you need:
 
 To quickly adapt to Agama projects like **"Hello-World"** please visit [Quick Start Using Agama Lab](https://docs.jans.io/head/admin/developer/agama/quick-start-using-agama-lab/).
 
-Once flow is completed, you will need to establish a connection between your flow and an engine like Jans server. To learn more about Engine and Bridge Configuration, please visit [here](https://docs.jans.io/head/admin/developer/agama/engine-bridge-config/).
+Once flow is completed, you will need to establish a connection between your flow and an engine like Jans Server. To learn more about Engine and Bridge Configuration, please visit [here](https://docs.jans.io/head/admin/developer/agama/engine-bridge-config/).
 
 # Deploy and Test
 
@@ -64,11 +64,34 @@ an example of **Hello-world** in action:
 https://github.com/GluuFederation/agama-pw/assets/43112579/e595b9a4-01b7-441f-a13f-c91f3dcbad97
 
 
+# Contributors
+
+<table>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/mmrraju>
+            <img src=https://avatars.githubusercontent.com/u/43112579?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Md Mostafejur Rahman/>
+            <br />
+            <sub style="font-size:14px"><b>Md Mostafejur Rahman</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
+
 # License
 
 This project is licensed under the [Apache 2.0](https://github.com/GluuFederation/agama-pw/blob/main/LICENSE)
 
 
-
-
+<!-- This are stats url reference for this repository -->
+[contributors-shield]: https://img.shields.io/github/contributors/GluuFederation/agama-pw.svg?style=for-the-badge
+[contributors-url]: https://github.com/GluuFederation/agama-pw/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/GluuFederation/agama-pw.svg?style=for-the-badge
+[forks-url]: https://github.com/GluuFederation/agama-pw/network/members
+[stars-shield]: https://img.shields.io/github/stars/GluuFederation/agama-pw?style=for-the-badge
+[stars-url]: https://github.com/GluuFederation/agama-pw/stargazers
+[issues-shield]: https://img.shields.io/github/issues/GluuFederation/agama-pw.svg?style=for-the-badge
+[issues-url]: https://github.com/GluuFederation/agama-pw/issues
+[license-shield]: https://img.shields.io/github/license/GluuFederation/agama-pw.svg?style=for-the-badge
+[license-url]: https://github.com/GluuFederation/agama-pw/blob/main/LICENSE
 
