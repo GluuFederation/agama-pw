@@ -1,0 +1,51 @@
+{
+    "hello-world": {
+        "projectName": "hello-world",
+        "description": "hello-world is basic password authentication project. You can deploy it in your Janssen server for user authentication",
+        "type": "community",
+        "author": "mmrraju",
+        "version": "1.0.1",
+        "authorWebsite": "https://github.com/mmrraju/agama-pw",
+        "githubUri": "https://github.com/mmrraju/agama-pw",
+        "license": "MIT",
+        "lastUpdated": "1697669897932",
+        "tags": [
+            "authentication",
+            "authorization",
+            "jans"
+        ],
+        "noDirectLaunch": [],
+        "configs": {
+            "mmrraju.pragmatic.agama.pw": {}
+        }
+    },
+    "agama-pw": {
+        "projectName": "agama-pw",
+        "description": "agama-pw is a basic password authentication project. You can deploy it in your Janssen server for user authentication.",
+        "type": "community",
+        "author": "GluuFederation",
+        "version": "1.0.6",
+        "authorWebsite": "https://github.com/GluuFederation/agama-pw",
+        "githubUri": "https://github.com/GluuFederation/agama-pw",
+        "license": "MIT",
+        "lastUpdated": "1697519523824",
+        "tags": [
+            "authentication",
+            "jans",
+            "community",
+            "openid-connect",
+            "authorization"
+        ],
+        "noDirectLaunch": [],
+        "configs": {
+            "gluufederation.wise.org.gluu.agama_pw": {},
+            "gluufederation.hypnotic.org.gluu.agama.pw": {},
+            "gluufederation.sly.org.gluu.agama.pw": {},
+            "gluufederation.rainbow.org.gluu.agama.pw": {},
+            "": {},
+            "gluufederation.acoustic.org.gluu.agama.pw": {},
+            "org.gluu.agama.pw": {}
+        },
+        "name": "agama-pw"
+    }
+}
