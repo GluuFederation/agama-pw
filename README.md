@@ -1,6 +1,9 @@
 <p align="left">
-  <img width="600" height="400" src="https://github.com/GluuFederation/agama-pw/assets/43112579/b6e12bd2-81d5-4cff-860d-ad784d3390d3">
+  <img width="600" height="400" src="https://github.com/GluuFederation/agama-pw/assets/43112579/639a8ca4-7549-4167-a5eb-5fe19fad3ff5">
 </p>
+
+
+
 
 [![Contributors][contributors-shield]](contributors-url)
 [![Forks][forks-shield]](forks-url)
