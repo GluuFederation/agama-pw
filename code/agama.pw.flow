@@ -1,0 +1,19 @@
+Flow agama.pw
+     Basepath ""
+Log "@info Import necessary class and packages"
+authService = Call io.jans.as.server.service.AuthenticationService#class 
+cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
+authResult = {}
+Repeat 3 times max
+     creds = RRF "login.ftlh" authResult
+     Log "@info Authenticating for uid : %" creds.username
+     authResult.success = Call cdiUtil authenticate creds.username creds.password
+     authResult.uid = creds.username
+     When authResult.success is true
+          Log "@info Successfully authenticate uid : %" authResult.uid
+          it_ksmmt = {success: true, data:{userId: authResult.uid}}
+          Finish it_ksmmt
+     Log "@info Wrong username or password try again"
+Log "@info Login attempt failed"
+it_iakzm = {success: false, error: "Authentication failed"}
+Finish it_iakzm
