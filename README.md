@@ -66,8 +66,9 @@ You'll need an OpenID Connect test RP. You can try [oidcdebugger](https://oidcde
 [jans-tarp](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp) or [jans-tent](https://github.com/JanssenProject/jans/tree/main/demos/jans-tent). Check out this video to see
 an example of **agama-pw** in action:
 
-https://github.com/GluuFederation/agama-pw/assets/43112579/e595b9a4-01b7-441f-a13f-c91f3dcbad97
+<!-- https://github.com/GluuFederation/agama-pw/assets/43112579/e595b9a4-01b7-441f-a13f-c91f3dcbad97 -->
 
+https://www.loom.com/share/73edb35bdfbf4497b1ffab17d9a66ad1?sid=354c60b7-7aeb-45dc-b828-b2668f46a6df
 
 # Contributors
 
