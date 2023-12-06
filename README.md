@@ -42,12 +42,12 @@ Once flow is completed, you will need to establish a connection between your flo
 
 * Download the release package from the Github [releases](https://github.com/GluuFederation/agama-pw/releases)
   ```
-  wget https://github.com/GluuFederation/agama-pw/releases/download/agama-pw-1.0.1/agama-pw.gama
+  https://github.com/GluuFederation/agama-pw/releases/download/v1.0.1/agama-pw.gama
   ```
 * Verify integrity of the downloaded package by verifying published `sha256sum`.
   Download `sha256sum` file for the package
   ```
-  wget https://github.com/GluuFederation/agama-pw/releases/download/agama-pw-1.0.1/agama-pw.gama.sha256sum
+  https://github.com/GluuFederation/agama-pw/releases/download/v1.0.1/agama-pw.gama.sha256sum
   ```
   Check the hash if it is matching
   ```
