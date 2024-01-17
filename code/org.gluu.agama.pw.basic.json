@@ -36,9 +36,10 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1560.4297798428859,
@@ -312,7 +313,7 @@
 					"inRepeatBlock": true,
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
-					"templatePath": "login.ftlh",
+					"templatePath": "login-basic.ftlh",
 					"asssignedVariableName": "credentials",
 					"arguments": [
 						"validationResult"
@@ -324,7 +325,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 727.6372428190757,
@@ -709,8 +710,8 @@
 		}
 	],
 	"viewport": {
-		"x": -672,
-		"y": 23,
+		"x": 10,
+		"y": 15,
 		"zoom": 1
 	}
 }
