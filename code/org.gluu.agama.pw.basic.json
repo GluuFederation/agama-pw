@@ -325,7 +325,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 727.6372428190757,
@@ -446,7 +446,7 @@
 					"displayName": "Initialize",
 					"hasComment": true,
 					"comment": "Get an instance of PasswordService Class",
-					"javaClassName": "org.gluu.agama.pw.PasswordService",
+					"javaClassName": "org.gluu.agama.pw.basic.PasswordService",
 					"javaMethodName": "getInstance",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
@@ -459,7 +459,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
