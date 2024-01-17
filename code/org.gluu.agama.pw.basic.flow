@@ -1,2 +1,6 @@
 Flow org.gluu.agama.pw.basic
      Basepath ""
+// create variable to receive validation result
+validationResult = {}
+Repeat 3 times max
+     credentials = RRF "login.ftlh" validationResult
