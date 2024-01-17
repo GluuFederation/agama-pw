@@ -444,7 +444,8 @@
 					"arguments": [],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "passwordValidationService"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -696,8 +697,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1109.2745430005841,
-		"y": -94.17144174808192,
-		"zoom": 1.3947436663504058
+		"x": -300,
+		"y": 18,
+		"zoom": 1
 	}
 }
