@@ -47,13 +47,6 @@ color: blue;
   background-position: bottom;
 }
 
-body{
-  background-image: url('blobscene.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
          .button-gradient {
             background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
             margin: 10px;
