@@ -33,9 +33,10 @@
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Validation complete sucessfully"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1425.5807127149096,
@@ -70,12 +71,13 @@
 					"comment": "",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": true,
-					"logMessage": "Well done",
+					"logMessage": "\"Well done\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1225.5807127149096,
@@ -763,8 +765,8 @@
 		}
 	],
 	"viewport": {
-		"x": -618,
-		"y": -139,
+		"x": 10,
+		"y": 15,
 		"zoom": 1
 	}
 }
