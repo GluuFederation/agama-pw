@@ -16,14 +16,15 @@
   
 	<div class="md:h-screen bg-white relative flex flex-col justify-center items-center">
 	  <div class="md:border md:border-gray-300 bg-white md:shadow-lg shadow-none rounded p-10 align-middle">
-		 <div classname="agama-ribbon-wrapper">
-        <div classname="agama-ribbon">WELCOME</div>
-      </div>
+		<div classname="agama-ribbon-wrapper">
+		  <div classname="agama-ribbon">WELCOME
+		  </div>
+		</div>
 		<div class="flex flex-col items-center space-y-3">
 		  <div class="flex">
 			<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png">
 		  </div>
-		  <span class="text-2xl font-semi-bold leading-normal">Welcome</span>
+		  <span class="text-2xl font-semi-bold leading-normal errorMessage">Welcome</span>
 		  [#if errorMessage??]
 		  <p class="leading-normal errorMessage">${errorMessage}
 		  </p>
