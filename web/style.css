@@ -38,3 +38,8 @@ color: blue;
   box-shadow: 0 0 0 999px #08769b;
   clip-path: inset(0 -100%);
 }
+
+
+body{
+  background-image: url('wave.png');
+}
