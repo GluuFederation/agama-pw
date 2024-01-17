@@ -31,7 +31,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "The provided credentails is not valid. Please try again!",
+							"assignmentExpression": "The provided credentials is not valid. Please try again!",
 							"assignedVariableName": "validationResult.errorMessage"
 						}
 					],
@@ -39,7 +39,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1560.4297798428859,
@@ -77,7 +77,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": false,
-							"assignmentExpression": "credentails.username",
+							"assignmentExpression": "credentials.username",
 							"assignedVariableName": "validationResult.uid"
 						}
 					],
@@ -135,7 +135,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1223.6562721147116,
@@ -707,8 +707,8 @@
 		}
 	],
 	"viewport": {
-		"x": -756,
-		"y": -169,
+		"x": -683,
+		"y": -3,
 		"zoom": 1
 	}
 }
