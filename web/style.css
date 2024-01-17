@@ -40,7 +40,7 @@ color: blue;
 }
 
 
-body loginCard{
+body .loginCard{
   background-image: url('wave.png');
   background-size: contain;
   background-repeat: no-repeat;
