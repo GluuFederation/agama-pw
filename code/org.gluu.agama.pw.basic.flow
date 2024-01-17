@@ -4,3 +4,6 @@ Flow org.gluu.agama.pw.basic
 validationResult = {}
 Repeat 3 times max
      credentials = RRF "login.ftlh" validationResult
+     validationResult.status = Call passwordValidationService validate credentails.username credentials.password
+it_kqrfz = {success:false, error: "Password validation failed!"}
+Finish it_kqrfz
