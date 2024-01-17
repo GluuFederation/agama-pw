@@ -15,12 +15,16 @@
   
   
 	<div class="md:h-screen bg-white relative flex flex-col justify-center items-center">
-	  <div class="md:border md:border-gray-300 bg-white md:shadow-lg shadow-none rounded p-10 align-middle">
-		<div class="login-ribbon">
+	  <div class="login-ribbon">
 		  <div class="agama-ribbon">WELCOME
 		  </div>
 		</div>
+	  <div class="md:border md:border-gray-300 bg-white md:shadow-lg shadow-none rounded p-10 align-middle">
 		<div class="flex flex-col items-center space-y-3">
+		  <div class="login-ribbon">
+		  <div class="agama-ribbon">WELCOME
+		  </div>
+		</div>
 		  <div class="flex">
 			<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png">
 		  </div>
