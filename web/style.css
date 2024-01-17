@@ -30,3 +30,11 @@ color: blue;
     color: white;
   }
 }
+
+
+.welcomeRibbon {
+  position: fixed;
+  background: #08769b;
+  box-shadow: 0 0 0 999px #08769b;
+  clip-path: inset(0 -100%);
+}
