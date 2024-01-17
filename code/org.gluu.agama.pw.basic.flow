@@ -12,13 +12,15 @@ Repeat 3 times max
      credentials = RRF "login.ftlh" validationResult
      // Validate provided user credentials
      validationResult.status = Call passwordValidationService validate credentails.username credentials.password
-     // desc
+     // If user credentials is valid
      When validationResult.status is true
-          it_mdjte = {success:true, data: { userId: validatiotionResult.uid}}
-          Finish it_mdjte
-     validationResult.uid = "credentails.username"
-     it_ejfzv = {success:false, error: "Wrong credentails. Please try again!"}
-     Finish it_ejfzv
+          // Password validation completed successfuly
+          it_gtnuy = {success:true, data: { userId: validatiotionResult.uid}}
+          Finish it_gtnuy
+     // Set uid to fill the username field on the UI on the next attempt
+     validationResult.uid = credentails.username
+     // Provide feedback about the error message to user
+     validationResult.errorMessage = "The provided credentails is not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_avgsm = {success:false, error: "Password validation failed!"}
-Finish it_avgsm
+it_qnsri = {success:false, error: "Password validation failed!"}
+Finish it_qnsri
