@@ -11,9 +11,9 @@ public class JansPasswordService extends PasswordService{
     private static AuthenticationService authenticationService = CdiUtil.bean(AuthenticationService.class);
     @Override
     public boolean validate(String username, String password) {
-        logger.info("Validating user credentials.");
+        logger.info("Validating user credentials {}.", username);
         boolean result = authenticationService.authenticate(username, password);
-        logger.info("Validation status.", result);
+        logger.info("Validation status is {}.", result);
         return result;
     }
 }
