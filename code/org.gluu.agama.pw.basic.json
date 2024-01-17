@@ -29,14 +29,14 @@
 					"hasComment": true,
 					"comment": "Password validation completed successfuly",
 					"flowfilename": "",
-					"returnVariable": "{ userId: validationResult.uid}",
+					"returnVariable": "{ userId: credentials.username}",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Validation complete sucessfully"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1425.5807127149096,
@@ -77,7 +77,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1225.5807127149096,
@@ -765,8 +765,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": -732,
+		"y": 11,
 		"zoom": 1
 	}
 }
