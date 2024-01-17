@@ -1,17 +1,24 @@
+// Basic password login flow
 Flow org.gluu.agama.pw.basic
      Basepath ""
-// create variable to receive validation result
+     Timeout 500 seconds
+// Create variable to receive validation result
 validationResult = {}
+// Get an instance of PasswordService Class
 passwordValidationService = Call org.gluu.agama.pw.PasswordService#getInstance 
+// Iterate x times max
 Repeat 3 times max
+     // Retrieve user credentials from UI
      credentials = RRF "login.ftlh" validationResult
+     // Validate provided user credentials
      validationResult.status = Call passwordValidationService validate credentails.username credentials.password
      // desc
      When validationResult.status is true
-          it_dgamc = {success:true, data: { userId: validatiotionResult.uid}}
-          Finish it_dgamc
+          it_mdjte = {success:true, data: { userId: validatiotionResult.uid}}
+          Finish it_mdjte
      validationResult.uid = "credentails.username"
-     it_kzhld = {success:false, error: "Wrong credentails. Please try again!"}
-     Finish it_kzhld
-it_ghfku = {success:false, error: "Password validation failed!"}
-Finish it_ghfku
+     it_ejfzv = {success:false, error: "Wrong credentails. Please try again!"}
+     Finish it_ejfzv
+// Maximum attempts reached. Password validation failed!
+it_avgsm = {success:false, error: "Password validation failed!"}
+Finish it_avgsm
