@@ -11,16 +11,16 @@ Repeat 3 times max
      // Retrieve user credentials from UI
      credentials = RRF "login-basic.ftlh" validationResult
      // Validate provided user credentials
-     validationResult.status = Call passwordValidationService validate credentails.username credentials.password
+     validationResult.status = Call passwordValidationService validate credentials.username credentials.password
      // If user credentials is valid
      When validationResult.status is true
           // Password validation completed successfuly
-          it_jcige = {success:true, data: { userId: validatiotionResult.uid}}
-          Finish it_jcige
+          it_dewar = {success:true, data: { userId: validationResult.uid}}
+          Finish it_dewar
      // Set uid to fill the username field on the UI on the next attempt
      validationResult.uid = credentails.username
      // Provide feedback about the error message to user
      validationResult.errorMessage = "The provided credentails is not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_riacc = {success:false, error: "Password validation failed!"}
-Finish it_riacc
+it_xcvqz = {success:false, error: "Password validation failed!"}
+Finish it_xcvqz
