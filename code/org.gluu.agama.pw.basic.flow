@@ -15,12 +15,12 @@ Repeat 3 times max
      // If user credentials is valid
      When validationResult.status is true
           // Password validation completed successfuly
-          it_chkmw = {success:true, data: { userId: validationResult.uid}}
-          Finish it_chkmw
+          it_ejhnu = {success:true, data: { userId: validationResult.uid}}
+          Finish it_ejhnu
      // Set uid to fill the username field on the UI on the next attempt
      validationResult.uid = credentials.username
      // Provide feedback about the error message to user
-     validationResult.errorMessage = "The provided credentials is not valid. Please try again!"
+     validationResult.errorMessage = "The provided credentials are not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_wuciv = {success:false, error: "Password validation failed!"}
-Finish it_wuciv
+it_cfvrz = {success:false, error: "Password validation failed!"}
+Finish it_cfvrz
