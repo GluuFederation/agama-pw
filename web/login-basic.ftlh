@@ -24,7 +24,7 @@
 		  <div class="flex">
 			<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png">
 		  </div>
-		  <span class="text-2xl font-semi-bold leading-normal errorMessage">Welcome</span>
+		  <span class="text-2xl font-semi-bold leading-normal">Welcome</span>
 		  [#if errorMessage??]
 		  <p class="leading-normal errorMessage">${errorMessage}
 		  </p>
