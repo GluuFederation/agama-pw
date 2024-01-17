@@ -1,0 +1,35 @@
+[
+  {
+    "id": "Agama-start-Flow-857536e5-f21b-4c1d-ab59-3f47a7772666",
+    "type": "start",
+    "sourcePosition": "right",
+    "data": {
+      "id": "Agama-start-Flow-857536e5-f21b-4c1d-ab59-3f47a7772666",
+      "type": "Agama-start-Flow",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "inRepeatBlock": false,
+      "agamaData": {
+        "id": "Agama-start-Flow-857536e5-f21b-4c1d-ab59-3f47a7772666",
+        "type": "Agama-start-Flow",
+        "displayName": "The username-password login flow process is a standard authentication method used to grant access to secure digital platforms. Users begin by entering their unique username, which is often a personal identifier chosen during account creation. ",
+        "hasComment": true,
+        "comment": "",
+        "isTopLevelFlow": true,
+        "basepath": "",
+        "configParams": "{}",
+        "nodeIcon": "material-symbols:line-start-square",
+        "timeout": "",
+        "inputs": "",
+        "configs": "",
+        "flowname": "org.gluu.agama.pw.basic"
+      }
+    },
+    "position": {
+      "x": 30,
+      "y": 30
+    }
+  }
+]
