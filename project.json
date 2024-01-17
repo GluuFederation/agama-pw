@@ -15,6 +15,7 @@
     ],
     "noDirectLaunch": [],
     "configs": {
+        "org.gluu.agama.pw.basic": {}
     },
     "name": "agama-pw"
 }
