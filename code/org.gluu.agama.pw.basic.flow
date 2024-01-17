@@ -16,12 +16,12 @@ Repeat 3 times max
      When validationResult.status is true
           Log "@info Well done"
           // Password validation completed successfuly
-          it_ivkyo = {success:true, data: { userId: validationResult.uid}}
-          Finish it_ivkyo
+          it_jxptw = {success:true, data: { userId: credentials.username}}
+          Finish it_jxptw
      // Set uid to fill the username field on the UI on the next attempt
      validationResult.uid = credentials.username
      // Provide feedback about the error message to user
      validationResult.errorMessage = "The provided credentials are not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_uiwxv = {success:false, error: "Password validation failed!"}
-Finish it_uiwxv
+it_nhtiv = {success:false, error: "Password validation failed!"}
+Finish it_nhtiv
