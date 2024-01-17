@@ -39,7 +39,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1560.4297798428859,
@@ -498,11 +498,12 @@
 					"hasSuccess": "",
 					"hasFailure": "",
 					"hasRepeat": false,
-					"comment": "Iterate x times max"
+					"comment": "Iterate x times max",
+					"maxIterationVariableName": "currentIteration"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 630.9054113045619,
@@ -707,8 +708,8 @@
 		}
 	],
 	"viewport": {
-		"x": -683,
-		"y": -3,
+		"x": -8,
+		"y": 31,
 		"zoom": 1
 	}
 }
