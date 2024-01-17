@@ -5,5 +5,12 @@ validationResult = {}
 Repeat 3 times max
      credentials = RRF "login.ftlh" validationResult
      validationResult.status = Call passwordValidationService validate credentails.username credentials.password
-it_kqrfz = {success:false, error: "Password validation failed!"}
-Finish it_kqrfz
+     // desc
+     When validationResult.status is true
+          it_akpsf = {success:true, data: { userId: validatiotionResult.uid}}
+          Finish it_akpsf
+     validationResult.uid = "credentails.username"
+     it_zcbog = {success:false, error: "Wrong credentails. Please try again!"}
+     Finish it_zcbog
+it_tkhwr = {success:false, error: "Password validation failed!"}
+Finish it_tkhwr
