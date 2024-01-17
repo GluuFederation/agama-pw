@@ -9,18 +9,18 @@ passwordValidationService = Call org.gluu.agama.pw.PasswordService#getInstance
 // Iterate x times max
 Repeat 3 times max
      // Retrieve user credentials from UI
-     credentials = RRF "login.ftlh" validationResult
+     credentials = RRF "login-basic.ftlh" validationResult
      // Validate provided user credentials
      validationResult.status = Call passwordValidationService validate credentails.username credentials.password
      // If user credentials is valid
      When validationResult.status is true
           // Password validation completed successfuly
-          it_gtnuy = {success:true, data: { userId: validatiotionResult.uid}}
-          Finish it_gtnuy
+          it_pvymd = {success:true, data: { userId: validatiotionResult.uid}}
+          Finish it_pvymd
      // Set uid to fill the username field on the UI on the next attempt
      validationResult.uid = credentails.username
      // Provide feedback about the error message to user
      validationResult.errorMessage = "The provided credentails is not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_qnsri = {success:false, error: "Password validation failed!"}
-Finish it_qnsri
+it_tchhm = {success:false, error: "Password validation failed!"}
+Finish it_tchhm
