@@ -30,7 +30,7 @@
 			<label for="username" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text">
 			  Username
 			</label>
-			<input type="text" id="username" name="username" autofocus="" class="w-full rounded px-3 border border-gray-300 pt-2 pb-2 focus:border-green-700">
+			<input type="text" id="username" value="${uid!''}" name="username" autofocus="" class="w-full rounded px-3 border border-gray-300 pt-2 pb-2 focus:border-green-700">
 		  </div>
 		  <div class="relative mb-2">
 			<label for="password" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text">
