@@ -44,7 +44,14 @@ color: blue;
   background-image: url('wave.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+}
+
+body{
+  background-image: url('blue-scene.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
          .button-gradient {
