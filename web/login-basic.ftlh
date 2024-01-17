@@ -21,7 +21,7 @@
 		  </div>
 		  <span class="text-2xl font-semi-bold leading-normal">Welcome</span>
 		  [#if errorMessage??]
-		  <p class="leading-normal">$(errorMessage}
+		  <p class="leading-normal">${errorMessage}
 		  </p>
 		  [/#if]
 		</div>
