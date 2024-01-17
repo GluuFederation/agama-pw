@@ -128,7 +128,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1223.6562721147116,
@@ -211,7 +211,7 @@
 					"hasSuccess": false,
 					"hasFailure": false,
 					"hasComment": true,
-					"comment": "",
+					"comment": "Maximum attempts reached. Password validation failed!",
 					"flowfilename": "",
 					"returnVariable": "Password validation failed!",
 					"finishMode": "withFailure",
@@ -252,7 +252,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "Validate credentails",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Validate provided user credentials",
 					"javaClassName": "",
 					"javaMethodName": "validate",
 					"javaVariableName": "passwordValidationService",
@@ -260,13 +260,16 @@
 					"callType": "Call method on instance",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"arguments": "credentails.username credentials.password",
+					"arguments": [
+						"credentails.username",
+						"credentials.password"
+					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "validationResult.status"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 910.4297798428859,
@@ -298,14 +301,16 @@
 					"type": "Agama-rrf-Node",
 					"displayName": "Retrieve crendentials",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Retrieve user credentials from UI",
 					"whenCondition": "",
 					"inRepeatBlock": true,
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "login.ftlh",
 					"asssignedVariableName": "credentials",
-					"arguments": "validationResult",
+					"arguments": [
+						"validationResult"
+					],
 					"hasSuccess": "",
 					"hasFailure": "",
 					"hasNoRepeat": false,
@@ -343,9 +348,9 @@
 					"id": "Agama-assignment-Node-a28dfd15-dadf-483e-bcc9-f3959ca35b2a",
 					"parentId": "Agama-start-Flow-857536e5-f21b-4c1d-ab59-3f47a7772666",
 					"type": "Agama-assignment-Node",
-					"displayName": "Declare validation variable",
+					"displayName": "Declare variables",
 					"hasComment": true,
-					"comment": "create variable to receive validation result",
+					"comment": "Create variable to receive validation result",
 					"whenCondition": "",
 					"inRepeatBlock": false,
 					"assignments": [
@@ -383,14 +388,14 @@
 				"agamaData": {
 					"id": "Agama-start-Flow-857536e5-f21b-4c1d-ab59-3f47a7772666",
 					"type": "Agama-start-Flow",
-					"displayName": "The username-password login flow process is a standard authentication method used to grant access to secure digital platforms. Users begin by entering their unique username, which is often a personal identifier chosen during account creation. ",
+					"displayName": "Basic Login Flow",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Basic password login flow",
 					"isTopLevelFlow": true,
 					"basepath": "",
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
-					"timeout": "",
+					"timeout": "500",
 					"inputs": "",
 					"configs": "",
 					"flowname": "org.gluu.agama.pw.basic"
@@ -433,7 +438,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "Initialize",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Get an instance of PasswordService Class",
 					"javaClassName": "org.gluu.agama.pw.PasswordService",
 					"javaMethodName": "getInstance",
 					"javaVariableName": "",
@@ -488,7 +493,8 @@
 					"hasNoRepeat": true,
 					"hasSuccess": "",
 					"hasFailure": "",
-					"hasRepeat": false
+					"hasRepeat": false,
+					"comment": "Iterate x times max"
 				},
 				"skake": false
 			},
@@ -697,8 +703,8 @@
 		}
 	],
 	"viewport": {
-		"x": -300,
-		"y": 18,
+		"x": 52,
+		"y": 10,
 		"zoom": 1
 	}
 }
