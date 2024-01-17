@@ -128,14 +128,14 @@
 					"hasComment": true,
 					"comment": "Password validation completed successfuly",
 					"flowfilename": "",
-					"returnVariable": "{ userId: validatiotionResult.uid}",
+					"returnVariable": "{ userId: validationResult.uid}",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Validation completed"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1223.6562721147116,
@@ -239,7 +239,7 @@
 			"height": 124,
 			"id": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e",
 			"position": {
-				"x": 910.4297798428859,
+				"x": 909.4297798428859,
 				"y": 257.63801467714086
 			},
 			"type": "call",
@@ -250,7 +250,7 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 910.4297798428859,
+					"x": 909.4297798428859,
 					"y": 257.63801467714086
 				},
 				"agamaData": {
@@ -267,10 +267,7 @@
 					"callType": "Call method on instance",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"arguments": [
-						"credentails.username",
-						"credentials.password"
-					],
+					"arguments": "credentials.username credentials.password",
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "validationResult.status"
 				},
@@ -279,7 +276,7 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 910.4297798428859,
+				"x": 909.4297798428859,
 				"y": 257.63801467714086
 			}
 		},
@@ -459,7 +456,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
@@ -710,8 +707,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": -756,
+		"y": -169,
 		"zoom": 1
 	}
 }
