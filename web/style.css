@@ -40,9 +40,14 @@ color: blue;
 }
 
 
-body{
+body loginCard{
   background-image: url('wave.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
          .button-gradient {
             background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
             margin: 10px;
