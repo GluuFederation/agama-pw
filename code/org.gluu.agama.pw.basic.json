@@ -3,6 +3,183 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "finish-38a87bc4-2aeb-4dc1-9bcd-4d00423b6b6b",
+			"position": {
+				"x": 1410.4297798428859,
+				"y": 203.63801467714086
+			},
+			"type": "finish",
+			"data": {
+				"id": "finish-38a87bc4-2aeb-4dc1-9bcd-4d00423b6b6b",
+				"type": "Agama-finish-Flow",
+				"parentId": "Agama-assignment-Node-0840e2f5-512a-4e43-a346-66988f0e962e",
+				"whenCondition": "",
+				"inRepeatBlock": true,
+				"handles": [],
+				"position": {
+					"x": 1410.4297798428859,
+					"y": 203.63801467714086
+				},
+				"agamaData": {
+					"id": "finish-38a87bc4-2aeb-4dc1-9bcd-4d00423b6b6b",
+					"parentId": "Agama-assignment-Node-0840e2f5-512a-4e43-a346-66988f0e962e",
+					"type": "Agama-finish-Flow",
+					"hasSuccess": false,
+					"hasFailure": false,
+					"hasComment": true,
+					"comment": "",
+					"flowfilename": "",
+					"returnVariable": "Wrong credentails. Please try again!",
+					"finishMode": "withFailure",
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"displayName": "Error feedback"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1410.4297798428859,
+				"y": 203.63801467714086
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-assignment-Node-0840e2f5-512a-4e43-a346-66988f0e962e",
+			"position": {
+				"x": 1210.4297798428859,
+				"y": 203.63801467714086
+			},
+			"type": "assignment",
+			"data": {
+				"id": "Agama-assignment-Node-0840e2f5-512a-4e43-a346-66988f0e962e",
+				"type": "Agama-assignment-Node",
+				"parentId": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": true,
+				"position": {
+					"x": 1210.4297798428859,
+					"y": 203.63801467714086
+				},
+				"agamaData": {
+					"id": "Agama-assignment-Node-0840e2f5-512a-4e43-a346-66988f0e962e",
+					"parentId": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+					"type": "Agama-assignment-Node",
+					"displayName": "Cache username",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": true,
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "credentails.username",
+							"assignedVariableName": "validationResult.uid"
+						}
+					],
+					"nodeIcon": "material-symbols:equal"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1210.4297798428859,
+				"y": 203.63801467714086
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "finish-3af436c8-96fa-491f-bcd3-1bd19c5f7f61",
+			"position": {
+				"x": 1089.4297798428859,
+				"y": 487.63801467714086
+			},
+			"type": "finish",
+			"data": {
+				"id": "finish-3af436c8-96fa-491f-bcd3-1bd19c5f7f61",
+				"type": "Agama-finish-Flow",
+				"parentId": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+				"whenCondition": "WhenTrue",
+				"inRepeatBlock": true,
+				"handles": [
+					"Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c.FAILURE",
+					"Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c.SUCCESS"
+				],
+				"position": {
+					"x": 1089.4297798428859,
+					"y": 487.63801467714086
+				},
+				"agamaData": {
+					"id": "finish-3af436c8-96fa-491f-bcd3-1bd19c5f7f61",
+					"parentId": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+					"type": "Agama-finish-Flow",
+					"hasSuccess": false,
+					"hasFailure": false,
+					"hasComment": true,
+					"comment": "",
+					"flowfilename": "",
+					"returnVariable": "{ userId: validatiotionResult.uid}",
+					"finishMode": "withSuccess",
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"displayName": "Validation completed"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1089.4297798428859,
+				"y": 487.63801467714086
+			}
+		},
+		{
+			"width": 210,
+			"height": 140,
+			"id": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+			"position": {
+				"x": 960.4297798428859,
+				"y": 257.63801467714086
+			},
+			"parentId": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e",
+			"type": "when",
+			"data": {
+				"id": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+				"type": "Agama-when-Node",
+				"parentId": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e",
+				"whenCondition": "",
+				"inRepeatBlock": true,
+				"position": {
+					"x": 960.4297798428859,
+					"y": 257.63801467714086
+				},
+				"agamaData": {
+					"id": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+					"parentId": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e",
+					"type": "Agama-when-Node",
+					"variableField": "validationResult.status",
+					"conditionInputField": "is",
+					"valueField": "true",
+					"comment": "desc",
+					"hasComment": true,
+					"inRepeatBlock": true,
+					"hasSuccess": true,
+					"hasFailure": true
+				},
+				"handles": [
+					"Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c.FAILURE",
+					"Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c.SUCCESS"
+				]
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 960.4297798428859,
+				"y": 257.63801467714086
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "finish-b75c3471-8b6a-4d23-bf59-0f0050de1aee",
 			"position": {
 				"x": 680,
@@ -36,9 +213,10 @@
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Maximum attempt reached"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 680,
@@ -81,7 +259,8 @@
 					"arguments": "credentails.username credentials.password",
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "validationResult.status"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -375,11 +554,81 @@
 				"fillOpacity": 0.7
 			},
 			"sourceHandle": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34.InFlow"
+		},
+		{
+			"id": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e-Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c-7e2923b6-a1f3-44d1-8d43-6b9cf191e94c",
+			"type": "straight",
+			"source": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e",
+			"target": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c-finish-3af436c8-96fa-491f-bcd3-1bd19c5f7f61-912d01b9-3d93-491f-892f-521c5e978545",
+			"type": "straight",
+			"source": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+			"target": "finish-3af436c8-96fa-491f-bcd3-1bd19c5f7f61",
+			"label": "Condition met",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c.SUCCESS"
+		},
+		{
+			"id": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c-Agama-assignment-Node-0840e2f5-512a-4e43-a346-66988f0e962e-1a12f7db-f642-4be8-9771-431718bf3bd0",
+			"type": "straight",
+			"source": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
+			"target": "Agama-assignment-Node-0840e2f5-512a-4e43-a346-66988f0e962e",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c.FAILURE"
+		},
+		{
+			"id": "Agama-assignment-Node-0840e2f5-512a-4e43-a346-66988f0e962e-finish-38a87bc4-2aeb-4dc1-9bcd-4d00423b6b6b-fa25089e-fe63-4503-9df9-840782d61a15",
+			"type": "straight",
+			"source": "Agama-assignment-Node-0840e2f5-512a-4e43-a346-66988f0e962e",
+			"target": "finish-38a87bc4-2aeb-4dc1-9bcd-4d00423b6b6b",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": 12.553463415596752,
-		"y": 61.05687816541689,
-		"zoom": 0.8467453123625276
+		"x": -369,
+		"y": -48,
+		"zoom": 1
 	}
 }
