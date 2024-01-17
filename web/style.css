@@ -48,7 +48,7 @@ color: blue;
 }
 
 body{
-  background-image: url('blue-scene.svg');
+  background-image: url('blobscene.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
