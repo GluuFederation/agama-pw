@@ -44,7 +44,6 @@ body .loginCard{
   background-image: url('wave.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
 }
 
