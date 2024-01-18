@@ -37,7 +37,7 @@ color: blue;
 body {
   width: 100vw;
   height: 100vh;
-  background: url('wave.png');
+  background-image: url('layered.svg');
   background-size: cover;
 }
          
