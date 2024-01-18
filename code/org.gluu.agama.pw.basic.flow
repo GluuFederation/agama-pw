@@ -19,12 +19,12 @@ Repeat 3 times max
           // add entry in log file for successfull login attempt
           Log "@info Valid credentials provided."
           // Password validation completed successfuly!
-          it_lnhob = {success:true, data: { userId: credentials.username}}
-          Finish it_lnhob
+          it_ehffp = {success:true, data: { userId: credentials.username}}
+          Finish it_ehffp
      // Invalid credentials provided
      Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
      validationResult.errorMessage = "The provided credentials are not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_wwrzj = {success:false, error: "Password validation failed!"}
-Finish it_wwrzj
+it_tsxgd = {success:false, error: "Password validation failed!"}
+Finish it_tsxgd
