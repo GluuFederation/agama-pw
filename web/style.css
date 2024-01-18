@@ -37,7 +37,7 @@ color: blue;
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url('layered.svg');
+  background-image: url('scene.svg');
   background-size: cover;
 }
          
