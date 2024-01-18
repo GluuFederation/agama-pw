@@ -1,12 +1,112 @@
 {
 	"nodes": [
 		{
+			"width": 270,
+			"height": 55,
+			"id": "Agama-note-6bd25a59-3d15-4414-87cb-194d3a09f0bd",
+			"position": {
+				"x": 1.9456500483905756,
+				"y": -51.60227494941
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-6bd25a59-3d15-4414-87cb-194d3a09f0bd",
+				"type": "Agama-note",
+				"notes": "The flow excecution start here, the timeout can be tuned  as well.",
+				"position": {
+					"x": 1.9456500483905756,
+					"y": -51.60227494941
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1.9456500483905756,
+				"y": -51.60227494941
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 68,
+			"id": "Agama-note-9d4c0655-6461-4fff-acf7-a715914966e6",
+			"position": {
+				"x": 945.2199280202456,
+				"y": 503.8626499604078
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-9d4c0655-6461-4fff-acf7-a715914966e6",
+				"type": "Agama-note",
+				"notes": "Here, we send the user credentials to the IDP for validation. The IDP will return true or false.",
+				"position": {
+					"x": 945.2199280202456,
+					"y": 503.8626499604078
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 945.2199280202456,
+				"y": 503.8626499604078
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 55,
+			"id": "Agama-note-a41d2d71-281a-43ac-bc3a-7f4111ead933",
+			"position": {
+				"x": 661.238609584755,
+				"y": 315.7897466540162
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-a41d2d71-281a-43ac-bc3a-7f4111ead933",
+				"type": "Agama-note",
+				"notes": "This show the login form so that the user can fill in the credentials.",
+				"position": {
+					"x": 661.238609584755,
+					"y": 315.7897466540162
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 661.238609584755,
+				"y": 315.7897466540162
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 68,
+			"id": "Agama-note-8e8798a6-61e7-4e93-a037-6f8717d9e652",
+			"position": {
+				"x": 800.4473070028464,
+				"y": -56.26333532511051
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-8e8798a6-61e7-4e93-a037-6f8717d9e652",
+				"type": "Agama-note",
+				"notes": "The maximum number of login attempts has been reached. The validation process end here with failure.",
+				"position": {
+					"x": 800.4473070028464,
+					"y": -56.26333532511051
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 800.4473070028464,
+				"y": -56.26333532511051
+			},
+			"dragging": false
+		},
+		{
 			"width": 170,
 			"height": 124,
 			"id": "finish-1399f638-94ae-4c1e-9a39-db277015ac24",
 			"position": {
-				"x": 1225.5807127149096,
-				"y": 489.0719699251567
+				"x": 1312.0548200286346,
+				"y": 689.9150578796152
 			},
 			"type": "finish",
 			"data": {
@@ -20,8 +120,8 @@
 					"Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c.SUCCESS"
 				],
 				"position": {
-					"x": 1225.5807127149096,
-					"y": 489.0719699251567
+					"x": 1312.0548200286346,
+					"y": 689.9150578796152
 				},
 				"agamaData": {
 					"id": "finish-1399f638-94ae-4c1e-9a39-db277015ac24",
@@ -36,13 +136,14 @@
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Password validation completed"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 1225.5807127149096,
-				"y": 489.0719699251567
+				"x": 1312.0548200286346,
+				"y": 689.9150578796152
 			}
 		},
 		{
@@ -50,8 +151,8 @@
 			"height": 124,
 			"id": "Agama-assignment-Node-c8641a45-c006-45c3-8e76-779c608cf4fc",
 			"position": {
-				"x": 1410.4297798428859,
-				"y": 202.63801467714086
+				"x": 1482.956450493107,
+				"y": 381.1652039699927
 			},
 			"type": "assignment",
 			"data": {
@@ -61,8 +162,8 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 1410.4297798428859,
-					"y": 202.63801467714086
+					"x": 1482.956450493107,
+					"y": 381.1652039699927
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-c8641a45-c006-45c3-8e76-779c608cf4fc",
@@ -87,8 +188,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 1410.4297798428859,
-				"y": 202.63801467714086
+				"x": 1482.956450493107,
+				"y": 381.1652039699927
 			}
 		},
 		{
@@ -96,8 +197,8 @@
 			"height": 140,
 			"id": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
 			"position": {
-				"x": 1112.5807127149096,
-				"y": 259.0719699251567
+				"x": 1197.6600763622844,
+				"y": 436.2044155516581
 			},
 			"parentId": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e",
 			"type": "when",
@@ -108,8 +209,8 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 1112.5807127149096,
-					"y": 259.0719699251567
+					"x": 1197.6600763622844,
+					"y": 436.2044155516581
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c",
@@ -135,8 +236,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 1112.5807127149096,
-				"y": 259.0719699251567
+				"x": 1197.6600763622844,
+				"y": 436.2044155516581
 			}
 		},
 		{
@@ -190,8 +291,8 @@
 			"height": 124,
 			"id": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e",
 			"position": {
-				"x": 909.4297798428859,
-				"y": 257.63801467714086
+				"x": 973.5879884950043,
+				"y": 381.7702009823267
 			},
 			"type": "call",
 			"data": {
@@ -201,14 +302,14 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 909.4297798428859,
-					"y": 257.63801467714086
+					"x": 973.5879884950043,
+					"y": 381.7702009823267
 				},
 				"agamaData": {
 					"id": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e",
 					"parentId": "Agama-rrf-Node-bbf285c6-59fa-48f7-899d-cef7bb532f4d",
 					"type": "Agama-call-Node",
-					"displayName": "Validate credentails",
+					"displayName": "Validate credentials",
 					"hasComment": true,
 					"comment": "Validate provided user credentials",
 					"javaClassName": "",
@@ -218,7 +319,10 @@
 					"callType": "Call method on instance",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"arguments": "credentials.username credentials.password",
+					"arguments": [
+						"credentials.username",
+						"credentials.password"
+					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "validationResult.status"
 				},
@@ -227,8 +331,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 909.4297798428859,
-				"y": 257.63801467714086
+				"x": 973.5879884950043,
+				"y": 381.7702009823267
 			}
 		},
 		{
@@ -236,8 +340,8 @@
 			"height": 124,
 			"id": "Agama-rrf-Node-bbf285c6-59fa-48f7-899d-cef7bb532f4d",
 			"position": {
-				"x": 727.6372428190757,
-				"y": 256.9210370531329
+				"x": 729.0319864854259,
+				"y": 383.8427106910198
 			},
 			"type": "rrf",
 			"data": {
@@ -247,14 +351,14 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 727.6372428190757,
-					"y": 256.9210370531329
+					"x": 729.0319864854259,
+					"y": 383.8427106910198
 				},
 				"agamaData": {
 					"id": "Agama-rrf-Node-bbf285c6-59fa-48f7-899d-cef7bb532f4d",
 					"parentId": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34",
 					"type": "Agama-rrf-Node",
-					"displayName": "Retrieve crendentials",
+					"displayName": "Login Form",
 					"hasComment": true,
 					"comment": "Retrieve user credentials from UI",
 					"whenCondition": "",
@@ -276,8 +380,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 727.6372428190757,
-				"y": 256.9210370531329
+				"x": 729.0319864854259,
+				"y": 383.8427106910198
 			}
 		},
 		{
@@ -683,8 +787,8 @@
 		}
 	],
 	"viewport": {
-		"x": -583,
-		"y": -50,
-		"zoom": 1
+		"x": 242.9664946026976,
+		"y": 67.50929463041464,
+		"zoom": 0.5
 	}
 }
