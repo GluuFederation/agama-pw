@@ -17,10 +17,12 @@ Repeat 3 times max
      // If user credentials is valid
      When validationResult.status is true
           // Password validation completed successfuly!
-          it_ktxlu = {success:true, data: { userId: credentials.username}}
-          Finish it_ktxlu
+          it_juxog = {success:true, data: { userId: credentials.username}}
+          Finish it_juxog
+     // Invalid credentials provided
+     Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
      validationResult.errorMessage = "The provided credentials are not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_aqlwt = {success:false, error: "Password validation failed!"}
-Finish it_aqlwt
+it_nqlbo = {success:false, error: "Password validation failed!"}
+Finish it_nqlbo
