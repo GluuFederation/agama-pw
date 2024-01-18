@@ -6,13 +6,6 @@ color: red;
 color: blue;
 }
 
-.welcomeRibbon {
-  position: fixed;
-  background: #08769b;
-  box-shadow: 0 0 0 999px #08769b;
-  clip-path: inset(0 -100%);
-}
-
 
 .loginCard{
   background-image: url('wave.png');
@@ -40,4 +33,17 @@ color: blue;
   color: #fff;
   text-decoration: none;
 }
+
+.ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 22px;
+    margin-right: -50px;
+    margin-top: 15px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari prior 9.0 */
+    transform: rotate(45deg); /* Standard syntax */
+  }
          
