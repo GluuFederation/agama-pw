@@ -524,8 +524,8 @@
 			"inRepeatBlock": ""
 		},
 		{
-			"width": 170,
-			"height": 124,
+			"width": 168,
+			"height": 120,
 			"id": "Agama-log-Node-fd65df1e-5e28-4585-a01a-78da3e6b639f",
 			"position": {
 				"x": 929.0319864854259,
@@ -551,12 +551,13 @@
 					"comment": "Log the successfull  used credentials retrieval.",
 					"whenCondition": "",
 					"inRepeatBlock": true,
-					"logMessage": "User credentials collected successfully!",
+					"logMessage": "\"User credentials collected successfully!\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 929.0319864854259,
