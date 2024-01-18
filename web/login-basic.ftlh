@@ -15,7 +15,8 @@
   
   
 	<div class="md:h-screen bg-white relative flex flex-col justify-center items-center">
-	  <div class="ribbon bg-green-500 text-sm whitespace-no-wrap px-4">Welcome</div>
+	  <div class="ribbon bg-green-500 text-sm whitespace-no-wrap px-4">Welcome
+	  </div>
 	  <div class="md:border md:border-gray-300 bg-white md:shadow-lg shadow-none rounded p-10 align-middle loginCard">
 		<div class="flex flex-col items-center space-y-3">
 		  <div class="flex">
