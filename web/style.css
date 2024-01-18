@@ -33,4 +33,11 @@ color: blue;
   color: #fff;
   text-decoration: none;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url('wave.png');
+  background-size: cover;
+}
          
