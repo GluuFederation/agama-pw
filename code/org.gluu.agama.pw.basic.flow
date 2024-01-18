@@ -16,13 +16,15 @@ Repeat 3 times max
      validationResult.status = Call passwordValidationService validate credentials.username credentials.password
      // If user credentials is valid
      When validationResult.status is true
+          // add entry in log file for successfull login attempt
+          Log "@info Valid credentials provided."
           // Password validation completed successfuly!
-          it_juxog = {success:true, data: { userId: credentials.username}}
-          Finish it_juxog
+          it_lnhob = {success:true, data: { userId: credentials.username}}
+          Finish it_lnhob
      // Invalid credentials provided
      Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
      validationResult.errorMessage = "The provided credentials are not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_nqlbo = {success:false, error: "Password validation failed!"}
-Finish it_nqlbo
+it_wwrzj = {success:false, error: "Password validation failed!"}
+Finish it_wwrzj
