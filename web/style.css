@@ -6,13 +6,6 @@ color: red;
 color: blue;
 }
 
-.welcomeRibbon {
-  position: fixed;
-  background: #08769b;
-  box-shadow: 0 0 0 999px #08769b;
-  clip-path: inset(0 -100%);
-}
-
 
 .loginCard{
   background-image: url('wave.png');
