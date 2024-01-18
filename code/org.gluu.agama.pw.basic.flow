@@ -10,15 +10,17 @@ passwordValidationService = Call org.gluu.agama.pw.basic.PasswordService#getInst
 Repeat 3 times max
      // Retrieve user credentials from UI
      credentials = RRF "login-basic.ftlh" validationResult
+     // Log the successfull  used credentials retrieval.
+     Log "@info " User credentials collected successfully!
      // Validate provided user credentials
      validationResult.status = Call passwordValidationService validate credentials.username credentials.password
      // If user credentials is valid
      When validationResult.status is true
           // Password validation completed successfuly!
-          it_frvfw = {success:true, data: { userId: credentials.username}}
-          Finish it_frvfw
+          it_riaxf = {success:true, data: { userId: credentials.username}}
+          Finish it_riaxf
      // Provide feedback about the error message to user
      validationResult.errorMessage = "The provided credentials are not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_uaxyu = {success:false, error: "Password validation failed!"}
-Finish it_uaxyu
+it_udkvs = {success:false, error: "Password validation failed!"}
+Finish it_udkvs
