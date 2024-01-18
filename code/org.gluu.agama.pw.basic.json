@@ -33,7 +33,8 @@
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Password validation completed"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -73,7 +74,8 @@
 					"logMessage": "\"Valid credentials provided.\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -252,8 +254,8 @@
 			"height": 68,
 			"id": "Agama-note-8e8798a6-61e7-4e93-a037-6f8717d9e652",
 			"position": {
-				"x": 800.4473070028464,
-				"y": -56.26333532511051
+				"x": 846.4473070028464,
+				"y": -56.26333532511052
 			},
 			"type": "notes",
 			"data": {
@@ -261,15 +263,15 @@
 				"type": "Agama-note",
 				"notes": "The maximum number of login attempts has been reached. The validation process end here with failure.",
 				"position": {
-					"x": 800.4473070028464,
-					"y": -56.26333532511051
+					"x": 846.4473070028464,
+					"y": -56.26333532511052
 				},
 				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 800.4473070028464,
-				"y": -56.26333532511051
+				"x": 846.4473070028464,
+				"y": -56.26333532511052
 			},
 			"dragging": false
 		},
@@ -314,7 +316,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1347.6600763622844,
@@ -326,8 +328,8 @@
 			"height": 124,
 			"id": "finish-b75c3471-8b6a-4d23-bf59-0f0050de1aee",
 			"position": {
-				"x": 830,
-				"y": 30
+				"x": 893,
+				"y": 32
 			},
 			"type": "finish",
 			"data": {
@@ -341,8 +343,8 @@
 					"Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34.InRepeatBlock"
 				],
 				"position": {
-					"x": 830,
-					"y": 30
+					"x": 893,
+					"y": 32
 				},
 				"agamaData": {
 					"id": "finish-b75c3471-8b6a-4d23-bf59-0f0050de1aee",
@@ -363,8 +365,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 830,
-				"y": 30
+				"x": 893,
+				"y": 32
 			}
 		},
 		{
@@ -961,8 +963,8 @@
 		}
 	],
 	"viewport": {
-		"x": 45.225547506854696,
-		"y": 85.36027977058748,
-		"zoom": 0.5
+		"x": 64.52158794806428,
+		"y": 98.85036862104027,
+		"zoom": 0.7169776240079136
 	}
 }
