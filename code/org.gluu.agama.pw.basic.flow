@@ -19,14 +19,14 @@ Repeat 3 times max
           // add entry in log file for successfull login attempt
           Log "@info Valid credentials provided."
           // Password validation completed successfuly!
-          it_czmnk = {success:true, data: { userId: credentials.username}}
-          Finish it_czmnk
+          it_bnydh = {success:true, data: { userId: credentials.username}}
+          Finish it_bnydh
      // Invalid credentials provided
      Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
      validationResult.errorMessage = "The provided credentials are not valid. Please try again!"
 // Maximum number of attemps has been reached.
-Log "@error " Maximum number of attemps has been reached.
+Log "@error Maximum number of attemps has been reached."
 // Maximum attempts reached. Password validation failed!
-it_odrvs = {success:false, error: "Password validation failed!"}
-Finish it_odrvs
+it_rcsqy = {success:false, error: "Password validation failed!"}
+Finish it_rcsqy
