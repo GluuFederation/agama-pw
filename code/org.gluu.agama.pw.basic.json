@@ -33,7 +33,8 @@
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Maximum attempt reached"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -43,8 +44,8 @@
 			}
 		},
 		{
-			"width": 170,
-			"height": 124,
+			"width": 168,
+			"height": 120,
 			"id": "Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f",
 			"position": {
 				"x": 880.9054113045619,
@@ -70,12 +71,13 @@
 					"comment": "Maximum number of attemps has been reached.",
 					"whenCondition": "",
 					"inRepeatBlock": "",
-					"logMessage": "Maximum number of attemps has been reached.",
+					"logMessage": "\"Maximum number of attemps has been reached.\"",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 880.9054113045619,
