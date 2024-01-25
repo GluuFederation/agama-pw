@@ -3,6 +3,88 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "finish-e5b761b5-30b8-437f-9a96-e2175ff86f9f",
+			"position": {
+				"x": 1080.9054113045618,
+				"y": 29.28302237599209
+			},
+			"type": "finish",
+			"data": {
+				"id": "finish-e5b761b5-30b8-437f-9a96-e2175ff86f9f",
+				"type": "Agama-finish-Flow",
+				"parentId": "Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f",
+				"whenCondition": "",
+				"inRepeatBlock": "",
+				"handles": [],
+				"position": {
+					"x": 1080.9054113045618,
+					"y": 29.28302237599209
+				},
+				"agamaData": {
+					"id": "finish-e5b761b5-30b8-437f-9a96-e2175ff86f9f",
+					"parentId": "Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f",
+					"type": "Agama-finish-Flow",
+					"hasSuccess": false,
+					"hasFailure": false,
+					"hasComment": true,
+					"comment": "Maximum attempts reached. Password validation failed!",
+					"flowfilename": "",
+					"returnVariable": "Password validation failed!",
+					"finishMode": "withFailure",
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"displayName": "Maximum attempt reached"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1080.9054113045618,
+				"y": 29.28302237599209
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f",
+			"position": {
+				"x": 880.9054113045619,
+				"y": 29.28302237599209
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34",
+				"whenCondition": "",
+				"inRepeatBlock": "",
+				"position": {
+					"x": 880.9054113045619,
+					"y": 29.28302237599209
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f",
+					"parentId": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34",
+					"type": "Agama-log-Node",
+					"displayName": "Log last login attempt failure",
+					"hasComment": true,
+					"comment": "Maximum number of attemps has been reached.",
+					"whenCondition": "",
+					"inRepeatBlock": "",
+					"logMessage": "Maximum number of attemps has been reached.",
+					"logLevel": "error",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 880.9054113045619,
+				"y": 29.28302237599209
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "finish-952209ff-d70c-46af-a52c-88e51a530bb9",
 			"position": {
 				"x": 1690.6600763622844,
@@ -254,7 +336,7 @@
 			"height": 68,
 			"id": "Agama-note-8e8798a6-61e7-4e93-a037-6f8717d9e652",
 			"position": {
-				"x": 846.4473070028464,
+				"x": 1067.169699630556,
 				"y": -56.26333532511052
 			},
 			"type": "notes",
@@ -263,14 +345,14 @@
 				"type": "Agama-note",
 				"notes": "The maximum number of login attempts has been reached. The validation process end here with failure.",
 				"position": {
-					"x": 846.4473070028464,
+					"x": 1067.169699630556,
 					"y": -56.26333532511052
 				},
 				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 846.4473070028464,
+				"x": 1067.169699630556,
 				"y": -56.26333532511052
 			},
 			"dragging": false
@@ -321,52 +403,6 @@
 			"positionAbsolute": {
 				"x": 1347.6600763622844,
 				"y": 436.2044155516581
-			}
-		},
-		{
-			"width": 170,
-			"height": 124,
-			"id": "finish-b75c3471-8b6a-4d23-bf59-0f0050de1aee",
-			"position": {
-				"x": 893,
-				"y": 32
-			},
-			"type": "finish",
-			"data": {
-				"id": "finish-b75c3471-8b6a-4d23-bf59-0f0050de1aee",
-				"type": "Agama-finish-Flow",
-				"parentId": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34",
-				"whenCondition": "",
-				"inRepeatBlock": false,
-				"handles": [
-					"Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34.InFlow",
-					"Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34.InRepeatBlock"
-				],
-				"position": {
-					"x": 893,
-					"y": 32
-				},
-				"agamaData": {
-					"id": "finish-b75c3471-8b6a-4d23-bf59-0f0050de1aee",
-					"parentId": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34",
-					"type": "Agama-finish-Flow",
-					"hasSuccess": false,
-					"hasFailure": false,
-					"hasComment": true,
-					"comment": "Maximum attempts reached. Password validation failed!",
-					"flowfilename": "",
-					"returnVariable": "Password validation failed!",
-					"finishMode": "withFailure",
-					"nodeIcon": "material-symbols:line-end-square-rounded",
-					"displayName": "Maximum attempt reached"
-				},
-				"skake": false
-			},
-			"selected": false,
-			"dragging": false,
-			"positionAbsolute": {
-				"x": 893,
-				"y": 32
 			}
 		},
 		{
@@ -583,7 +619,7 @@
 					"maxIteration": "3",
 					"displayName": "Validation loop",
 					"hasComment": true,
-					"hasNoRepeat": true,
+					"hasNoRepeat": false,
 					"hasSuccess": "",
 					"hasFailure": "",
 					"hasRepeat": false,
@@ -751,24 +787,6 @@
 				"color": "#fff",
 				"fillOpacity": 0.7
 			}
-		},
-		{
-			"id": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34-finish-b75c3471-8b6a-4d23-bf59-0f0050de1aee-758de37d-c560-487b-ad9a-8d3f9da9421b",
-			"type": "straight",
-			"source": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34",
-			"target": "finish-b75c3471-8b6a-4d23-bf59-0f0050de1aee",
-			"label": "Not In Block",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"labelBgStyle": {
-				"fill": "#FFCC00",
-				"color": "#fff",
-				"fillOpacity": 0.7
-			},
-			"sourceHandle": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34.InFlow"
 		},
 		{
 			"id": "Agama-call-Node-8631816b-9ec6-474d-b4a0-cc881e722f2e-Agama-when-Node-ad2b2e5b-f7d1-425f-91ff-b980cffe948c-7e2923b6-a1f3-44d1-8d43-6b9cf191e94c",
@@ -960,11 +978,45 @@
 				"color": "#fff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34-Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f-305d41da-3629-46b2-8ff1-3df247b27cd1",
+			"type": "straight",
+			"source": "Agama-repeat-Node-78d1e804-9fd5-4272-b6fa-75f7cecd5f34",
+			"target": "Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f-finish-e5b761b5-30b8-437f-9a96-e2175ff86f9f-d752a40c-fcea-4221-a85f-6b524a548e1a",
+			"type": "straight",
+			"source": "Agama-log-Node-d91f748c-55e7-4301-8117-6393f4542d3f",
+			"target": "finish-e5b761b5-30b8-437f-9a96-e2175ff86f9f",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": 64.52158794806428,
-		"y": 98.85036862104027,
-		"zoom": 0.7169776240079136
+		"x": 115.95369218303028,
+		"y": 100.71925027388093,
+		"zoom": 0.6070974421975234
 	}
 }
