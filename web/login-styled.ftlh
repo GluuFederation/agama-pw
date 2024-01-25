@@ -39,8 +39,7 @@
 			  </div>
 			</div>
 		  </div>
-		  <div class="w-full flex justify-center">
-		  </div>
+		  
 		</div>
 	  </div>
 	</div>
