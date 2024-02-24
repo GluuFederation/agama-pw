@@ -1,36 +1,112 @@
-[
-  {
-    "id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
-    "type": "start",
-    "sourcePosition": "right",
-    "data": {
-      "id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
-      "type": "Agama-start-Flow",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "inRepeatBlock": false,
-      "agamaData": {
-        "id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
-        "type": "Agama-start-Flow",
-        "displayName": "Password Validation with account lock",
-        "hasComment": true,
-        "comment": "",
-        "isTopLevelFlow": true,
-        "basepath": "",
-        "configParams": "{}",
-        "nodeIcon": "material-symbols:line-start-square",
-        "timeout": "",
-        "inputs": "",
-        "configs": "",
-        "flowname": "org.gluu.agama.pw.accountLock"
-      },
-      "skake": false
-    },
-    "position": {
-      "x": 30,
-      "y": 30
-    }
-  }
-]
+{
+	"nodes": [
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-log-Node-dd66f156-bc00-4e13-904d-9aacbb391a64",
+			"position": {
+				"x": 230,
+				"y": 30
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-dd66f156-bc00-4e13-904d-9aacbb391a64",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 230,
+					"y": 30
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-dd66f156-bc00-4e13-904d-9aacbb391a64",
+					"parentId": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+					"type": "Agama-log-Node",
+					"displayName": "Start Account Lock Flow",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "\"Start execution of account lock flow\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 230,
+				"y": 30
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+			"type": "start",
+			"sourcePosition": "right",
+			"data": {
+				"id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+				"type": "Agama-start-Flow",
+				"position": {
+					"x": 30,
+					"y": 30
+				},
+				"inRepeatBlock": false,
+				"agamaData": {
+					"id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+					"type": "Agama-start-Flow",
+					"displayName": "Account lock flow",
+					"hasComment": true,
+					"comment": "",
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "",
+					"configs": "",
+					"flowname": "org.gluu.agama.pw.accountLock"
+				},
+				"skake": false
+			},
+			"position": {
+				"x": 30,
+				"y": 30
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 30,
+				"y": 30
+			}
+		}
+	],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4-Agama-log-Node-dd66f156-bc00-4e13-904d-9aacbb391a64-68f706a7-b107-44c1-b3bb-e6baed9aebd3",
+			"type": "straight",
+			"source": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+			"target": "Agama-log-Node-dd66f156-bc00-4e13-904d-9aacbb391a64",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
+		}
+	],
+	"viewport": {
+		"x": 33,
+		"y": 143,
+		"zoom": 1
+	}
+}
