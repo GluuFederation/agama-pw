@@ -39,9 +39,9 @@
 					],
 					"nodeIcon": "material-symbols:equal"
 				},
-				"skake": true
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2174,
@@ -988,8 +988,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1204,
-		"y": -41,
+		"x": -939,
+		"y": -35,
 		"zoom": 1
 	}
 }
