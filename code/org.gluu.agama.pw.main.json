@@ -33,12 +33,13 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"The provided credentials are not valid. Please try again!\"",
+							"assignmentExpression": "The provided credentials are not valid. Please try again!",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": true
 			},
 			"selected": true,
 			"dragging": false,
@@ -80,7 +81,8 @@
 					"logMessage": "\"Invalid credentials provided.\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -122,7 +124,8 @@
 					"returnVariable": "{ userId: credentials.username}",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Closing Flow Execution"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -164,7 +167,8 @@
 					"logMessage": "\"Valid credentials provided\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -213,7 +217,8 @@
 				"handles": [
 					"Agama-when-Node-01da2b1f-01b6-4e63-8cdb-ef29cf153b7c.FAILURE",
 					"Agama-when-Node-01da2b1f-01b6-4e63-8cdb-ef29cf153b7c.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -255,7 +260,8 @@
 					"logMessage": "\"Validation done\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -305,7 +311,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "uiFeedback.succeed"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
