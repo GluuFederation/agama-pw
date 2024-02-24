@@ -33,7 +33,8 @@
 					"logMessage": "\"Start execution of account lock flow\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
