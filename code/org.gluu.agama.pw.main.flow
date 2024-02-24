@@ -1,2 +1,3 @@
 Flow org.gluu.agama.pw.main
      Basepath ""
+Log "@info Start excecution of the password validation flow."
