@@ -20,14 +20,14 @@ count = Repeat 3 times max
      When uiFeedback.succeed is true
           Log "@info Valid credentials provided"
           // Password validation completed successfully!
-          it_kxsfs = undefined
-          Finish it_kxsfs
+          it_roaac = undefined
+          Finish it_roaac
      // Invalid credentials provided
      Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
-     uiFeedback.errorMessage = ""The provided credentials are not valid. Please try again!""
+     uiFeedback.errorMessage = "The provided credentials are not valid. Please try again!"
 // Validation still fail after the max logins attempt
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_bwuoy = {success:false, error: "Password validation failed!"}
-Finish it_bwuoy
+it_qqlob = {success:false, error: "Password validation failed!"}
+Finish it_qqlob
