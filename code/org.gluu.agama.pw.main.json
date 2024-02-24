@@ -33,7 +33,8 @@
 					"logMessage": "\"Start excecution of the password validation flow.\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
