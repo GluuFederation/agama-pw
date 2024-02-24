@@ -20,8 +20,8 @@ count = Repeat 3 times max
      When uiFeedback.succeed is true
           Log "@info Valid credentials provided"
           // Password validation completed successfully!
-          it_bninb = undefined
-          Finish it_bninb
+          it_vdtfn = {success:true, data: { userId: credentials.username }}
+          Finish it_vdtfn
      // Invalid credentials provided
      Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
@@ -29,5 +29,5 @@ count = Repeat 3 times max
 // Validation still fail after the max logins attempt
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_badmi = {success:false, error: "Password validation failed!"}
-Finish it_badmi
+it_hvptv = {success:false, error: "Password validation failed!"}
+Finish it_hvptv
