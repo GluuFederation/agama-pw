@@ -1,2 +1,3 @@
 Flow org.gluu.agama.pw.accountLock
      Basepath ""
+Log "@info Start execution of account lock flow"
