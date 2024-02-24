@@ -1,3 +1,20 @@
 Flow org.gluu.agama.pw.main
      Basepath ""
-Log "@info Start excecution of the password validation flow."
+     Timeout 500 seconds
+     Configs conf
+Log "@info Start execution of the password validation flow."
+//  Create json variable for feedback
+uiFeedback = {}
+// Get an instance of PasswordService Class
+validationService = Call org.gluu.agama.pw.basic.PasswordService#getInstance 
+// Iterate x times max
+count = Repeat 3 times max
+     // Retrieve user credentials from UI
+     credentials = RRF "login-basic.ftlh" uiFeedback
+     // Log the successfull  used credentials retrieval.
+     Log "@info User credentials collected successfully!"
+// Validation still fail after the max logins attempt
+Log "@info The maximum login attempt has been reached!"
+// Maximum attempts reached. Password validation failed!
+it_gkjkx = {success:false, error: "Password validation failed!"}
+Finish it_gkjkx
