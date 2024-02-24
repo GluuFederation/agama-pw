@@ -1,35 +1,112 @@
-[
-  {
-    "id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
-    "type": "start",
-    "sourcePosition": "right",
-    "data": {
-      "id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
-      "type": "Agama-start-Flow",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "inRepeatBlock": false,
-      "agamaData": {
-        "id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
-        "type": "Agama-start-Flow",
-        "displayName": "Password Validation Flow",
-        "hasComment": true,
-        "comment": "",
-        "isTopLevelFlow": true,
-        "basepath": "",
-        "configParams": "{}",
-        "nodeIcon": "material-symbols:line-start-square",
-        "timeout": "",
-        "inputs": "",
-        "configs": "",
-        "flowname": "org.gluu.agama.pw.main"
-      }
-    },
-    "position": {
-      "x": 30,
-      "y": 30
-    }
-  }
-]
+{
+	"nodes": [
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-log-Node-d60b1625-cf8f-4d4e-bea4-53cb97c8ed34",
+			"position": {
+				"x": 226,
+				"y": 58
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-d60b1625-cf8f-4d4e-bea4-53cb97c8ed34",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 226,
+					"y": 58
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-d60b1625-cf8f-4d4e-bea4-53cb97c8ed34",
+					"parentId": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+					"type": "Agama-log-Node",
+					"displayName": "Log flow start",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "\"Start excecution of the password validation flow.\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 226,
+				"y": 58
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+			"type": "start",
+			"sourcePosition": "right",
+			"data": {
+				"id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+				"type": "Agama-start-Flow",
+				"position": {
+					"x": 26,
+					"y": 58
+				},
+				"inRepeatBlock": false,
+				"agamaData": {
+					"id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+					"type": "Agama-start-Flow",
+					"displayName": "Password Validation Flow",
+					"hasComment": true,
+					"comment": "",
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "",
+					"configs": "",
+					"flowname": "org.gluu.agama.pw.main"
+				},
+				"skake": false
+			},
+			"position": {
+				"x": 26,
+				"y": 58
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 26,
+				"y": 58
+			},
+			"dragging": false
+		}
+	],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4-Agama-log-Node-d60b1625-cf8f-4d4e-bea4-53cb97c8ed34-f17c8532-e168-4a92-849c-48121f4bf9dc",
+			"type": "straight",
+			"source": "Agama-start-Flow-4d4e99be-60ff-474e-abd8-f058c1da7af4",
+			"target": "Agama-log-Node-d60b1625-cf8f-4d4e-bea4-53cb97c8ed34",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
+		}
+	],
+	"viewport": {
+		"x": 10,
+		"y": 15,
+		"zoom": 1
+	}
+}
