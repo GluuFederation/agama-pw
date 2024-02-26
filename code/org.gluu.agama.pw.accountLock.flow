@@ -7,6 +7,6 @@ validationService = Call org.gluu.agama.pw.PasswordService#getInstance conf
 Repeat 3 times max
      // Retrieve user credentials from UI
      credentials = RRF "login-basic.ftlh" uiFeedback
-Log "@ " __________
-it_ihsda = {success:false, error: "Password validation failed!"}
-Finish it_ihsda
+Log "@info Log failed login after max attempts"
+it_pcmap = {success:false, error: "Password validation failed!"}
+Finish it_pcmap
