@@ -33,9 +33,10 @@
 					"logMessage": "\"Invalid credentials provided.\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1979.8567795375802,
@@ -75,7 +76,8 @@
 					"logMessage": "\"Credentials is valid\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -124,7 +126,8 @@
 				"handles": [
 					"Agama-when-Node-070780af-8d80-497c-b1f0-c950e4f5ac8c.FAILURE",
 					"Agama-when-Node-070780af-8d80-497c-b1f0-c950e4f5ac8c.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -166,7 +169,8 @@
 					"logMessage": "\"Validation done\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -216,7 +220,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "uiFeedback.succeed"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -226,8 +231,8 @@
 			}
 		},
 		{
-			"width": 170,
-			"height": 124,
+			"width": 168,
+			"height": 120,
 			"id": "Agama-log-Node-bcd0fe9f-46f4-411b-92b4-ff9da6cef1cc",
 			"position": {
 				"x": 1129.8567795375802,
@@ -255,12 +260,13 @@
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "User credentials collected successfully!",
+					"logMessage": "\"User credentials collected successfully!\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1129.8567795375802,
