@@ -33,9 +33,10 @@
 					"returnVariable": "{ userId: credentials.username }",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Closing the flow"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2242.85677953758,
@@ -75,14 +76,15 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Invalid credentails.Try again!\"",
+							"assignmentExpression": "Invalid credentails.Try again!",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2828.642584653185,
@@ -122,7 +124,8 @@
 					"logMessage": "\"Fail login attempt\"",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -169,7 +172,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -211,7 +215,8 @@
 					"logMessage": "\"User account locked\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -263,7 +268,8 @@
 				"handles": [
 					"Agama-when-Node-2d627153-2a28-4aef-9f7a-861a9f0f3586.FAILURE",
 					"Agama-when-Node-2d627153-2a28-4aef-9f7a-861a9f0f3586.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
