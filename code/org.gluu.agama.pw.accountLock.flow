@@ -1,12 +1,26 @@
 Flow org.gluu.agama.pw.accountLock
      Basepath ""
-Log "@info Start execution of account lock flow"
+     Timeout 500 seconds
+     Configs conf
+Log "@info Start execution of the account lock  flow."
+// Create json variable for feedback
 uiFeedback = {}
+// Get an instance of PasswordService Class
 validationService = Call org.gluu.agama.pw.PasswordService#getInstance conf
 // Iterate x times max
 Repeat 3 times max
      // Retrieve user credentials from UI
      credentials = RRF "login-basic.ftlh" uiFeedback
+     // Log the successfull  used credentials retrieval.
+     Log "@info " User credentials collected successfully!
+     // Validate provided user credentials
+     uiFeedback.succeed = Call validationService validate credentials.username credentials.password
+     Log "@info Validation done"
+     // If user credentials is valid
+     When uiFeedback.succeed is true
+          // Valid credentials provided
+          Log "@info Credentials is valid"
+     Log "@info Invalid credentials provided."
 Log "@info Log failed login after max attempts"
-it_pcmap = {success:false, error: "Password validation failed!"}
-Finish it_pcmap
+it_ocnzs = {success:false, error: "Password validation failed!"}
+Finish it_ocnzs
