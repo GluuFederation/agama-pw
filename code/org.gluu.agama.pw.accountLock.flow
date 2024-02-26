@@ -23,8 +23,8 @@ Repeat 3 times max
           // Unlock user account
           unlockResult = Call validationService unlock credentials.username
           // Password validation completed successfully!
-          it_bojvl = undefined
-          Finish it_bojvl
+          it_hcxfi = undefined
+          Finish it_hcxfi
      Log "@info Invalid credentials provided."
      // Lock user account if needed
      lockResult = Call validationService lock credentials.username
@@ -33,7 +33,7 @@ Repeat 3 times max
           // Provide account lock feedback
           uiFeedback.errorMessage = "Your account has been locked"
      Log "@error Fail login attempt"
-     uiFeedback.errorMessage = ""Invalid credentails.Try again!""
+     uiFeedback.errorMessage = "Invalid credentails.Try again!"
 Log "@info Log failed login after max attempts"
-it_lttxm = {success:false, error: "Password validation failed!"}
-Finish it_lttxm
+it_usqva = {success:false, error: "Password validation failed!"}
+Finish it_usqva
