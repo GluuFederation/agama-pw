@@ -31,12 +31,13 @@
 					"comment": "Password validation completed successfully!",
 					"flowfilename": "",
 					"returnVariable": "{ userId: credentials.username }",
+					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Closing the flow"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2242.85677953758,
@@ -82,9 +83,9 @@
 					],
 					"nodeIcon": "material-symbols:equal"
 				},
-				"skake": true
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2828.642584653185,
