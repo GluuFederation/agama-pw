@@ -572,7 +572,7 @@
 					"displayName": "Initialize Validation Service",
 					"hasComment": true,
 					"comment": "Get an instance of PasswordService Class",
-					"javaClassName": "org.gluu.agama.pw.basic.PasswordService",
+					"javaClassName": "org.gluu.agama.pw.PasswordService",
 					"javaMethodName": "getInstance",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
@@ -991,8 +991,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": -181,
+		"y": 56,
 		"zoom": 1
 	}
 }
