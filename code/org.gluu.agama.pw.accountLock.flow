@@ -12,7 +12,7 @@ Repeat 3 times max
      // Retrieve user credentials from UI
      credentials = RRF "login-basic.ftlh" uiFeedback
      // Log the successfull  used credentials retrieval.
-     Log "@info " User credentials collected successfully!
+     Log "@info User credentials collected successfully!"
      // Validate provided user credentials
      uiFeedback.succeed = Call validationService validate credentials.username credentials.password
      Log "@info Validation done"
@@ -22,5 +22,5 @@ Repeat 3 times max
           Log "@info Credentials is valid"
      Log "@info Invalid credentials provided."
 Log "@info Log failed login after max attempts"
-it_ocnzs = {success:false, error: "Password validation failed!"}
-Finish it_ocnzs
+it_jkcex = {success:false, error: "Password validation failed!"}
+Finish it_jkcex
