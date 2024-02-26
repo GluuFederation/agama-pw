@@ -20,7 +20,13 @@ Repeat 3 times max
      When uiFeedback.succeed is true
           // Valid credentials provided
           Log "@info Credentials is valid"
+          // Unlock user account
+          unlockResult = Call validationService unlock credentials.username
      Log "@info Invalid credentials provided."
+     // Lock user account if needed
+     lockResult = Call validationService lock credentials.username
+     // Provide feedback about the error message to user
+     uiFeedback.errorMessage = "The provided credentials are not valid. Please try again!"
 Log "@info Log failed login after max attempts"
-it_jkcex = {success:false, error: "Password validation failed!"}
-Finish it_jkcex
+it_xfpmv = {success:false, error: "Password validation failed!"}
+Finish it_xfpmv
