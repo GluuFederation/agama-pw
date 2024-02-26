@@ -34,9 +34,10 @@
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Password validation failed!"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1277.57161023121,
@@ -44,8 +45,8 @@
 			}
 		},
 		{
-			"width": 170,
-			"height": 124,
+			"width": 168,
+			"height": 120,
 			"id": "Agama-log-Node-fda82c7b-00d3-4c0d-b501-822bf481ef8a",
 			"position": {
 				"x": 1077.57161023121,
@@ -67,22 +68,19 @@
 					"id": "Agama-log-Node-fda82c7b-00d3-4c0d-b501-822bf481ef8a",
 					"parentId": "Agama-repeat-Node-990b0a69-c711-4640-98cf-881157101511",
 					"type": "Agama-log-Node",
-					"displayName": "",
+					"displayName": "Max attempt reached",
 					"hasComment": true,
 					"comment": "",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "",
-					"logLevel": "",
-					"nodeIcon": "octicon:log-16",
-					"hasSuccess": "",
-					"hasFailure": "",
-					"hasNoRepeat": false,
-					"hasRepeat": false
-				}
+					"logMessage": "\"Log failed login after max attempts\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16"
+				},
+				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1077.57161023121,
@@ -124,7 +122,8 @@
 					"templatePath": "login-basic.ftlh",
 					"asssignedVariableName": "credentials",
 					"arguments": "uiFeedback"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -166,7 +165,8 @@
 					"displayName": "Validation Loop",
 					"comment": "Iterate x times max",
 					"hasComment": true
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -215,7 +215,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "validationService"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -262,7 +263,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
