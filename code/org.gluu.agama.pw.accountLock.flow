@@ -22,11 +22,18 @@ Repeat 3 times max
           Log "@info Credentials is valid"
           // Unlock user account
           unlockResult = Call validationService unlock credentials.username
+          // Password validation completed successfully!
+          it_bojvl = undefined
+          Finish it_bojvl
      Log "@info Invalid credentials provided."
      // Lock user account if needed
      lockResult = Call validationService lock credentials.username
-     // Provide feedback about the error message to user
-     uiFeedback.errorMessage = "The provided credentials are not valid. Please try again!"
+     When lockResult is true
+          Log "@info User account locked"
+          // Provide account lock feedback
+          uiFeedback.errorMessage = "Your account has been locked"
+     Log "@error Fail login attempt"
+     uiFeedback.errorMessage = ""Invalid credentails.Try again!""
 Log "@info Log failed login after max attempts"
-it_duikr = {success:false, error: "Password validation failed!"}
-Finish it_duikr
+it_lttxm = {success:false, error: "Password validation failed!"}
+Finish it_lttxm
