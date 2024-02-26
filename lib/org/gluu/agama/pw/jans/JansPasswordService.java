@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import io.jans.service.cdi.util.CdiUtil;
 import io.jans.as.server.service.AuthenticationService;
 import io.jans.as.server.service.UserService;
+import io.jans.as.common.model.common.User;
 import io.jans.agama.engine.service.FlowService;
 import io.jans.service.CacheService;
 
