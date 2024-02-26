@@ -1,3 +1,12 @@
 Flow org.gluu.agama.pw.accountLock
      Basepath ""
 Log "@info Start execution of account lock flow"
+uiFeedback = {}
+validationService = Call org.gluu.agama.pw.PasswordService#getInstance conf
+// Iterate x times max
+Repeat 3 times max
+     // Retrieve user credentials from UI
+     credentials = RRF "login-basic.ftlh" uiFeedback
+Log "@ " __________
+it_ihsda = {success:false, error: "Password validation failed!"}
+Finish it_ihsda
