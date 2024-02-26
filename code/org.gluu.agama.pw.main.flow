@@ -6,7 +6,7 @@ Log "@info Start execution of the password validation flow."
 //  Create json variable for feedback
 uiFeedback = {}
 // Get an instance of PasswordService Class
-validationService = Call org.gluu.agama.pw.basic.PasswordService#getInstance conf
+validationService = Call org.gluu.agama.pw.PasswordService#getInstance conf
 // Iterate x times max
 count = Repeat 3 times max
      // Retrieve user credentials from UI
@@ -20,8 +20,8 @@ count = Repeat 3 times max
      When uiFeedback.succeed is true
           Log "@info Valid credentials provided"
           // Password validation completed successfully!
-          it_mvgmb = {success:true, data: { userId: credentials.username }}
-          Finish it_mvgmb
+          it_hiznz = {success:true, data: { userId: credentials.username }}
+          Finish it_hiznz
      // Invalid credentials provided
      Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
@@ -29,5 +29,5 @@ count = Repeat 3 times max
 // Validation still fail after the max logins attempt
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_gjxts = {success:false, error: "Password validation failed!"}
-Finish it_gjxts
+it_yxwtl = {success:false, error: "Password validation failed!"}
+Finish it_yxwtl
