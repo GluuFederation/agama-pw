@@ -23,8 +23,8 @@ Repeat 3 times max
           // Unlock user account
           unlockResult = Call validationService unlock credentials.username
           // Password validation completed successfully!
-          it_hcxfi = undefined
-          Finish it_hcxfi
+          it_qchdo = {success:true, data: { userId: credentials.username }}
+          Finish it_qchdo
      Log "@info Invalid credentials provided."
      // Lock user account if needed
      lockResult = Call validationService lock credentials.username
@@ -35,5 +35,5 @@ Repeat 3 times max
      Log "@error Fail login attempt"
      uiFeedback.errorMessage = "Invalid credentails.Try again!"
 Log "@info Log failed login after max attempts"
-it_usqva = {success:false, error: "Password validation failed!"}
-Finish it_usqva
+it_odaxc = {success:false, error: "Password validation failed!"}
+Finish it_odaxc
