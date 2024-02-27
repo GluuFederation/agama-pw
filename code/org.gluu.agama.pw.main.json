@@ -5,8 +5,8 @@
 			"height": 124,
 			"id": "Agama-log-Node-4cf3eaa3-0d0c-479d-8d52-9496a507065f",
 			"position": {
-				"x": 2424,
-				"y": 287
+				"x": 2426,
+				"y": 286
 			},
 			"type": "log",
 			"data": {
@@ -17,8 +17,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2424,
-					"y": 287
+					"x": 2426,
+					"y": 286
 				},
 				"agamaData": {
 					"id": "Agama-log-Node-4cf3eaa3-0d0c-479d-8d52-9496a507065f",
@@ -33,13 +33,14 @@
 					"logMessage": "\"Fail login attempt\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 2424,
-				"y": 287
+				"x": 2426,
+				"y": 286
 			}
 		},
 		{
@@ -66,20 +67,29 @@
 					"id": "Agama-assignment-Node-2e9154a0-3848-4aba-923f-813c2de10714",
 					"parentId": "Agama-call-Node-9fbe0582-6251-45bb-9514-9a58d6bf485e",
 					"type": "Agama-assignment-Node",
-					"displayName": "",
+					"displayName": "Feedback",
 					"hasComment": true,
 					"comment": "",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "You account has been lock!",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"positionAbsolute": {
 				"x": 2686,
 				"y": 561
-			}
+			},
+			"selected": true,
+			"dragging": false
 		},
 		{
 			"width": 170,
@@ -121,7 +131,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "lockResult"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -163,7 +174,8 @@
 					"logMessage": "\"Start account lock process\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -211,7 +223,8 @@
 				"handles": [
 					"Agama-when-Node-fb35d7ac-1510-4e5d-a1b4-84039a42d36a.FAILURE",
 					"Agama-when-Node-fb35d7ac-1510-4e5d-a1b4-84039a42d36a.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -1337,8 +1350,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1736,
-		"y": -126,
+		"x": -1962,
+		"y": -206,
 		"zoom": 1
 	}
 }
