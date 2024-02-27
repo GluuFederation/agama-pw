@@ -54,42 +54,51 @@ public class JansPasswordService extends PasswordService {
     }
 
     @Override
-    public boolean lockAccount(String username) {
+    public String[] lockAccount(String username) {
+        String[] result = new String[2];
         User currentUser = userService.getUser(username);
         int currentFailCount = 1;
         String invalidLoginCount = getCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE);
         if (invalidLoginCount != null) {
-            currentFailCount = Integer.parseInt(invalidLoginCount)+1;
+            currentFailCount = Integer.parseInt(invalidLoginCount) + 1;
         }
         String currentStatus = getCustomAttribute(currentUser, JANS_STATUS);
         logger.info("Current user status is: {}", currentStatus);
         if (currentFailCount < DEFAULT_MAX_LOGIN_ATTEMPT) {
-            int remainingCount=DEFAULT_MAX_LOGIN_ATTEMPT-currentFailCount;
+            int remainingCount = DEFAULT_MAX_LOGIN_ATTEMPT - currentFailCount;
             logger.info("Remaining login count: {} for user {}", remainingCount, username);
-            if(remainingCount>0 && currentStatus == "active"){
+            if (remainingCount > 0 && currentStatus == "active") {
                 setCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE, String.valueOf(currentFailCount));
                 logger.info("{}  more attempt(s) before account is LOCKED!", remainingCount);
             }
-            return false;
+            result[0] = "false";
+            result[1] = "You have " + remainingCount + " more attempt(s) before your account is locked.";
+            return result;
         }
-        if(currentFailCount >= DEFAULT_MAX_LOGIN_ATTEMPT && currentStatus == "active"){
+        if (currentFailCount >= DEFAULT_MAX_LOGIN_ATTEMPT && currentStatus == "active") {
             logger.info("Locking {} account for {} seconds.", username, DEFAULT_LOCK_EXP_TIME);
             String object_to_store = "{'locked': 'true'}";
             setCustomAttribute(currentUser, JANS_STATUS, INACTIVE);
             cacheService.put(DEFAULT_LOCK_EXP_TIME, CACHE_PREFIX + username, object_to_store);
-            return true;
+            result[0] = "true";
+            result[1] = "Your account have been locked.";
+            return result;
         }
-        if(currentFailCount >= DEFAULT_MAX_LOGIN_ATTEMPT && currentStatus == "inactive"){
+        if (currentFailCount >= DEFAULT_MAX_LOGIN_ATTEMPT && currentStatus == "inactive") {
             logger.info("User {} account is already locked. Checking if we can unlock", username);
             String cache_object = cacheService.get(CACHE_PREFIX + username);
-            if(cache_object == null){
+            if (cache_object == null) {
                 logger.info("Unlocking user {} account", username);
                 setCustomAttribute(currentUser, JANS_STATUS, ACTIVE);
                 setCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE, "0");
+                result[0] = "false";
+                result[1] = "Your account  is now unlock. Try login ";
+                return result;
             }
-            return true;
+
         }
-        return false;
+        result[0] = "false";
+        return result;
     }
 
     private String getCustomAttribute(User user, String attributeName) {
@@ -99,6 +108,7 @@ public class JansPasswordService extends PasswordService {
         }
         return null;
     }
+
     private User setCustomAttribute(User user, String attributeName, String value) {
         userService.setCustomAttribute(user, attributeName, value);
         return userService.updateUser(user);
