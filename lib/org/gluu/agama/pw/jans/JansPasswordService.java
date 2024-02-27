@@ -44,9 +44,11 @@ public class JansPasswordService extends PasswordService {
         logger.info("Validating user credentials.");
         boolean hasLogin = authenticationService.authenticate(username, password);
         if (hasLogin && Boolean.valueOf(flowConfig.get("ENABLE_ACCOUNT_LOCK"))) {
+            logger.info("Credentials are valid and user account locked feature is activated");
             User currentUser = userService.getUser(username);
             userService.setCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE, 0);
             userService.updateUser(currentUser);
+            logger.info("Invalid login count reset to zero for {} .", username);
         }
         return hasLogin;
     }
