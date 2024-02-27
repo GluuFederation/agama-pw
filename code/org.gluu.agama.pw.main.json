@@ -3,142 +3,6 @@
 		{
 			"width": 170,
 			"height": 124,
-			"id": "Agama-log-Node-a866a4f7-f7a4-49f2-8f0c-66375935c861",
-			"position": {
-				"x": 2304,
-				"y": 798
-			},
-			"type": "log",
-			"data": {
-				"id": "Agama-log-Node-a866a4f7-f7a4-49f2-8f0c-66375935c861",
-				"type": "Agama-log-Node",
-				"parentId": "Agama-call-Node-e2dac1c8-adaf-4b95-b7d1-4b063d06bb28",
-				"whenCondition": "WhenFalse",
-				"inRepeatBlock": false,
-				"inIterateBlock": false,
-				"position": {
-					"x": 2304,
-					"y": 798
-				},
-				"agamaData": {
-					"id": "Agama-log-Node-a866a4f7-f7a4-49f2-8f0c-66375935c861",
-					"parentId": "Agama-call-Node-e2dac1c8-adaf-4b95-b7d1-4b063d06bb28",
-					"type": "Agama-log-Node",
-					"displayName": "Log lock",
-					"hasComment": true,
-					"comment": "",
-					"whenCondition": "WhenFalse",
-					"inRepeatBlock": false,
-					"inIterateBlock": false,
-					"logMessage": "\"Account has been lock\"",
-					"logLevel": "info",
-					"nodeIcon": "octicon:log-16"
-				},
-				"skake": false
-			},
-			"selected": false,
-			"positionAbsolute": {
-				"x": 2304,
-				"y": 798
-			},
-			"dragging": false
-		},
-		{
-			"width": 170,
-			"height": 124,
-			"id": "Agama-call-Node-e2dac1c8-adaf-4b95-b7d1-4b063d06bb28",
-			"position": {
-				"x": 2081,
-				"y": 802
-			},
-			"type": "call",
-			"data": {
-				"id": "Agama-call-Node-e2dac1c8-adaf-4b95-b7d1-4b063d06bb28",
-				"type": "Agama-call-Node",
-				"parentId": "Agama-log-Node-8837eb0b-72b8-439a-aa39-0c535e54989b",
-				"whenCondition": "WhenFalse",
-				"inRepeatBlock": false,
-				"inIterateBlock": false,
-				"position": {
-					"x": 2081,
-					"y": 802
-				},
-				"agamaData": {
-					"id": "Agama-call-Node-e2dac1c8-adaf-4b95-b7d1-4b063d06bb28",
-					"parentId": "Agama-log-Node-8837eb0b-72b8-439a-aa39-0c535e54989b",
-					"type": "Agama-call-Node",
-					"displayName": "Lock Account",
-					"hasComment": true,
-					"comment": "",
-					"javaClassName": "",
-					"javaMethodName": "lockAccount",
-					"javaVariableName": "validationService",
-					"exceptionVariableField": "",
-					"callType": "Call method on instance",
-					"whenCondition": "WhenFalse",
-					"inRepeatBlock": false,
-					"inIterateBlock": false,
-					"arguments": [
-						"credentials.username"
-					],
-					"nodeIcon": "material-symbols:code",
-					"asssignedVariableName": "lockResult"
-				},
-				"skake": false
-			},
-			"selected": false,
-			"positionAbsolute": {
-				"x": 2081,
-				"y": 802
-			},
-			"dragging": false
-		},
-		{
-			"width": 170,
-			"height": 124,
-			"id": "Agama-log-Node-8837eb0b-72b8-439a-aa39-0c535e54989b",
-			"position": {
-				"x": 1845,
-				"y": 804
-			},
-			"type": "log",
-			"data": {
-				"id": "Agama-log-Node-8837eb0b-72b8-439a-aa39-0c535e54989b",
-				"type": "Agama-log-Node",
-				"parentId": "Agama-when-Node-a75d7895-8bbb-40f5-b897-9e132a094221",
-				"whenCondition": "WhenTrue",
-				"inRepeatBlock": false,
-				"inIterateBlock": false,
-				"position": {
-					"x": 1845,
-					"y": 804
-				},
-				"agamaData": {
-					"id": "Agama-log-Node-8837eb0b-72b8-439a-aa39-0c535e54989b",
-					"parentId": "Agama-when-Node-a75d7895-8bbb-40f5-b897-9e132a094221",
-					"type": "Agama-log-Node",
-					"displayName": "Log account lock feature",
-					"hasComment": true,
-					"comment": "",
-					"whenCondition": "WhenTrue",
-					"inRepeatBlock": false,
-					"inIterateBlock": false,
-					"logMessage": "\"Account lock feature is enabled.\"",
-					"logLevel": "info",
-					"nodeIcon": "octicon:log-16"
-				},
-				"skake": false
-			},
-			"positionAbsolute": {
-				"x": 1845,
-				"y": 804
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
-			"width": 170,
-			"height": 124,
 			"id": "Agama-assignment-Node-da725a08-c5de-4a48-a62b-8ff58ee94469",
 			"position": {
 				"x": 2430,
@@ -220,7 +84,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2211,
@@ -624,7 +488,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 826,
@@ -813,56 +677,6 @@
 				"y": 58
 			},
 			"dragging": false
-		},
-		{
-			"width": 210,
-			"height": 140,
-			"id": "Agama-when-Node-a75d7895-8bbb-40f5-b897-9e132a094221",
-			"position": {
-				"x": 1724,
-				"y": 341
-			},
-			"parentId": "Agama-log-Node-eb8d49d7-8822-4deb-bc79-c69e087742ce",
-			"type": "when",
-			"data": {
-				"id": "Agama-when-Node-a75d7895-8bbb-40f5-b897-9e132a094221",
-				"type": "Agama-when-Node",
-				"parentId": "Agama-log-Node-eb8d49d7-8822-4deb-bc79-c69e087742ce",
-				"whenCondition": "WhenFalse",
-				"inRepeatBlock": false,
-				"inIterateBlock": false,
-				"position": {
-					"x": 1724,
-					"y": 341
-				},
-				"agamaData": {
-					"id": "Agama-when-Node-a75d7895-8bbb-40f5-b897-9e132a094221",
-					"parentId": "Agama-log-Node-eb8d49d7-8822-4deb-bc79-c69e087742ce",
-					"type": "Agama-when-Node",
-					"hasFailure": true,
-					"conditions": [
-						{
-							"variable": "conf.ENABLE_LOCK",
-							"operator": "is",
-							"dataValue": "\"true\"",
-							"combinator": "none"
-						}
-					],
-					"hasComment": true,
-					"inRepeatBlock": false
-				},
-				"handles": [
-					"Agama-when-Node-a75d7895-8bbb-40f5-b897-9e132a094221.FAILURE",
-					"Agama-when-Node-a75d7895-8bbb-40f5-b897-9e132a094221.SUCCESS"
-				],
-				"skake": false
-			},
-			"selected": false,
-			"dragging": false,
-			"positionAbsolute": {
-				"x": 1724,
-				"y": 341
-			}
 		},
 		{
 			"width": 210,
@@ -1253,8 +1067,8 @@
 		}
 	],
 	"viewport": {
-		"x": -97,
-		"y": 185,
+		"x": -1189,
+		"y": -260,
 		"zoom": 1
 	}
 }
