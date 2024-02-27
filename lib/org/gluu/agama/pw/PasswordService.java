@@ -8,7 +8,6 @@ public abstract class PasswordService {
 
     public abstract boolean validate(String username, String password);
     public abstract boolean lockAccount(String username);
-    public abstract boolean unlockAccount(String username);
 
     public static PasswordService getInstance(HashMap config){
         return  new JansPasswordService(config);
