@@ -18,11 +18,15 @@ count = Repeat 6 times max
      Log "@info Validation done"
      When uiFeedback.succeed is true
           Log "@info Valid credentials provided"
-          it_wlydr = {success:true, data: { userId: credentials.username}}
-          Finish it_wlydr
+          it_zsfhm = {success:true, data: { userId: credentials.username}}
+          Finish it_zsfhm
      Log "@error Invalid credentials provided"
+     When conf.ENABLE_LOCK is "true"
+          Log "@info Start account lock process"
+          lockResult = Call validationService lockAccount credentials.username
+     Log "@info Fail login attempt"
 // Validation still fail after the max logins attempt
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_rbvfe = {success:false, error: "Password validation failed!"}
-Finish it_rbvfe
+it_jqrsz = {success:false, error: "Password validation failed!"}
+Finish it_jqrsz
