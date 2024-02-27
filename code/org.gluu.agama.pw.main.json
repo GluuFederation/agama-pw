@@ -33,18 +33,19 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Invalid credentials. Please try again!\"",
+							"assignmentExpression": "Invalid credentials. Please try again!",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": true
 			},
 			"positionAbsolute": {
 				"x": 2626,
 				"y": 286
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -135,7 +136,7 @@
 				"x": 2686,
 				"y": 561
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
