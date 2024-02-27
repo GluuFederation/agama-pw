@@ -16,12 +16,14 @@ count = Repeat 3 times max
      // Validate provided user credentials
      uiFeedback.succeed = Call validationService validate credentials.username credentials.password
      Log "@info Validation done"
+     When conf.ENABLE_LOCK is "true"
+          Log "@info Account lock feature is enabled."
      // If user credentials is valid
      When uiFeedback.succeed is true
           Log "@info Valid credentials provided"
           // Password validation completed successfully!
-          it_hiznz = {success:true, data: { userId: credentials.username }}
-          Finish it_hiznz
+          it_ycaaq = {success:true, data: { userId: credentials.username }}
+          Finish it_ycaaq
      // Invalid credentials provided
      Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
@@ -29,5 +31,5 @@ count = Repeat 3 times max
 // Validation still fail after the max logins attempt
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_yxwtl = {success:false, error: "Password validation failed!"}
-Finish it_yxwtl
+it_wayzr = {success:false, error: "Password validation failed!"}
+Finish it_wayzr
