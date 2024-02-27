@@ -3,6 +3,53 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-assignment-Node-c9e69f4f-25d7-4a0f-a772-baaf866e04b6",
+			"position": {
+				"x": 2626,
+				"y": 286
+			},
+			"type": "assignment",
+			"data": {
+				"id": "Agama-assignment-Node-c9e69f4f-25d7-4a0f-a772-baaf866e04b6",
+				"type": "Agama-assignment-Node",
+				"parentId": "Agama-log-Node-4cf3eaa3-0d0c-479d-8d52-9496a507065f",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 2626,
+					"y": 286
+				},
+				"agamaData": {
+					"id": "Agama-assignment-Node-c9e69f4f-25d7-4a0f-a772-baaf866e04b6",
+					"parentId": "Agama-log-Node-4cf3eaa3-0d0c-479d-8d52-9496a507065f",
+					"type": "Agama-assignment-Node",
+					"displayName": "Set feedback",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Invalid credentials. Please try again!\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal"
+				}
+			},
+			"positionAbsolute": {
+				"x": 2626,
+				"y": 286
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-log-Node-4cf3eaa3-0d0c-479d-8d52-9496a507065f",
 			"position": {
 				"x": 2426,
@@ -76,8 +123,8 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "You account has been lock!",
-							"assignedVariableName": "uiFeedback.errorMessage"
+							"assignmentExpression": "Your account has been lock!",
+							"assignedVariableName": "uiFeedback.lockMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
@@ -1347,11 +1394,28 @@
 				"fillOpacity": 0.7
 			},
 			"sourceHandle": "Agama-when-Node-fb35d7ac-1510-4e5d-a1b4-84039a42d36a.FAILURE"
+		},
+		{
+			"id": "Agama-log-Node-4cf3eaa3-0d0c-479d-8d52-9496a507065f-Agama-assignment-Node-c9e69f4f-25d7-4a0f-a772-baaf866e04b6-4f3eadc4-f975-43ad-9ac3-5956e3773c64",
+			"type": "straight",
+			"source": "Agama-log-Node-4cf3eaa3-0d0c-479d-8d52-9496a507065f",
+			"target": "Agama-assignment-Node-c9e69f4f-25d7-4a0f-a772-baaf866e04b6",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": -1962,
-		"y": -206,
+		"x": -1768,
+		"y": -152,
 		"zoom": 1
 	}
 }
