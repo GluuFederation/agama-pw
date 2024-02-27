@@ -30,7 +30,7 @@ public class JansPasswordService extends PasswordService {
     private HashMap<String, String> flowConfig;
 
     public JansPasswordService(HashMap config) {
-        logger.debug("Flow config provided is  {}.", config);
+        logger.ino("Flow config provided is  {}.", config);
         flowConfig = config;
         DEFAULT_MAX_LOGIN_ATTEMPT = flowConfig.get("MAX_LOGIN_ATTEMPT") != null ? Integer.parseInt(flowConfig.get("MAX_LOGIN_ATTEMPT")) : DEFAULT_MAX_LOGIN_ATTEMPT;
         DEFAULT_LOCK_EXP_TIME = flowConfig.get("LOCK_EXP_TIME") != null ? Integer.parseInt(flowConfig.get("LOCK_EXP_TIME")) : DEFAULT_LOCK_EXP_TIME;
