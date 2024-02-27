@@ -8,7 +8,7 @@ uiFeedback = {}
 // Get an instance of PasswordService Class
 validationService = Call org.gluu.agama.pw.PasswordService#getInstance conf
 // Iterate x times max
-count = Repeat 3 times max
+count = Repeat 6 times max
      // Retrieve user credentials from UI
      credentials = RRF "login-basic.ftlh" uiFeedback
      // Log the successfull  used credentials retrieval.
@@ -24,8 +24,8 @@ count = Repeat 3 times max
      When uiFeedback.succeed is true
           Log "@info Valid credentials provided"
           // Password validation completed successfully!
-          it_aofgd = {success:true, data: { userId: credentials.username }}
-          Finish it_aofgd
+          it_oxqbb = {success:true, data: { userId: credentials.username }}
+          Finish it_oxqbb
      // Invalid credentials provided
      Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
@@ -33,5 +33,5 @@ count = Repeat 3 times max
 // Validation still fail after the max logins attempt
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_ffrzf = {success:false, error: "Password validation failed!"}
-Finish it_ffrzf
+it_unufd = {success:false, error: "Password validation failed!"}
+Finish it_unufd
