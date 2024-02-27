@@ -1,70 +1,104 @@
 package org.gluu.agama.pw.jans;
 
+import io.jans.agama.engine.service.FlowService;
+import io.jans.as.common.model.common.User;
+import io.jans.as.server.service.AuthenticationService;
+import io.jans.as.server.service.UserService;
+import io.jans.orm.model.base.CustomObjectAttribute;
+import io.jans.service.CacheService;
+import io.jans.service.cdi.util.CdiUtil;
 import org.gluu.agama.pw.PasswordService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import io.jans.service.cdi.util.CdiUtil;
-import io.jans.as.server.service.AuthenticationService;
-import io.jans.as.server.service.UserService;
-import io.jans.as.common.model.common.User;
-import io.jans.agama.engine.service.FlowService;
-import io.jans.service.CacheService;
 
 import java.util.HashMap;
 
 public class JansPasswordService extends PasswordService {
 
     private static final Logger logger = LoggerFactory.getLogger(FlowService.class);
+    public static final String JANS_STATUS = "jansStatus";
+    public static final String INACTIVE = "inactive";
+    public static final String ACTIVE = "active";
+    public static final String CACHE_PREFIX = "lock_user_";
     private static AuthenticationService authenticationService = CdiUtil.bean(AuthenticationService.class);
     private static UserService userService = CdiUtil.bean(UserService.class);
     private static CacheService cacheService = CdiUtil.bean(CacheService.class);
     private String INVALID_LOGIN_COUNT_ATTRIBUTE = "jansCountInvalidLogin";
-    private int MAXIMUM_LOGIN_ATTEMPT = 3;
-    private int LOCK_EXPIRATION_TIME = 180;
+    private int DEFAULT_MAX_LOGIN_ATTEMPT = 3;
+    private int DEFAULT_LOCK_EXP_TIME = 180;
 
     private HashMap<String, String> flowConfig;
 
-    public  JansPasswordService(HashMap config){
-        flowConfig = config;
+    public JansPasswordService(HashMap config) {
         logger.debug("Flow config provided is  {}.", config);
+        flowConfig = config;
+        DEFAULT_MAX_LOGIN_ATTEMPT = flowConfig.get("MAX_LOGIN_ATTEMPT") != null ? Integer.parseInt(flowConfig.get("MAX_LOGIN_ATTEMPT")) : DEFAULT_MAX_LOGIN_ATTEMPT;
+        DEFAULT_LOCK_EXP_TIME = flowConfig.get("LOCK_EXP_TIME") != null ? Integer.parseInt(flowConfig.get("LOCK_EXP_TIME")) : DEFAULT_LOCK_EXP_TIME;
     }
 
-    public  JansPasswordService(){
+    public JansPasswordService() {
     }
+
     @Override
     public boolean validate(String username, String password) {
         logger.info("Validating user credentials.");
-        return authenticationService.authenticate(username, password);
+        boolean hasLogin = authenticationService.authenticate(username, password);
+        if (hasLogin && Boolean.valueOf(flowConfig.get("ENABLE_ACCOUNT_LOCK"))) {
+            User currentUser = userService.getUser(username);
+            userService.setCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE, 0);
+            userService.updateUser(currentUser);
+        }
+        return hasLogin;
     }
+
     @Override
-    public boolean lockAccount(String username){
+    public boolean lockAccount(String username) {
         User currentUser = userService.getUser(username);
-        if(currentUser != null){
-            int currentFailCount;
-            String attributeValue = userService.getCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE);
-            if(attributeValue != null){
-                currentFailCount = Integer.parseInt(attributeValue) + 1;
-                if(currentFailCount >= MAXIMUM_LOGIN_ATTEMPT){
-                    userService.setCustomAttribute(currentUser, "gluuStatus", "inactive");
-                    userService.setCustomAttribute(currentUser, "jansStatus", "inactive");
-                    userService.updateUser(currentUser);
-                    String object_to_store="{'locked': true}";
-                    cacheService.put(LOCK_EXPIRATION_TIME, "lock_user_"+username, object_to_store);
-                    return true;
-                }
+        int currentFailCount = 0;
+        String invalidLoginCount = getCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE);
+        if (invalidLoginCount != null) {
+            currentFailCount = Integer.parseInt(invalidLoginCount)+1;
+        }
+        String currentStatus = getCustomAttribute(currentUser, JANS_STATUS);
+        logger.info("Current user status is: {}", currentStatus);
+        if (currentFailCount < DEFAULT_MAX_LOGIN_ATTEMPT) {
+            int remainingCount=DEFAULT_MAX_LOGIN_ATTEMPT-currentFailCount;
+            logger.info("Remaining login count: {} for user {}", remainingCount, username);
+            if(remainingCount>0 && currentStatus == "active"){
+                setCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE, String.valueOf(currentFailCount));
+                logger.info("{}  more attempt(s) before account is LOCKED!", remainingCount);
             }
+            return false;
+        }
+        if(currentFailCount >= DEFAULT_MAX_LOGIN_ATTEMPT && currentStatus == "active"){
+            logger.info("Locking {} account for {} seconds.", username, DEFAULT_LOCK_EXP_TIME);
+            String object_to_store = "{'locked': 'true'}";
+            setCustomAttribute(currentUser, JANS_STATUS, INACTIVE);
+            cacheService.put(DEFAULT_LOCK_EXP_TIME, CACHE_PREFIX + username, object_to_store);
+            return true;
+        }
+        if(currentFailCount >= DEFAULT_MAX_LOGIN_ATTEMPT && currentStatus == "inactive"){
+            logger.info("User {} account is already locked. Checking if we can unlock", username);
+            String cache_object = cacheService.get(CACHE_PREFIX + username);
+            if(cache_object == null){
+                logger.info("Unlocking user {} account", username);
+                setCustomAttribute(currentUser, JANS_STATUS, ACTIVE);
+                setCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE, "0");
+            }
+            return true;
         }
         return false;
     }
 
-    @Override
-    public boolean unlockAccount(String username){
-        User currentUser = userService.getUser(username);
-        cacheService.put(LOCK_EXPIRATION_TIME, "lock_user_"+username, null);
-        userService.setCustomAttribute(currentUser, "gluuStatus", "active");
-        userService.setCustomAttribute(currentUser, "jansStatus", "active");
-        userService.setCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE, 0);
-        userService.updateUser(currentUser);
-        return true;
+    private String getCustomAttribute(User user, String attributeName) {
+        CustomObjectAttribute customAttribute = userService.getCustomAttribute(user, attributeName);
+        if (customAttribute != null) {
+            return customAttribute.getValue();
+        }
+        return null;
+    }
+    private User setCustomAttribute(User user, String attributeName, String value) {
+        userService.setCustomAttribute(user, attributeName, value);
+        return userService.updateUser(user);
     }
 }
