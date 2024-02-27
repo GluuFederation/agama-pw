@@ -945,9 +945,10 @@
 					"logMessage": "\"Account lock result\" lockResult",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2686,
@@ -987,7 +988,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": false,
-							"assignmentExpression": "lockResult[1]",
+							"assignmentExpression": "lockResult",
 							"assignedVariableName": "uiFeedback.lockMessage"
 						}
 					],
@@ -1002,7 +1003,7 @@
 				"x": 2903,
 				"y": 561
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"parentId": "Agama-log-Node-24e6a8f2-6a6d-4b57-917c-9497dafebcdf",
 			"whenCondition": "",
@@ -1481,8 +1482,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1861,
-		"y": -183,
+		"x": -1963,
+		"y": -160,
 		"zoom": 1
 	}
 }
