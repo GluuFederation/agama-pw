@@ -39,13 +39,13 @@
 					],
 					"nodeIcon": "material-symbols:equal"
 				},
-				"skake": true
+				"skake": false
 			},
 			"positionAbsolute": {
 				"x": 2626,
 				"y": 286
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -123,8 +123,8 @@
 					"inIterateBlock": false,
 					"assignments": [
 						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "Your account has been lock!",
+							"variableTypeCheck": false,
+							"assignmentExpression": "lockResult[1]",
 							"assignedVariableName": "uiFeedback.lockMessage"
 						}
 					],
@@ -136,7 +136,7 @@
 				"x": 2686,
 				"y": 561
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1415,8 +1415,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1768,
-		"y": -152,
+		"x": -1647,
+		"y": -183,
 		"zoom": 1
 	}
 }
