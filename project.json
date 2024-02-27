@@ -17,8 +17,7 @@
     "configs": {
         "org.gluu.agama.pw.basic": {},
         "": {},
-        "org.gluu.agama.pw.main": {},
-        "org.gluu.agama.pw.accountLock": {}
+        "org.gluu.agama.pw.main": {}
     },
     "name": "agama-pw"
 }
