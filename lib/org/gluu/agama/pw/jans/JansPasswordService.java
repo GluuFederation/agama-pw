@@ -56,7 +56,7 @@ public class JansPasswordService extends PasswordService {
     @Override
     public boolean lockAccount(String username) {
         User currentUser = userService.getUser(username);
-        int currentFailCount = 0;
+        int currentFailCount = 1;
         String invalidLoginCount = getCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE);
         if (invalidLoginCount != null) {
             currentFailCount = Integer.parseInt(invalidLoginCount)+1;
