@@ -3,23 +3,25 @@ Flow org.gluu.agama.pw.main
      Timeout 500 seconds
      Configs conf
 Log "@info Start execution of the password validation flow."
-//  Create json variable for UI feedback
+//  Create json variable for UI feedback.
 uiFeedback = {}
-// Get an instance of PasswordService Class
+// Get an instance of PasswordService Class.
 validationService = Call org.gluu.agama.pw.PasswordService#getInstance conf
 // Iterate x times max
 count = Repeat 6 times max
-     // Retrieve user credentials from UI
+     // Retrieve user credentials from UI.
      credentials = RRF "login-basic.ftlh" uiFeedback
      // Log the successfull  used credentials retrieval.
      Log "@info User credentials collected successfully!"
-     // Validate provided user credentials
+     // Validate provided user credentials.
      uiFeedback.succeed = Call validationService validate credentials.username credentials.password
      Log "@info Validation done"
+     // If user credentials is valid, the flow end successfully.
      When uiFeedback.succeed is true
+          // add entry in log file for successfull login attempt
           Log "@info Valid credentials provided"
-          it_bleek = {success:true, data: { userId: credentials.username}}
-          Finish it_bleek
+          it_bfctv = {success:true, data: { userId: credentials.username}}
+          Finish it_bfctv
      Log "@error Invalid credentials provided"
      When conf.ENABLE_LOCK is "true"
           Log "@info Start account lock process"
@@ -29,8 +31,8 @@ count = Repeat 6 times max
      Log "@info Fail login attempt"
      uiFeedback.errorMessage = "Invalid credentials. Please try again!"
      uiFeedback.uid = credentials.username
-// Validation still fail after the max logins attempt
+// The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_qbwll = {success:false, error: "Password validation failed!"}
-Finish it_qbwll
+it_edaix = {success:false, error: "Password validation failed!"}
+Finish it_edaix
