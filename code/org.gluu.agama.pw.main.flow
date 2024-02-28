@@ -3,7 +3,7 @@ Flow org.gluu.agama.pw.main
      Timeout 500 seconds
      Configs conf
 Log "@info Start execution of the password validation flow."
-//  Create json variable for feedback
+//  Create json variable for UI feedback
 uiFeedback = {}
 // Get an instance of PasswordService Class
 validationService = Call org.gluu.agama.pw.PasswordService#getInstance conf
@@ -18,8 +18,8 @@ count = Repeat 6 times max
      Log "@info Validation done"
      When uiFeedback.succeed is true
           Log "@info Valid credentials provided"
-          it_wjucq = {success:true, data: { userId: credentials.username}}
-          Finish it_wjucq
+          it_bleek = {success:true, data: { userId: credentials.username}}
+          Finish it_bleek
      Log "@error Invalid credentials provided"
      When conf.ENABLE_LOCK is "true"
           Log "@info Start account lock process"
@@ -32,5 +32,5 @@ count = Repeat 6 times max
 // Validation still fail after the max logins attempt
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_zyglk = {success:false, error: "Password validation failed!"}
-Finish it_zyglk
+it_qbwll = {success:false, error: "Password validation failed!"}
+Finish it_qbwll
