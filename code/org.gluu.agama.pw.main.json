@@ -1,6 +1,81 @@
 {
 	"nodes": [
 		{
+			"width": 270,
+			"height": 55,
+			"id": "Agama-note-aed97be1-3b9a-45eb-b2ce-a1407cd929f7",
+			"position": {
+				"x": 846,
+				"y": 204
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-aed97be1-3b9a-45eb-b2ce-a1407cd929f7",
+				"type": "Agama-note",
+				"notes": "Show login form to the UI to collect his username and password for validation.",
+				"position": {
+					"x": 846,
+					"y": 204
+				}
+			},
+			"selected": true,
+			"positionAbsolute": {
+				"x": 846,
+				"y": 204
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 81,
+			"id": "Agama-note-33568e0d-0894-4f99-b404-e204102ce936",
+			"position": {
+				"x": 1242.0000000000002,
+				"y": -52
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-33568e0d-0894-4f99-b404-e204102ce936",
+				"type": "Agama-note",
+				"notes": "The maximum number of attempts has been reached.\nIf account lock feature is enable, the user account will be lock for few minutes.",
+				"position": {
+					"x": 1242.0000000000002,
+					"y": -52
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1242.0000000000002,
+				"y": -52
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 68,
+			"id": "Agama-note-84d98dbd-7f8e-4b09-9fe0-3ae284f603ed",
+			"position": {
+				"x": -10,
+				"y": -40
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-84d98dbd-7f8e-4b09-9fe0-3ae284f603ed",
+				"type": "Agama-note",
+				"notes": "The Password validation flow start here. The flow timeout can be tuned as well flow configurations.",
+				"position": {
+					"x": -10,
+					"y": -40
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": -10,
+				"y": -40
+			},
+			"dragging": false
+		},
+		{
 			"width": 170,
 			"height": 124,
 			"id": "Agama-assignment-Node-c9e69f4f-25d7-4a0f-a772-baaf866e04b6",
@@ -758,7 +833,7 @@
 					"id": "Agama-call-Node-a270a0a1-fe26-483e-9c63-d6d429df714f",
 					"parentId": "Agama-assignment-Node-8238ebff-772a-4150-9141-72a4b1177f1d",
 					"type": "Agama-call-Node",
-					"displayName": "Initialize Validation Service",
+					"displayName": "Service initialization",
 					"hasComment": true,
 					"comment": "Get an instance of PasswordService Class",
 					"javaClassName": "org.gluu.agama.pw.PasswordService",
@@ -808,9 +883,9 @@
 					"id": "Agama-assignment-Node-8238ebff-772a-4150-9141-72a4b1177f1d",
 					"parentId": "Agama-log-Node-d60b1625-cf8f-4d4e-bea4-53cb97c8ed34",
 					"type": "Agama-assignment-Node",
-					"displayName": "Declare variable",
+					"displayName": "Declare variables",
 					"hasComment": true,
-					"comment": " Create json variable for feedback",
+					"comment": " Create json variable for UI feedback",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -1008,7 +1083,7 @@
 				"x": 2903,
 				"y": 561
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"parentId": "Agama-log-Node-24e6a8f2-6a6d-4b57-917c-9497dafebcdf",
 			"whenCondition": "",
@@ -1487,8 +1562,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2090,
-		"y": -166,
-		"zoom": 1
+		"x": -27.270476277679563,
+		"y": 204.33463225587457,
+		"zoom": 0.5
 	}
 }
