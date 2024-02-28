@@ -18,8 +18,8 @@ count = Repeat 6 times max
      Log "@info Validation done"
      When uiFeedback.succeed is true
           Log "@info Valid credentials provided"
-          it_ifksg = {success:true, data: { userId: credentials.username}}
-          Finish it_ifksg
+          it_vgmsj = {success:true, data: { userId: credentials.username}}
+          Finish it_vgmsj
      Log "@error Invalid credentials provided"
      When conf.ENABLE_LOCK is "true"
           Log "@info Start account lock process"
@@ -28,8 +28,9 @@ count = Repeat 6 times max
           uiFeedback.lockMessage = lockResult
      Log "@info Fail login attempt"
      uiFeedback.errorMessage = "Invalid credentials. Please try again!"
+     uiFeedback.uid = credentials.username
 // Validation still fail after the max logins attempt
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_mtgby = {success:false, error: "Password validation failed!"}
-Finish it_mtgby
+it_xdvat = {success:false, error: "Password validation failed!"}
+Finish it_xdvat
