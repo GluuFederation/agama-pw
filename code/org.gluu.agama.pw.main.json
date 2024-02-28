@@ -1,6 +1,56 @@
 {
 	"nodes": [
 		{
+			"width": 242,
+			"height": 30,
+			"id": "Agama-note-52cb694f-ea6a-4a6d-97ce-21aad3989f19",
+			"position": {
+				"x": 1704,
+				"y": 478
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-52cb694f-ea6a-4a6d-97ce-21aad3989f19",
+				"type": "Agama-note",
+				"notes": "If user credentials is valid.",
+				"position": {
+					"x": 1704,
+					"y": 478
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1704,
+				"y": 478
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-59f03bb4-17eb-4c85-9db9-ddbe205ea831",
+			"position": {
+				"x": 2153.35,
+				"y": 472
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-59f03bb4-17eb-4c85-9db9-ddbe205ea831",
+				"type": "Agama-note",
+				"notes": "If the ACCOUNT_LOCK feature is enable.",
+				"position": {
+					"x": 2153.35,
+					"y": 472
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 2153.35,
+				"y": 472
+			},
+			"dragging": false
+		},
+		{
 			"width": 270,
 			"height": 55,
 			"id": "Agama-note-c2063b09-73ce-47c8-a8b0-fefa6b462ba5",
@@ -135,7 +185,7 @@
 			"height": 124,
 			"id": "Agama-assignment-Node-c9e69f4f-25d7-4a0f-a772-baaf866e04b6",
 			"position": {
-				"x": 2626,
+				"x": 2628,
 				"y": 286
 			},
 			"type": "assignment",
@@ -147,7 +197,7 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2626,
+					"x": 2628,
 					"y": 286
 				},
 				"agamaData": {
@@ -177,7 +227,7 @@
 				"skake": false
 			},
 			"positionAbsolute": {
-				"x": 2626,
+				"x": 2628,
 				"y": 286
 			},
 			"selected": false,
@@ -231,7 +281,7 @@
 			"height": 124,
 			"id": "Agama-call-Node-9fbe0582-6251-45bb-9514-9a58d6bf485e",
 			"position": {
-				"x": 2486,
+				"x": 2510,
 				"y": 561
 			},
 			"type": "call",
@@ -243,7 +293,7 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2486,
+					"x": 2510,
 					"y": 561
 				},
 				"agamaData": {
@@ -272,7 +322,7 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 2486,
+				"x": 2510,
 				"y": 561
 			}
 		},
@@ -281,7 +331,7 @@
 			"height": 124,
 			"id": "Agama-log-Node-eecdd688-377e-412b-b6ec-efae1672bd95",
 			"position": {
-				"x": 2285,
+				"x": 2311,
 				"y": 561
 			},
 			"type": "log",
@@ -293,7 +343,7 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2285,
+					"x": 2311,
 					"y": 561
 				},
 				"agamaData": {
@@ -312,9 +362,9 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
-				"x": 2285,
+				"x": 2311,
 				"y": 561
 			},
 			"dragging": false
@@ -324,8 +374,8 @@
 			"height": 140,
 			"id": "Agama-when-Node-fb35d7ac-1510-4e5d-a1b4-84039a42d36a",
 			"position": {
-				"x": 2174,
-				"y": 341
+				"x": 2186,
+				"y": 343
 			},
 			"parentId": "Agama-log-Node-dd07a185-af0c-433d-9eaa-cd4ac9992d06",
 			"type": "when",
@@ -337,8 +387,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2174,
-					"y": 341
+					"x": 2186,
+					"y": 343
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-fb35d7ac-1510-4e5d-a1b4-84039a42d36a",
@@ -364,8 +414,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 2174,
-				"y": 341
+				"x": 2186,
+				"y": 343
 			}
 		},
 		{
@@ -1055,7 +1105,7 @@
 			"height": 124,
 			"id": "Agama-log-Node-24e6a8f2-6a6d-4b57-917c-9497dafebcdf",
 			"position": {
-				"x": 2686,
+				"x": 2704,
 				"y": 561
 			},
 			"type": "log",
@@ -1067,14 +1117,14 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2686,
+					"x": 2704,
 					"y": 561
 				},
 				"agamaData": {
 					"id": "Agama-log-Node-24e6a8f2-6a6d-4b57-917c-9497dafebcdf",
 					"parentId": "Agama-call-Node-9fbe0582-6251-45bb-9514-9a58d6bf485e",
 					"type": "Agama-log-Node",
-					"displayName": "Log lock result",
+					"displayName": "Log account lock result",
 					"hasComment": true,
 					"comment": "",
 					"whenCondition": "WhenFalse",
@@ -1089,7 +1139,7 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 2686,
+				"x": 2704,
 				"y": 561
 			}
 		},
@@ -1620,8 +1670,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1669.0625,
-		"y": -83,
-		"zoom": 1
+		"x": -190.56171744741235,
+		"y": 105.5,
+		"zoom": 0.5
 	}
 }
