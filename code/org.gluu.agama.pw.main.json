@@ -3,6 +3,56 @@
 		{
 			"width": 270,
 			"height": 55,
+			"id": "Agama-note-c2063b09-73ce-47c8-a8b0-fefa6b462ba5",
+			"position": {
+				"x": 2446.0625,
+				"y": 493
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-c2063b09-73ce-47c8-a8b0-fefa6b462ba5",
+				"type": "Agama-note",
+				"notes": "Lock user account. The user account will be lock if the maximum login attempt is reach.",
+				"position": {
+					"x": 2446.0625,
+					"y": 493
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 2446.0625,
+				"y": 493
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 55,
+			"id": "Agama-note-16024c83-78d0-48e4-a242-8bb00f45bbde",
+			"position": {
+				"x": 1279,
+				"y": 226
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-16024c83-78d0-48e4-a242-8bb00f45bbde",
+				"type": "Agama-note",
+				"notes": "IDP validate the user credentials and send back the result.",
+				"position": {
+					"x": 1279,
+					"y": 226
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1279,
+				"y": 226
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 55,
 			"id": "Agama-note-aed97be1-3b9a-45eb-b2ce-a1407cd929f7",
 			"position": {
 				"x": 846,
@@ -16,9 +66,10 @@
 				"position": {
 					"x": 846,
 					"y": 204
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 846,
 				"y": 204
@@ -31,7 +82,7 @@
 			"id": "Agama-note-33568e0d-0894-4f99-b404-e204102ce936",
 			"position": {
 				"x": 1242.0000000000002,
-				"y": -52
+				"y": -38
 			},
 			"type": "notes",
 			"data": {
@@ -40,13 +91,14 @@
 				"notes": "The maximum number of attempts has been reached.\nIf account lock feature is enable, the user account will be lock for few minutes.",
 				"position": {
 					"x": 1242.0000000000002,
-					"y": -52
-				}
+					"y": -38
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
 				"x": 1242.0000000000002,
-				"y": -52
+				"y": -38
 			},
 			"dragging": false
 		},
@@ -66,7 +118,8 @@
 				"position": {
 					"x": -10,
 					"y": -40
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -350,7 +403,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2037,
@@ -424,9 +477,9 @@
 					"id": "Agama-log-Node-d6b0c4f6-39f5-4bf1-9ca5-1d24c927f5f4",
 					"parentId": "Agama-when-Node-9f6b107a-8409-4137-8b1f-4841925df7fb",
 					"type": "Agama-log-Node",
-					"displayName": "Cool",
+					"displayName": "Log successfully validation",
 					"hasComment": true,
-					"comment": "",
+					"comment": "add entry in log file for successfull login attempt",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -477,7 +530,8 @@
 						}
 					],
 					"hasComment": true,
-					"inRepeatBlock": false
+					"inRepeatBlock": false,
+					"comment": "If user credentials is valid, the flow end successfully."
 				},
 				"handles": [
 					"Agama-when-Node-9f6b107a-8409-4137-8b1f-4841925df7fb.FAILURE",
@@ -516,7 +570,7 @@
 					"id": "Agama-log-Node-eb8d49d7-8822-4deb-bc79-c69e087742ce",
 					"parentId": "Agama-call-Node-f2e99385-be5f-43cf-833e-61b6f7e1d9db",
 					"type": "Agama-log-Node",
-					"displayName": "Log validation step",
+					"displayName": "Log validation done",
 					"hasComment": true,
 					"comment": "",
 					"whenCondition": "WhenFalse",
@@ -561,7 +615,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "Validate credentials",
 					"hasComment": true,
-					"comment": "Validate provided user credentials",
+					"comment": "Validate provided user credentials.",
 					"javaClassName": "",
 					"javaMethodName": "validate",
 					"javaVariableName": "validationService",
@@ -656,7 +710,7 @@
 					"type": "Agama-log-Node",
 					"displayName": "Log max attempt reached",
 					"hasComment": true,
-					"comment": "Validation still fail after the max logins attempt",
+					"comment": "The login flow will end here with failure.",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -746,7 +800,7 @@
 					"type": "Agama-rrf-Node",
 					"displayName": "Retrieve user credentials",
 					"hasComment": true,
-					"comment": "Retrieve user credentials from UI",
+					"comment": "Retrieve user credentials from UI.",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": true,
 					"inIterateBlock": false,
@@ -754,7 +808,9 @@
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "login-basic.ftlh",
 					"asssignedVariableName": "credentials",
-					"arguments": "uiFeedback"
+					"arguments": [
+						"uiFeedback"
+					]
 				},
 				"skake": false
 			},
@@ -835,7 +891,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "Service initialization",
 					"hasComment": true,
-					"comment": "Get an instance of PasswordService Class",
+					"comment": "Get an instance of PasswordService Class.",
 					"javaClassName": "org.gluu.agama.pw.PasswordService",
 					"javaMethodName": "getInstance",
 					"javaVariableName": "",
@@ -885,7 +941,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "Declare variables",
 					"hasComment": true,
-					"comment": " Create json variable for UI feedback",
+					"comment": " Create json variable for UI feedback.",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -1562,8 +1618,8 @@
 		}
 	],
 	"viewport": {
-		"x": -27.270476277679563,
-		"y": 204.33463225587457,
-		"zoom": 0.5
+		"x": -1437.0625,
+		"y": -68,
+		"zoom": 1
 	}
 }
