@@ -16,7 +16,8 @@
 				"position": {
 					"x": 2446.0625,
 					"y": 493
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -41,7 +42,8 @@
 				"position": {
 					"x": 1279,
 					"y": 226
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -152,7 +154,7 @@
 					"id": "Agama-assignment-Node-c9e69f4f-25d7-4a0f-a772-baaf866e04b6",
 					"parentId": "Agama-log-Node-4cf3eaa3-0d0c-479d-8d52-9496a507065f",
 					"type": "Agama-assignment-Node",
-					"displayName": "Set feedback",
+					"displayName": "Provide UI feedback",
 					"hasComment": true,
 					"comment": "",
 					"whenCondition": "WhenFalse",
@@ -205,13 +207,13 @@
 					"id": "Agama-log-Node-4cf3eaa3-0d0c-479d-8d52-9496a507065f",
 					"parentId": "Agama-when-Node-fb35d7ac-1510-4e5d-a1b4-84039a42d36a",
 					"type": "Agama-log-Node",
-					"displayName": "Fail login attempt",
+					"displayName": "Failed login attempt",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Maximum attempts reached. Password validation failed!",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "\"Fail login attempt\"",
+					"logMessage": "\"Maximum attempts reached. Password validation failed.\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
@@ -248,9 +250,9 @@
 					"id": "Agama-call-Node-9fbe0582-6251-45bb-9514-9a58d6bf485e",
 					"parentId": "Agama-log-Node-eecdd688-377e-412b-b6ec-efae1672bd95",
 					"type": "Agama-call-Node",
-					"displayName": "Lock account",
+					"displayName": "Lock user account",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Lock user account if needed or unlock if the expiration time  is over.",
 					"javaClassName": "",
 					"javaMethodName": "lockAccount",
 					"javaVariableName": "validationService",
@@ -298,9 +300,9 @@
 					"id": "Agama-log-Node-eecdd688-377e-412b-b6ec-efae1672bd95",
 					"parentId": "Agama-when-Node-fb35d7ac-1510-4e5d-a1b4-84039a42d36a",
 					"type": "Agama-log-Node",
-					"displayName": "starting lock",
+					"displayName": "Log account lock",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Account lock feature is active.",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -310,7 +312,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2285,
 				"y": 561
@@ -394,16 +396,16 @@
 					"hasSuccess": false,
 					"hasFailure": false,
 					"hasComment": true,
-					"comment": "",
+					"comment": "Password validation completed successfuly!",
 					"flowfilename": "",
 					"returnVariable": "{ userId: credentials.username}",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
-					"displayName": "Closing the flow"
+					"displayName": "Flow completed"
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2037,
@@ -434,9 +436,9 @@
 					"id": "Agama-log-Node-dd07a185-af0c-433d-9eaa-cd4ac9992d06",
 					"parentId": "Agama-when-Node-9f6b107a-8409-4137-8b1f-4841925df7fb",
 					"type": "Agama-log-Node",
-					"displayName": "Log invalid credentials",
+					"displayName": "Log failed login attempt",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Invalid credentials provided.",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -479,7 +481,7 @@
 					"type": "Agama-log-Node",
 					"displayName": "Log successfully validation",
 					"hasComment": true,
-					"comment": "add entry in log file for successfull login attempt",
+					"comment": "add entry in log file for successfull login attempt.",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -1115,7 +1117,7 @@
 					"id": "Agama-assignment-Node-2e9154a0-3848-4aba-923f-813c2de10714",
 					"parentId": "Agama-log-Node-24e6a8f2-6a6d-4b57-917c-9497dafebcdf",
 					"type": "Agama-assignment-Node",
-					"displayName": "Feedback",
+					"displayName": "Provide UI feedback",
 					"hasComment": true,
 					"comment": "",
 					"whenCondition": "WhenFalse",
@@ -1618,8 +1620,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1437.0625,
-		"y": -68,
+		"x": -1669.0625,
+		"y": -83,
 		"zoom": 1
 	}
 }
