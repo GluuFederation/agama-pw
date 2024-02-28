@@ -35,6 +35,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "Invalid credentials. Please try again!",
 							"assignedVariableName": "uiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "credentials.username",
+							"assignedVariableName": "uiFeedback.uid"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
@@ -45,7 +50,7 @@
 				"x": 2626,
 				"y": 286
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1003,7 +1008,7 @@
 				"x": 2903,
 				"y": 561
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"parentId": "Agama-log-Node-24e6a8f2-6a6d-4b57-917c-9497dafebcdf",
 			"whenCondition": "",
@@ -1482,8 +1487,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1954,
-		"y": -193,
+		"x": -2279,
+		"y": -74,
 		"zoom": 1
 	}
 }
