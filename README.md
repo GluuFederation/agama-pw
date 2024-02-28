@@ -32,6 +32,21 @@ The sequence diagram below shows the good flow.
 ![agama-pw sequence diagram image](Agama-PW-sequence.png)
 [Source](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIEEHMCGBbRBaACgdWgCUQA4ECe0AYuAPYDuAULYgMbCUBO0BkrAzpQHa0CiVqEYghfYNABGrGty61IksKWqRp3MJEHDR4xJOgBJACIZa0ygFc+AE2GlE14AAtloxMB2CuvPmgAfGYYAFzQxJDcHFCICgB0iSbQ1IZSLNBU8CACIUGy8lzh1iB2APQE1ORsyL48-Ply1Aqs4YyskHbclk0tQSHhGADyAMoAKtWstXmBzm4eIIxekOEAbojgpcsAFCV2ADQc1ACUDC7uKkve-ebhAN4ARB3c1uDAD6EPL4yMUdwP+wAOnwHoxKHZIB9oAAmAAMsKBIOQf0Q8Eh4QeQwA0g8AL60GYFZpFaBDTh8MzQMEQnqFVhBdSabRtDbgaRMADWQA)
 
+# Flow Configuration
+Below is a typical agama-pw flow
+  ```
+        {
+            "org.gluu.agama.pw.main": {
+              "MAX_LOGIN_ATTEMPT": "6",
+              "ENABLE_LOCK": "true",
+              "LOCK_EXP_TIME": "180"
+            }
+        }
+  ```
+- MAX_LOGIN_ATTEMPT: Is the maximum failed login attempt before the user account is locked
+- ENABLE_LOCK: true/false, this is use to enable the Account Lock feature
+- LOCK_EXP_TIME: The time in seconds befor a locked account is unlock.
+  
 # Core Developers
 
 <table>
