@@ -16,7 +16,8 @@
 				"position": {
 					"x": 1704,
 					"y": 478
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -30,8 +31,8 @@
 			"height": 42,
 			"id": "Agama-note-59f03bb4-17eb-4c85-9db9-ddbe205ea831",
 			"position": {
-				"x": 2153.35,
-				"y": 472
+				"x": 2125.35,
+				"y": 483
 			},
 			"type": "notes",
 			"data": {
@@ -39,14 +40,15 @@
 				"type": "Agama-note",
 				"notes": "If the ACCOUNT_LOCK feature is enable.",
 				"position": {
-					"x": 2153.35,
-					"y": 472
-				}
+					"x": 2125.35,
+					"y": 483
+				},
+				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 2153.35,
-				"y": 472
+				"x": 2125.35,
+				"y": 483
 			},
 			"dragging": false
 		},
@@ -1670,8 +1672,8 @@
 		}
 	],
 	"viewport": {
-		"x": -190.56171744741235,
-		"y": 105.5,
-		"zoom": 0.5
+		"x": -1573,
+		"y": -241,
+		"zoom": 1
 	}
 }
