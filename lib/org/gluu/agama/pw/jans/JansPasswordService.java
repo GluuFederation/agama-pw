@@ -54,8 +54,7 @@ public class JansPasswordService extends PasswordService {
     }
 
     @Override
-    public String[] lockAccount(String username) {
-        String[] result = new String[2];
+    public String lockAccount(String username) {
         User currentUser = userService.getUser(username);
         int currentFailCount = 1;
         String invalidLoginCount = getCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE);
@@ -71,18 +70,14 @@ public class JansPasswordService extends PasswordService {
                 setCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE, String.valueOf(currentFailCount));
                 logger.info("{}  more attempt(s) before account is LOCKED!", remainingCount);
             }
-            result[0] = "false";
-            result[1] = "You have " + remainingCount + " more attempt(s) before your account is locked.";
-            return result;
+            return "You have " + remainingCount + " more attempt(s) before your account is locked.";
         }
         if (currentFailCount >= DEFAULT_MAX_LOGIN_ATTEMPT && currentStatus == "active") {
             logger.info("Locking {} account for {} seconds.", username, DEFAULT_LOCK_EXP_TIME);
             String object_to_store = "{'locked': 'true'}";
             setCustomAttribute(currentUser, JANS_STATUS, INACTIVE);
             cacheService.put(DEFAULT_LOCK_EXP_TIME, CACHE_PREFIX + username, object_to_store);
-            result[0] = "true";
-            result[1] = "Your account have been locked.";
-            return result;
+            return "Your account have been locked.";
         }
         if (currentFailCount >= DEFAULT_MAX_LOGIN_ATTEMPT && currentStatus == "inactive") {
             logger.info("User {} account is already locked. Checking if we can unlock", username);
@@ -91,14 +86,11 @@ public class JansPasswordService extends PasswordService {
                 logger.info("Unlocking user {} account", username);
                 setCustomAttribute(currentUser, JANS_STATUS, ACTIVE);
                 setCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE, "0");
-                result[0] = "false";
-                result[1] = "Your account  is now unlock. Try login ";
-                return result;
+                return "Your account  is now unlock. Try login ";
             }
 
         }
-        result[0] = "false";
-        return result;
+        return null;
     }
 
     private String getCustomAttribute(User user, String attributeName) {
