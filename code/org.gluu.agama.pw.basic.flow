@@ -19,12 +19,12 @@ currentIteration = Repeat 3 times max
           // add entry in log file for successfull login attempt
           Log "@info Valid credentials provided."
           // Password validation completed successfuly!
-          it_zvuri = {success:true, data: { userId: credentials.username}}
-          Finish it_zvuri
+          it_mjusf = {success:true, data: { userId: credentials.username}}
+          Finish it_mjusf
      // Invalid credentials provided
      Log "@info Invalid credentials provided."
      // Provide feedback about the error message to user
      validationResult.errorMessage = "The provided credentials are not valid. Please try again!"
 // Maximum attempts reached. Password validation failed!
-it_yophk = {success:false, error: "Password validation failed!"}
-Finish it_yophk
+it_jzbaz = {success:false, error: "Password validation failed!"}
+Finish it_jzbaz
