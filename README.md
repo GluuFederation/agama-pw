@@ -22,10 +22,6 @@ refer to the [quick start guide](https://gluu.org/quick-start-guide/).
 In this project, we have created a login flow.
 
 
-Password authentication is still useful ! ! !
-
-This is also a great project to fork if you want to write
-a “Hello World” Agama project.
 
 ## Implementations
 
@@ -56,6 +52,26 @@ In the `Web` folder, you can customize the UI of the page. Additionally,
 you can generate the code for this login flow by using the `Generate Code` button.
 
 ![image](./pw-generated-code.png)
+
+Also can inster the notes to the flow
+
+#### Exporting and Importing Login Flows
+
+1. Export the Flow:
+
+* Select the option to export the flow.
+* A ZIP file containing your login flow configuration will be generated.
+* Save this ZIP file to your local system for future use or sharing.
+
+2. Importing a Login Flow:
+
+* Navigate to the `web` section where you manage flows.
+* Click on the `Import` button.
+* Choose the ZIP file that you import.
+* The system will process the file and import the flow configuration.
+* Ensure that the imported flow is correctly integrated and functioning as intended.
+
+
 
 ### Uploading the Agama-pw Flow
 
@@ -94,11 +110,11 @@ The add client process as shown below
 
 ![git](./addclient.gif)
 
-2. Once configured, the Authentication Flow Inputs screen will be displayed. 
+2. Once configured, the Authentication Flow Inputs screen will be displayed.
 On this screen, add an `Acr Value` such as `agama_Qualified_Name`.
 The authentication process is shown below.
 
-![gif](../web/authentication-flow-Inputs.gif)
+![gif](./openlogin.gif)
 
 The login screen should appear as shown in the image below:
 
