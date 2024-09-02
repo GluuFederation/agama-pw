@@ -53,7 +53,6 @@ you can generate the code for this login flow by using the `Generate Code` butto
 
 ![image](./pw-generated-code.png)
 
-Also can inster the notes to the flow
 
 #### Exporting and Importing Login Flows
 
@@ -100,10 +99,10 @@ Below is a typical agama-pw flow
   
 ### Running the Agama Project
 
-To run the flow, you need to [install the Trap extension](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp). 
+To run the flow, you need to [install the Tarp extension](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp). 
 This extension is available for Chrome and Firefox.
 
-After installing the Trap extension, follow these steps:
+After installing the Tarp extension, follow these steps:
 
 1. Add the client by entering the hostname, client expiry date, and selecting the scopes.
 The add client process as shown below
@@ -127,7 +126,7 @@ according to the designed process.
 2. Check User Details: After successful login, verify if the user 
 details are retrieved correctly.
 
-![gif](../web/login-success.gif)
+
 
 # Core Developers
 
