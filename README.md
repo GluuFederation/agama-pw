@@ -67,20 +67,16 @@ project comes with a basic sample configuration file for reference.
 Below is a typical configuration of the Agama-PW project. As show, it contains
 configuration parameters for the [flows contained in it](#flows-in-the-project):
  ```
- {
- "org.gluu.agama.pw.main": {
- "MAX_LOGIN_ATTEMPT": "6",
- "ENABLE_LOCK": "true",
- "LOCK_EXP_TIME": "180"
- }
- }
+{
+  "org.gluu.agama.pw.main": {
+    "MAX_LOGIN_ATTEMPT": "6",
+    "ENABLE_LOCK": "true",
+    "LOCK_EXP_TIME": "180"
+  }
+}
  ```
 
-#### Parameter Details
-
-- MAX_LOGIN_ATTEMPT: Is the maximum failed login attempt before the user account is locked
-- ENABLE_LOCK: true/false, enables or disables the Account Lock feature
-- LOCK_EXP_TIME: The time in seconds before a locked account is unlocked.
+Check the flow detail section for details about configuration parameters.
 
 ### Test The Flow
 
@@ -131,6 +127,12 @@ Authenticate->>IDP: {"result":"success","code": 200,"message": "OK"}
 IDP->>Browser: OpenID Code
 Browser->>website: callback
  ```
+
+#### Parameter Details
+
+- MAX_LOGIN_ATTEMPT: Is the maximum failed login attempt before the user account is locked
+- ENABLE_LOCK: true/false, enables or disables the Account Lock feature
+- LOCK_EXP_TIME: The time in seconds before a locked account is unlocked.
 
 <!-- This are stats url reference for this repository -->
 [contributors-shield]: https://img.shields.io/github/contributors/GluuFederation/agama-pw.svg?style=for-the-badge
