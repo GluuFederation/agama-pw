@@ -40,10 +40,10 @@ Deployment of an Agama project involves three steps
 
 ### Download the Project
 
-!!! Note
- Skip this step if you use the Janssen Server TUI tool to 
- configure this project. The TUI tool enables the download and adding of this 
- project directly from the tool, as part of the `community projects` listing. 
+> [!TIP]
+> Skip this step if you use the Janssen Server TUI tool to 
+> configure this project. The TUI tool enables the download and adding of this 
+> project directly from the tool, as part of the `community projects` listing. 
 
 The project is bundled as 
 [.gama package](https://docs.jans.io/head/agama/gama-format/). 
