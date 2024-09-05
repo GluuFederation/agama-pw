@@ -59,7 +59,7 @@ Below is a typical agama-pw flow configuration:
 
 ### Test The Flow
 
-Use an Relying party implementation (like [jans-tarp](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp)) to send authentication request that triggers the flow.
+Use any Relying party implementation (like [jans-tarp](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp)) to send authentication request that triggers the flow.
 
 From the incoming authentication request, the Janssen Server reads the `ACR` parameter value to identify which authentication method should be used. In order to invoke the Agama-PW project flow, specify the ACR value as that your request should be authenticated using Agama-PW project, use the ACR as `agama_<qualified-name-of-the-top-level-flow>`.  
 
@@ -67,7 +67,7 @@ The qualified name of the top level flow in Agama-PW project is `org.gluu.agama.
 
 ## Customize and Make It Your Own
 
-Fork this repo and you can start customizing Agama-pw project in many ways. Starting from changing the main authentication flow to changing the styling of the web-pages to suite your organization's branding guidelines. Agama flow can also be used in conjunction with other Agama project to create complex authentication journeys. 
+Fork this repo to start customizing Agama-pw project in many ways. Starting from changing the main authentication flow to changing the styling of the web-pages to suite your organization's branding guidelines. Agama flow can also be used in conjunction with other Agama project to create complex authentication journeys. 
 
 To make it easier to visualize and customize the Agama Project, use the [Agama Lab](https://cloud.gluu.org/agama-lab/login)
 
@@ -78,6 +78,26 @@ The sequence diagram below shows the good flow.
 
 ![agama-pw sequence diagram image](Agama-PW-sequence.png)
 [Source](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIEEHMCGBbRBaACgdWgCUQA4ECe0AYuAPYDuAULYgMbCUBO0BkrAzpQHa0CiVqEYghfYNABGrGty61IksKWqRp3MJEHDR4xJOgBJACIZa0ygFc+AE2GlE14AAtloxMB2CuvPmgAfGYYAFzQxJDcHFCICgB0iSbQ1IZSLNBU8CACIUGy8lzh1iB2APQE1ORsyL48-Ply1Aqs4YyskHbclk0tQSHhGADyAMoAKtWstXmBzm4eIIxekOEAbojgpcsAFCV2ADQc1ACUDC7uKkve-ebhAN4ARB3c1uDAD6EPL4yMUdwP+wAOnwHoxKHZIB9oAAmAAMsKBIOQf0Q8Eh4QeQwA0g8AL60GYFZpFaBDTh8MzQMEQnqFVhBdSabRtDbgaRMADWQA)
+
+```mermaid
+zenuml
+    title Agama-PW Happy Flow
+    @Actor Person #FFEBE6
+    @participant browser #0747A6
+    @entity website #E3FCEF
+    @participant IDP #0747A6
+    @boundary authenticate
+    @Starter(Person)
+
+    Person->IDP: yes please... I want to login
+    IDP->browser: uid/pw Form
+    Person->browser: Creds
+    browser->IDP: POST 
+    IDP->authenticate: validate(uid, pw)
+    authenticate->IDP: {"result":"success", "code": 200,"message": "OK"}
+    IDP->browser: OpenID 
+    browser->website: callback
+ ```
 
 ### Login Flow
 
@@ -114,20 +134,6 @@ you can generate the code for this login flow by using the `Generate Code` butto
 * Ensure that the imported flow is correctly integrated and functioning as intended.
 
 
-
-### Uploading the Agama-pw Flow
-
-To use the Agama-pw flow:
-
-1. Download the login flow and upload it as an Agama project in Tui.
-2. After uploading the flow, import the flow configuration.
-
-You can also obtain a sample `Flow Configuration` by exporting it from Tui.
-
-
-#### Flow Configuration
-
-  
 ### Running the Agama Project
 
 To run the flow, you need to [install the Tarp extension](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp). 
