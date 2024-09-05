@@ -14,7 +14,9 @@
 # About
 
 This repo is home to Gluu Agama-PW project. This Agama project provides 
-standard password authentication for a person.
+standard username-password authentication for a person.
+
+![image](./pw-login-page.png)
 
 ## Where To Deploy
 
@@ -65,131 +67,45 @@ From the incoming authentication request, the Janssen Server reads the `ACR` par
 
 The qualified name of the top level flow in Agama-PW project is `org.gluu.agama.pw.main`. So, use the ACR value as `agama_org.gluu.agama.pw.main`.
 
+![gif](./openlogin.gif)
+
 ## Customize and Make It Your Own
 
 Fork this repo to start customizing Agama-pw project in many ways. Starting from changing the main authentication flow to changing the styling of the web-pages to suite your organization's branding guidelines. Agama flow can also be used in conjunction with other Agama project to create complex authentication journeys. 
 
 To make it easier to visualize and customize the Agama Project, use the [Agama Lab](https://cloud.gluu.org/agama-lab/login)
 
-## Flow: One-step password authn
+## Flows In The Project
 
-This is the classic combined username / password form authentication workflow.
-The sequence diagram below shows the good flow.
+This project contains one flow. 
 
-![agama-pw sequence diagram image](Agama-PW-sequence.png)
-[Source](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIEEHMCGBbRBaACgdWgCUQA4ECe0AYuAPYDuAULYgMbCUBO0BkrAzpQHa0CiVqEYghfYNABGrGty61IksKWqRp3MJEHDR4xJOgBJACIZa0ygFc+AE2GlE14AAtloxMB2CuvPmgAfGYYAFzQxJDcHFCICgB0iSbQ1IZSLNBU8CACIUGy8lzh1iB2APQE1ORsyL48-Ply1Aqs4YyskHbclk0tQSHhGADyAMoAKtWstXmBzm4eIIxekOEAbojgpcsAFCV2ADQc1ACUDC7uKkve-ebhAN4ARB3c1uDAD6EPL4yMUdwP+wAOnwHoxKHZIB9oAAmAAMsKBIOQf0Q8Eh4QeQwA0g8AL60GYFZpFaBDTh8MzQMEQnqFVhBdSabRtDbgaRMADWQA)
+- [org.gluu.agama.pw.main](#orggluuagamapwmain)
+
+### org.gluu.agama.pw.main
+
+[org.gluu.agama.pw.main](./code/org.gluu.agama.pw.main.flow) flow represents 
+single step username and password authentication. This flow allows configurable
+number of incorrect login attempts along with ability to call account locking 
+endpoint if the attempts reach the maximum allowed number.
 
 ```mermaid
-zenuml
-    title Agama-PW Happy Flow
-    @Actor Person #FFEBE6
-    @participant browser #0747A6
-    @entity website #E3FCEF
-    @participant IDP #0747A6
-    @boundary authenticate
-    @Starter(Person)
-
-    Person->IDP: yes please... I want to login
-    IDP->browser: uid/pw Form
-    Person->browser: Creds
-    browser->IDP: POST 
-    IDP->authenticate: validate(uid, pw)
-    authenticate->IDP: {"result":"success", "code": 200,"message": "OK"}
-    IDP->browser: OpenID 
-    browser->website: callback
+sequenceDiagram
+title Agama-PW Happy Flow
+actor Person
+participant Browser
+participant website
+participant IDP
+participant Authenticate
+ 
+Person->>IDP: yes please... I want to login
+IDP->>Browser: uid/pw Form
+Person->>Browser: Creds
+Browser->>IDP: POST Form
+IDP->>Authenticate: validate(uid, pw)
+Authenticate->>IDP: {"result":"success","code": 200,"message": "OK"}
+IDP->>Browser: OpenID Code
+Browser->>website: callback
  ```
-
-### Login Flow
-
-This flow was created using a pre-defined template located in the code folder. 
-you can view code for the login flow. The image below illustrates 
-the login flow:
-
-![image](./agama-pw.png)
-
-The flow includes the UI for the login page, informational messages, 
-service calls, and a validation loop.
-
-
-In the `Web` folder, you can customize the UI of the page. Additionally, 
-you can generate the code for this login flow by using the `Generate Code` button.
-
-![image](./pw-generated-code.png)
-
-
-#### Exporting and Importing Login Flows
-
-1. Export the Flow:
-
-* Select the option to export the flow.
-* A ZIP file containing your login flow configuration will be generated.
-* Save this ZIP file to your local system for future use or sharing.
-
-2. Importing a Login Flow:
-
-* Navigate to the `web` section where you manage flows.
-* Click on the `Import` button.
-* Choose the ZIP file that you import.
-* The system will process the file and import the flow configuration.
-* Ensure that the imported flow is correctly integrated and functioning as intended.
-
-
-### Running the Agama Project
-
-To run the flow, you need to [install the Tarp extension](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp). 
-This extension is available for Chrome and Firefox.
-
-After installing the Tarp extension, follow these steps:
-
-1. Add the client by entering the hostname, client expiry date, and selecting the scopes.
-The add client process as shown below
-
-![git](./addclient.gif)
-
-2. Once configured, the Authentication Flow Inputs screen will be displayed.
-On this screen, add an `Acr Value` such as `agama_Qualified_Name`.
-The authentication process is shown below.
-
-![gif](./openlogin.gif)
-
-The login screen should appear as shown in the image below:
-
-![image](./pw-login-page.png)
-
-### Verification
-
-1. Verify the Login Flow: Ensure that the login flow operates as expected 
-according to the designed process.
-2. Check User Details: After successful login, verify if the user 
-details are retrieved correctly.
-
-
-
-# Core Developers
-
-<table>
- <tr>
-  <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-    <a href=https://github.com/syntrydy>
-        <img src="https://avatars.githubusercontent.com/u/7513418?v=4" width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Thomas Gasmyr>
-        <br />
-        <sub style="font-size:14px"><b>Mougang Gasmyr</b></sub>
-    </a>
-  </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/mmrraju>
-            <img src=https://avatars.githubusercontent.com/u/43112579?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Md Mostafejur Rahman/>
-            <br />
-            <sub style="font-size:14px"><b>Md Mostafejur Rahman</b></sub>
-        </a>
-  </td>
- </tr>
-</table>
-
-# License
-
-This project is licensed under the [Apache 2.0](https://github.com/GluuFederation/agama-pw/blob/main/LICENSE)
-
 
 <!-- This are stats url reference for this repository -->
 [contributors-shield]: https://img.shields.io/github/contributors/GluuFederation/agama-pw.svg?style=for-the-badge
