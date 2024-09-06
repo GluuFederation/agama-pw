@@ -92,9 +92,18 @@ i.e  `agama_org.gluu.agama.pw.main`.
 
 ## Customize and Make It Your Own
 
-Fork this repo to start customizing the Agama-PW project. Add custom web assets to change the styling of the web pages to suit your organization's branding guidelines. Or customize the flow code to change the most basic behavior. Agama flow can also be used in conjunction with other Agama projects to create complex authentication journeys. 
+Fork this repo to start customizing the Agama-PW project. It is possible to 
+customize the user interface provided by the flow to suit your organization's 
+branding 
+guidelines. Or customize the overall flow behavior. Follow the best 
+practices and steps listed 
+[here](https://docs.jans.io/head/admin/developer/agama/agama-best-practices/#project-reuse-and-customizations).
+to achieve these customizations in the best possible way.
+Agama flow can also call or trigger flows in the same or Agama projects to 
+create complex authentication journeys. 
 
-To make it easier to visualize and customize the Agama Project, use the [Agama Lab](https://cloud.gluu.org/agama-lab/login).
+To make it easier to visualize and customize the Agama Project, use the 
+[Agama Lab](https://cloud.gluu.org/agama-lab/login).
 
 ## Flows In The Project
 
