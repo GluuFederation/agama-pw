@@ -97,12 +97,13 @@ customize the user interface provided by the flow to suit your organization's
 branding 
 guidelines. Or customize the overall flow behavior. Follow the best 
 practices and steps listed 
-[here](https://docs.jans.io/head/admin/developer/agama/agama-best-practices/#project-reuse-and-customizations).
+[here](https://docs.jans.io/head/admin/developer/agama/agama-best-practices/#project-reuse-and-customizations) 
 to achieve these customizations in the best possible way.
-Agama flow can also call or trigger flows in the same or Agama projects to 
-create complex authentication journeys. 
+This  project can be re-used in other Agama projects to create more complex
+ authentication journeys: trigger flow 
+ [org.gluu.agama.pw.main](#orggluuagamapwmain) where you see fit.
 
-To make it easier to visualize and customize the Agama Project, use the 
+To make it easier to visualize and customize the Agama Project, use 
 [Agama Lab](https://cloud.gluu.org/agama-lab/login).
 
 ## Flows In The Project
