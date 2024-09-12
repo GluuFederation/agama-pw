@@ -100,8 +100,8 @@ practices and steps listed
 [here](https://docs.jans.io/head/admin/developer/agama/agama-best-practices/#project-reuse-and-customizations) 
 to achieve these customizations in the best possible way.
 This  project can be re-used in other Agama projects to create more complex
- authentication journeys: trigger flow 
- [org.gluu.agama.pw.main](#orggluuagamapwmain) where you see fit.
+ authentication journeys. To re-use, trigger the 
+ [org.gluu.agama.pw.main](#orggluuagamapwmain) flow from other Agama projects.
 
 To make it easier to visualize and customize the Agama Project, use 
 [Agama Lab](https://cloud.gluu.org/agama-lab/login).
