@@ -1,4 +1,4 @@
-<p align="left">
+<p align="center">
   <img width="600" height="400" src="https://github.com/GluuFederation/agama-pw/assets/43112579/639a8ca4-7549-4167-a5eb-5fe19fad3ff5">
 </p>
 
@@ -143,6 +143,20 @@ Browser->>website: callback
 - MAX_LOGIN_ATTEMPT: Is the maximum failed login attempt before the user account is locked
 - ENABLE_LOCK: true/false, enables or disables the Account Lock feature
 - LOCK_EXP_TIME: The time in seconds before a locked account is unlocked.
+
+
+
+# Demo
+
+Check out this video to see the **agama-pw** authentication flow in action.
+Also check the 
+[Agama Project Of The Week](https://gluu.org/agama-project-of-the-week/) video
+series for a quick demo on this flow.
+
+*Note:*
+While video shows how the flow works overall, it may be dated. Do check the 
+[Test The Flow](#test-the-flow) section to understand the current
+method of passing the ACR parameter when invoking the flow.
 
 <!-- This are stats url reference for this repository -->
 [contributors-shield]: https://img.shields.io/github/contributors/GluuFederation/agama-pw.svg?style=for-the-badge
