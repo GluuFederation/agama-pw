@@ -1,4 +1,4 @@
-<p align="left">
+<p align="center">
   <img width="600" height="400" src="https://github.com/GluuFederation/agama-pw/assets/43112579/639a8ca4-7549-4167-a5eb-5fe19fad3ff5">
 </p>
 
@@ -8,55 +8,155 @@
 [![Issues][issues-shield]](issues-url)
 [![Apache License][license-shield]](license-url)
 
-# Gluu Agama-PW
 
-Welcome to the [https://github.com/GluuFederation/agama-pw](Agama-PW) project.
-This project is governed by [Gluu](https://gluu.org) and published under an
-Apache 2.0 license. It provides various flows to password authenticate a person.
 
-Password authentication is still useful ! ! !
 
-This is also a great project to fork if you want to write
-a “Hello World” Agama project.
+# About Agama-PW Project
 
-## Implementations
+This repo is home to the Gluu Agama-PW project. This Agama project provides 
+standard username-password authentication for a person.
 
-* Jans Auth Server
-* Gluu Flex
+![image](./pw-login-page.png)
 
-## Flow: One-step password authn
+## Where To Deploy
 
-This is the classic combined username / password form authentication workflow.
-The sequence diagram below shows the good flow.
+The project can be deployed to any IAM server that runs an implementation of 
+the [Agama Framework](https://docs.jans.io/head/agama/introduction/) like 
+[Janssen Server](https://jans.io) and [Gluu Flex](https://gluu.org/flex/).
 
-![agama-pw sequence diagram image](Agama-PW-sequence.png)
-[Source](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIEEHMCGBbRBaACgdWgCUQA4ECe0AYuAPYDuAULYgMbCUBO0BkrAzpQHa0CiVqEYghfYNABGrGty61IksKWqRp3MJEHDR4xJOgBJACIZa0ygFc+AE2GlE14AAtloxMB2CuvPmgAfGYYAFzQxJDcHFCICgB0iSbQ1IZSLNBU8CACIUGy8lzh1iB2APQE1ORsyL48-Ply1Aqs4YyskHbclk0tQSHhGADyAMoAKtWstXmBzm4eIIxekOEAbojgpcsAFCV2ADQc1ACUDC7uKkve-ebhAN4ARB3c1uDAD6EPL4yMUdwP+wAOnwHoxKHZIB9oAAmAAMsKBIOQf0Q8Eh4QeQwA0g8AL60GYFZpFaBDTh8MzQMEQnqFVhBdSabRtDbgaRMADWQA)
+## How To Deploy
 
-# Core Developers
+Different IAM servers may provide different methods and 
+user interfaces from where an Agama project can be deployed on that server. 
+The steps below show how the Agama-PW project can be deployed on the 
+[Janssen Server](https://jans.io). 
 
-<table>
- <tr>
-  <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-    <a href=https://github.com/syntrydy>
-        <img src="https://avatars.githubusercontent.com/u/7513418?v=4" width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Thomas Gasmyr>
-        <br />
-        <sub style="font-size:14px"><b>Thomas Gasmyr</b></sub>
-    </a>
-  </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/mmrraju>
-            <img src=https://avatars.githubusercontent.com/u/43112579?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Md Mostafejur Rahman/>
-            <br />
-            <sub style="font-size:14px"><b>Md Mostafejur Rahman</b></sub>
-        </a>
-  </td>
- </tr>
-</table>
+Deployment of an Agama project involves three steps
 
-# License
+- [Downloading the `.gama` package from project repository](#download-the-project)
+- [Adding the `.gama` package to the IAM server](#add-the-project-to-the-server)
+- [Configure the project](#configure-the-project)
 
-This project is licensed under the [Apache 2.0](https://github.com/GluuFederation/agama-pw/blob/main/LICENSE)
 
+### Download the Project
+
+> [!TIP]
+> Skip this step if you use the Janssen Server TUI tool to 
+> configure this project. The TUI tool enables the download and adding of this 
+> project directly from the tool, as part of the `community projects` listing. 
+
+The project is bundled as 
+[.gama package](https://docs.jans.io/head/agama/gama-format/). 
+Visit the `Assets` section of the 
+[Releases](https://github.com/GluuFederation/agama-pw/releases) to download 
+the `.gama` package.
+
+### Add The Project To The Server
+
+ The Janssen Server provides multiple ways an Agama project can be 
+ deployed and configured. Either use the command-line tool, REST API, or a 
+ TUI (text-based UI). Refer to 
+ [Agama project configuration page](https://docs.jans.io/head/admin/config-guide/auth-server-config/agama-project-configuration/) in the Janssen Server documentation for more 
+ details.
+
+### Configure The Project
+
+Agama project accepts configuration parameters in the JSON format. Every Agama 
+project comes with a basic sample configuration file for reference.
+
+Below is a typical configuration of the Agama-PW project. As show, it contains
+configuration parameters for the [flows contained in it](#flows-in-the-project):
+ ```
+{
+  "org.gluu.agama.pw.main": {
+    "MAX_LOGIN_ATTEMPT": "6",
+    "ENABLE_LOCK": "true",
+    "LOCK_EXP_TIME": "180"
+  }
+}
+ ```
+
+Check the flow detail section for details about configuration parameters.
+
+### Test The Flow
+
+Use any Relying party implementation (like [jans-tarp](https://github.com/JanssenProject/jans/tree/main/demos/jans-tarp)) to send authentication request that triggers the flow.
+
+From the incoming authentication request, the Janssen Server reads the `ACR` 
+parameter value to identify which authentication method should be used. 
+To invoke the `org.gluu.agama.pw.main` flow contained in the  Agama-PW project, 
+specify the ACR value as `agama_<qualified-name-of-the-top-level-flow>`, 
+i.e  `agama_org.gluu.agama.pw.main`.
+
+![gif](./openlogin.gif)
+
+## Customize and Make It Your Own
+
+Fork this repo to start customizing the Agama-PW project. It is possible to 
+customize the user interface provided by the flow to suit your organization's 
+branding 
+guidelines. Or customize the overall flow behavior. Follow the best 
+practices and steps listed 
+[here](https://docs.jans.io/head/admin/developer/agama/agama-best-practices/#project-reuse-and-customizations) 
+to achieve these customizations in the best possible way.
+This  project can be re-used in other Agama projects to create more complex
+ authentication journeys. To re-use, trigger the 
+ [org.gluu.agama.pw.main](#orggluuagamapwmain) flow from other Agama projects.
+
+To make it easier to visualize and customize the Agama Project, use 
+[Agama Lab](https://cloud.gluu.org/agama-lab/login).
+
+## Flows In The Project
+
+List of the flows: 
+
+- [org.gluu.agama.pw.main](#orggluuagamapwmain)
+
+### org.gluu.agama.pw.main
+
+[org.gluu.agama.pw.main](./code/org.gluu.agama.pw.main.flow) flow represents 
+single step username and password authentication. This flow allows a configurable
+number of incorrect login attempts along with the ability to call account locking 
+endpoint if the attempts reach the maximum allowed number.
+
+```mermaid
+sequenceDiagram
+title Agama-PW Basic Flow
+actor Person
+participant Browser
+participant website
+participant IDP
+participant Authenticate
+ 
+Person->>IDP: Sign-in request
+IDP->>Browser: uid/pw Form
+Person->>Browser: Creds
+Browser->>IDP: POST Form
+IDP->>Authenticate: validate(uid, pw)
+Authenticate->>IDP: {"result":"success","code": 200,"message": "OK"}
+IDP->>Browser: OpenID Code
+Browser->>website: callback
+ ```
+
+#### Parameter Details
+
+- MAX_LOGIN_ATTEMPT: Is the maximum failed login attempt before the user account is locked
+- ENABLE_LOCK: true/false, enables or disables the Account Lock feature
+- LOCK_EXP_TIME: The time in seconds before a locked account is unlocked.
+
+
+
+# Demo
+
+Check out this video to see the **agama-pw** authentication flow in action.
+Also check the 
+[Agama Project Of The Week](https://gluu.org/agama-project-of-the-week/) video
+series for a quick demo on this flow.
+
+*Note:*
+While video shows how the flow works overall, it may be dated. Do check the 
+[Test The Flow](#test-the-flow) section to understand the current
+method of passing the ACR parameter when invoking the flow.
 
 <!-- This are stats url reference for this repository -->
 [contributors-shield]: https://img.shields.io/github/contributors/GluuFederation/agama-pw.svg?style=for-the-badge

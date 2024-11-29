@@ -25,8 +25,14 @@
 			<span class="absolute px-3 font-medium text-white-900 -translate-x-1-2 bg-white left-1-2 dark:text-white dark:bg-gray-900">Welcome</span>
 		  </div>
 		  [#if errorMessage??]
-		  <p class="leading-normal errorMessage">${errorMessage}
-		  </p>
+		  <div role="alert" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400">
+			<span class="font-medium"></span> ${errorMessage}
+		  </div>
+		  [/#if]
+		  [#if lockMessage??]
+		  <div role="alert" class="p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300">
+			<span class="font-medium"></span>${lockMessage}
+		  </div>
 		  [/#if]
 		</div>
 		<form method="post" class="my-8">
