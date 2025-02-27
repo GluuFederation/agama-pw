@@ -11,8 +11,6 @@ validationService = Call org.gluu.agama.pw.PasswordService#getInstance conf
 Repeat 6 times max
      // Retrieve user credentials from UI.
      credentials = RRF "login-basic.ftlh" uiFeedback
-     // Log the successfull  used credentials retrieval.
-     Log "@info User credentials collected successfully!"
      // Validate provided user credentials.
      uiFeedback.succeed = Call validationService validate credentials.username credentials.password
      Log "@info Validation done"
@@ -38,5 +36,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_qrcxh = {success:false, error: "Password validation failed!"}
-Finish it_qrcxh
+it_weoqz = {success:false, error: "Password validation failed!"}
+Finish it_weoqz
