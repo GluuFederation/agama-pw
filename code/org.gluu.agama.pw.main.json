@@ -485,7 +485,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "Invalid credentials. Please try again!",
+							"assignmentExpression": "\"Invalid credentials. Please try again!\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -512,7 +512,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"data": {
@@ -701,7 +702,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
