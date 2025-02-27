@@ -161,7 +161,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"data": {
@@ -680,8 +680,8 @@
 					"displayName": "Flow completed",
 					"hasComment": true,
 					"comment": "Password validation completed successfuly!",
-					"returnVariable": "{ userId: credentials.username}",
-					"finishMode": "withSuccess"
+					"returnVariable": "credentials.username",
+					"finishMode": "withVariable"
 				},
 				"id": "finishNode-91a948c1-0158-49cd-9051-fac022e1f04b",
 				"type": "finishNode",
@@ -700,7 +700,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -1105,8 +1106,8 @@
 		}
 	],
 	"viewport": {
-		"x": -901,
-		"y": -102,
-		"zoom": 1
+		"x": -1976.8630923259848,
+		"y": -188.65888462637884,
+		"zoom": 0.7966400962855826
 	}
 }
