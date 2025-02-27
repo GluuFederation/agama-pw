@@ -33,10 +33,10 @@ Repeat 6 times max
           uiFeedback.lockMessage = lockResult
      // Maximum attempts reached. Password validation failed!
      Log "@info Maximum attempts reached. Password validation failed."
-     uiFeedback.errorMessage = Invalid credentials. Please try again!
+     uiFeedback.errorMessage = "Invalid credentials. Please try again!"
      uiFeedback.uid = credentials.username
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_atyqd = {success:false, error: "Password validation failed!"}
-Finish it_atyqd
+it_tncen = {success:false, error: "Password validation failed!"}
+Finish it_tncen
