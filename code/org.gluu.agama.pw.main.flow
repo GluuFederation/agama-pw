@@ -13,7 +13,6 @@ Repeat 6 times max
      credentials = RRF "login-basic.ftlh" uiFeedback
      // Validate provided user credentials.
      uiFeedback.succeed = Call validationService validate credentials.username credentials.password
-     Log "@info Validation done"
      // If user credentials is valid, the flow end successfully.
      When uiFeedback.succeed is true
           // add entry in log file for successfull login attempt.
@@ -36,5 +35,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_weoqz = {success:false, error: "Password validation failed!"}
-Finish it_weoqz
+it_blvyj = {success:false, error: "Password validation failed!"}
+Finish it_blvyj
