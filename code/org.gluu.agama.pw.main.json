@@ -462,36 +462,6 @@
 		{
 			"data": {
 				"agamaData": {
-					"nodeIcon": "octicon:log-16",
-					"displayName": "Log account lock",
-					"hasComment": true,
-					"comment": "Account lock feature is active.",
-					"logMessage": "\"Start account lock process\"",
-					"logLevel": "info"
-				},
-				"id": "logNode-13dca133-d9f5-4d7f-b52b-89cfc3151661",
-				"type": "logNode",
-				"position": {
-					"x": 3050,
-					"y": 700
-				},
-				"previousNodeId": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
-				"branching": "success"
-			},
-			"type": "logNode",
-			"id": "logNode-13dca133-d9f5-4d7f-b52b-89cfc3151661",
-			"position": {
-				"x": 2550,
-				"y": 700
-			},
-			"measured": {
-				"width": 170,
-				"height": 124
-			}
-		},
-		{
-			"data": {
-				"agamaData": {
 					"nodeIcon": "material-symbols:code",
 					"displayName": "Lock user account",
 					"hasComment": true,
@@ -512,12 +482,13 @@
 					"x": 3300,
 					"y": 700
 				},
-				"previousNodeId": "logNode-13dca133-d9f5-4d7f-b52b-89cfc3151661"
+				"previousNodeId": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
+				"branching": "success"
 			},
 			"type": "callNode",
 			"id": "callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9",
 			"position": {
-				"x": 2800,
+				"x": 2550,
 				"y": 700
 			},
 			"measured": {
@@ -546,13 +517,14 @@
 			"type": "logNode",
 			"id": "logNode-9d9ceeb2-aec3-4e6c-bb73-787508ac8bad",
 			"position": {
-				"x": 3050,
+				"x": 2800,
 				"y": 700
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"data": {
@@ -580,7 +552,7 @@
 			"type": "assignmentNode",
 			"id": "assignmentNode-6f2b13e8-cadc-4004-87a4-c1636d060c27",
 			"position": {
-				"x": 3300,
+				"x": 3050,
 				"y": 700
 			},
 			"measured": {
@@ -861,44 +833,6 @@
 			"sourceHandle": "source_logNode-0642d411-b13a-4bff-a71d-93395593f99d"
 		},
 		{
-			"id": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476-logNode-13dca133-d9f5-4d7f-b52b-89cfc3151661",
-			"type": "default",
-			"source": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
-			"target": "logNode-13dca133-d9f5-4d7f-b52b-89cfc3151661",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "Condition met",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476_success"
-		},
-		{
-			"id": "logNode-13dca133-d9f5-4d7f-b52b-89cfc3151661-callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9",
-			"type": "default",
-			"source": "logNode-13dca133-d9f5-4d7f-b52b-89cfc3151661",
-			"target": "callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-13dca133-d9f5-4d7f-b52b-89cfc3151661"
-		},
-		{
 			"id": "callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9-logNode-9d9ceeb2-aec3-4e6c-bb73-787508ac8bad",
 			"type": "default",
 			"source": "callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9",
@@ -1009,11 +943,29 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__callNode-570c4949-af38-4c18-a383-a5b860a319f8source_callNode-570c4949-af38-4c18-a383-a5b860a319f8-whenNode-6bb9b4c5-92d3-4257-8f41-1557fb24648etarget_whenNode-6bb9b4c5-92d3-4257-8f41-1557fb24648e"
+		},
+		{
+			"source": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
+			"sourceHandle": "source_whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476_success",
+			"target": "callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9",
+			"targetHandle": "target_callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9",
+			"label": "Condition met",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476source_whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476_success-callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9target_callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9"
 		}
 	],
 	"viewport": {
-		"x": -1469.051621332584,
-		"y": -255.97998124064804,
+		"x": -2159.051621332584,
+		"y": -445.97998124064804,
 		"zoom": 1.0055605803984682
 	}
 }
