@@ -141,7 +141,7 @@
 					"hasComment": true,
 					"comment": "Iterate x times max",
 					"maxIteration": "6",
-					"maxIterationVariableName": "count"
+					"maxIterationVariableName": ""
 				},
 				"id": "repeatNode-fd826784-1f9b-42d3-bde2-1f4d84ae4dab",
 				"type": "repeatNode",
@@ -160,7 +160,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"data": {
@@ -1104,8 +1105,8 @@
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
+		"x": -901,
+		"y": -102,
 		"zoom": 1
 	}
 }
