@@ -15,7 +15,6 @@
     ],
     "noDirectLaunch": [],
     "configs": {
-        "": {},
         "org.gluu.agama.pw.main": {
             "maxLoginAttempt": 6,
             "lockExpTime": 180,
