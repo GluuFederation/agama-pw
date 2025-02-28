@@ -5,7 +5,7 @@
 				"agamaData": {
 					"isTopLevelFlow": true,
 					"basepath": "",
-					"configParams": "{\n  \"MAX_LOGIN_ATTEMPT\": 6,\n  \"LOCK_EXP_TIME\": 180,\n  \"ENABLE_LOCK\": true\n}",
+					"configParams": "{\n  \"maxLoginAttempt\": 6,\n  \"lockExpTime\": 180,\n  \"enableLock\": true\n}",
 					"creationDate": "29/11/2024",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "500",
@@ -34,7 +34,8 @@
 				"height": 124
 			},
 			"selected": true,
-			"deletable": false
+			"deletable": false,
+			"dragging": false
 		},
 		{
 			"data": {
