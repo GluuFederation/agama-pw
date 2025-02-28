@@ -8,26 +8,20 @@ uiFeedback = {}
 // Get an instance of PasswordService Class.
 validationService = Call org.gluu.agama.pw.PasswordService#getInstance conf
 // Iterate x times max
-count = Repeat 6 times max
+Repeat 6 times max
      // Retrieve user credentials from UI.
      credentials = RRF "login-basic.ftlh" uiFeedback
-     // Log the successfull  used credentials retrieval.
-     Log "@info User credentials collected successfully!"
      // Validate provided user credentials.
      uiFeedback.succeed = Call validationService validate credentials.username credentials.password
-     Log "@info Validation done"
      // If user credentials is valid, the flow end successfully.
      When uiFeedback.succeed is true
           // add entry in log file for successfull login attempt.
           Log "@info Valid credentials provided"
           // Password validation completed successfuly!
-          it_jhojb = {success:true, data: { userId: credentials.username}}
-          Finish it_jhojb
+          Finish credentials.username
      // Invalid credentials provided.
      Log "@error Invalid credentials provided"
-     When conf.ENABLE_LOCK is "true"
-          // Account lock feature is active.
-          Log "@info Start account lock process"
+     When conf.enableLock is true
           // Lock user account if needed or unlock if the expiration time  is over.
           lockResult = Call validationService lockAccount credentials.username
           Log "@info Account lock result" lockResult
@@ -39,5 +33,5 @@ count = Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_ihlsv = {success:false, error: "Password validation failed!"}
-Finish it_ihlsv
+it_iqqbf = {success:false, error: "Password validation failed!"}
+Finish it_iqqbf
