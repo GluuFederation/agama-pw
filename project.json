@@ -17,9 +17,9 @@
     "configs": {
         "": {},
         "org.gluu.agama.pw.main": {
-            "MAX_LOGIN_ATTEMPT": 6,
-            "LOCK_EXP_TIME": 180,
-            "ENABLE_LOCK": true
+            "maxLoginAttempt": 6,
+            "lockExpTime": 180,
+            "enableLock": true
         }
     },
     "name": "agama-pw"
