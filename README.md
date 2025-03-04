@@ -69,9 +69,9 @@ configuration parameters for the [flows contained in it](#flows-in-the-project):
  ```
 {
   "org.gluu.agama.pw.main": {
-    "maxLoginAttempt": "6",
-    "enableLock": "true",
-    "lockExpTime": "180"
+    "maxLoginAttempt": 6,
+    "enableLock": true,
+    "lockExpTime": 180
   }
 }
  ```
