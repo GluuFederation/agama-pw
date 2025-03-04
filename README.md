@@ -140,9 +140,9 @@ Browser->>website: callback
 
 #### Parameter Details
 
-- MAX_LOGIN_ATTEMPT: Is the maximum failed login attempt before the user account is locked
-- ENABLE_LOCK: true/false, enables or disables the Account Lock feature
-- LOCK_EXP_TIME: The time in seconds before a locked account is unlocked.
+- maxLoginAttempt: Is the maximum failed login attempt before the user account is locked
+- enableLock: true/false, enables or disables the Account Lock feature
+- lockExpTime: The time in seconds before a locked account is unlocked.
 
 
 
