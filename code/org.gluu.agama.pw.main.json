@@ -89,7 +89,7 @@
 					"x": 550,
 					"y": 200
 				},
-				"previousNodeId": "logNode-772c35a3-86c5-4406-a6c2-71bbf67ebf54"
+				"previousNodeId": "logNode-5a3cae12-8652-4280-a4bf-0d976acf67e7"
 			},
 			"type": "assignmentNode",
 			"id": "assignmentNode-4b931452-41b4-4a9d-b82e-c4eb20ce3bc6",
@@ -663,6 +663,39 @@
 				"width": 170,
 				"height": 124
 			},
+			"selected": false
+		},
+		{
+			"id": "logNode-5a3cae12-8652-4280-a4bf-0d976acf67e7",
+			"type": "logNode",
+			"position": {
+				"x": 800,
+				"y": 200
+			},
+			"data": {
+				"id": "logNode-5a3cae12-8652-4280-a4bf-0d976acf67e7",
+				"type": "logNode",
+				"position": {
+					"x": 800,
+					"y": 200
+				},
+				"previousNodeId": "logNode-772c35a3-86c5-4406-a6c2-71bbf67ebf54",
+				"agamaData": {
+					"logMessage": "\"Is user lock is enable: %\" conf.enableLock",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Is user lock is enable"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
 			"selected": true
 		},
 		{
@@ -1056,9 +1089,28 @@
 			"sourceHandle": "source_logNode-ca2177f4-09a0-4243-9999-3fa5025e7550"
 		},
 		{
-			"id": "logNode-772c35a3-86c5-4406-a6c2-71bbf67ebf54-assignmentNode-4b931452-41b4-4a9d-b82e-c4eb20ce3bc6",
+			"id": "logNode-772c35a3-86c5-4406-a6c2-71bbf67ebf54-logNode-5a3cae12-8652-4280-a4bf-0d976acf67e7",
 			"type": "default",
 			"source": "logNode-772c35a3-86c5-4406-a6c2-71bbf67ebf54",
+			"target": "logNode-5a3cae12-8652-4280-a4bf-0d976acf67e7",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-772c35a3-86c5-4406-a6c2-71bbf67ebf54"
+		},
+		{
+			"id": "logNode-5a3cae12-8652-4280-a4bf-0d976acf67e7-assignmentNode-4b931452-41b4-4a9d-b82e-c4eb20ce3bc6",
+			"type": "default",
+			"source": "logNode-5a3cae12-8652-4280-a4bf-0d976acf67e7",
 			"target": "assignmentNode-4b931452-41b4-4a9d-b82e-c4eb20ce3bc6",
 			"label": "",
 			"labelBgPadding": [
@@ -1071,13 +1123,13 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			},
-			"sourceHandle": "source_logNode-772c35a3-86c5-4406-a6c2-71bbf67ebf54",
+			"sourceHandle": "source_logNode-5a3cae12-8652-4280-a4bf-0d976acf67e7",
 			"targetHandle": "target_assignmentNode-4b931452-41b4-4a9d-b82e-c4eb20ce3bc6"
 		}
 	],
 	"viewport": {
-		"x": -182,
-		"y": -88,
+		"x": -245,
+		"y": -82,
 		"zoom": 1
 	}
 }
