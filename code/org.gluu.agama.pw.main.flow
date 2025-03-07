@@ -21,6 +21,8 @@ Repeat 6 times max
           Finish credentials.username
      // Invalid credentials provided.
      Log "@error Invalid credentials provided"
+     // Is user lock is enable
+     Log "@info Is user lock is enable: %" conf.enableLock
      When conf.enableLock is true
           // Lock user account if needed or unlock if the expiration time  is over.
           lockResult = Call validationService lockAccount credentials.username
@@ -33,5 +35,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_iqqbf = {success:false, error: "Password validation failed!"}
-Finish it_iqqbf
+it_arvcx = {success:false, error: "Password validation failed!"}
+Finish it_arvcx
