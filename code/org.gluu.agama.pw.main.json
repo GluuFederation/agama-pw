@@ -167,7 +167,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"data": {
@@ -353,13 +353,15 @@
 			"type": "logNode",
 			"id": "logNode-dc442886-09ac-4f06-8cae-b4fccbdc1f23",
 			"position": {
-				"x": 2050,
-				"y": 450
+				"x": 1950,
+				"y": 258
 			},
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"data": {
@@ -380,7 +382,7 @@
 					"x": 2800,
 					"y": 450
 				},
-				"previousNodeId": "logNode-dc442886-09ac-4f06-8cae-b4fccbdc1f23"
+				"previousNodeId": "logNode-52ab50aa-c101-4147-b52a-e0bd29edcaeb"
 			},
 			"type": "whenNode",
 			"id": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
@@ -597,6 +599,40 @@
 			}
 		},
 		{
+			"id": "logNode-52ab50aa-c101-4147-b52a-e0bd29edcaeb",
+			"type": "logNode",
+			"position": {
+				"x": 2158,
+				"y": 256
+			},
+			"data": {
+				"id": "logNode-52ab50aa-c101-4147-b52a-e0bd29edcaeb",
+				"type": "logNode",
+				"position": {
+					"x": 2200,
+					"y": 258
+				},
+				"previousNodeId": "logNode-dc442886-09ac-4f06-8cae-b4fccbdc1f23",
+				"agamaData": {
+					"logMessage": "\"Is user lock is enable: %\" conf.enableLock",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Is user lock is enable"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 124
+			},
+			"selected": true,
+			"dragging": false
+		},
+		{
 			"data": {
 				"agamaData": {
 					"nodeIcon": "material-symbols:line-end-square-rounded",
@@ -781,25 +817,6 @@
 			"sourceHandle": "source_whenNode-6bb9b4c5-92d3-4257-8f41-1557fb24648e_continue"
 		},
 		{
-			"id": "logNode-dc442886-09ac-4f06-8cae-b4fccbdc1f23-whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
-			"type": "default",
-			"source": "logNode-dc442886-09ac-4f06-8cae-b4fccbdc1f23",
-			"target": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-dc442886-09ac-4f06-8cae-b4fccbdc1f23"
-		},
-		{
 			"id": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476-logNode-0642d411-b13a-4bff-a71d-93395593f99d",
 			"type": "default",
 			"source": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
@@ -966,11 +983,49 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476source_whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476_success-callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9target_callNode-0ae7b2de-3a3c-41f8-b09b-7a3dde4e12a9"
+		},
+		{
+			"id": "logNode-dc442886-09ac-4f06-8cae-b4fccbdc1f23-logNode-52ab50aa-c101-4147-b52a-e0bd29edcaeb",
+			"type": "default",
+			"source": "logNode-dc442886-09ac-4f06-8cae-b4fccbdc1f23",
+			"target": "logNode-52ab50aa-c101-4147-b52a-e0bd29edcaeb",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-dc442886-09ac-4f06-8cae-b4fccbdc1f23"
+		},
+		{
+			"id": "logNode-52ab50aa-c101-4147-b52a-e0bd29edcaeb-whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
+			"type": "default",
+			"source": "logNode-52ab50aa-c101-4147-b52a-e0bd29edcaeb",
+			"target": "whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "source_logNode-52ab50aa-c101-4147-b52a-e0bd29edcaeb",
+			"targetHandle": "target_whenNode-84730b3c-0e8b-4859-ac01-99fd3fc7f476"
 		}
 	],
 	"viewport": {
-		"x": -412.96192407564854,
-		"y": -34.55622254105754,
-		"zoom": 0.7878538860493463
+		"x": -1736,
+		"y": -155,
+		"zoom": 1
 	}
 }
