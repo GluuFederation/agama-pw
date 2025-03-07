@@ -3,6 +3,8 @@ Flow org.gluu.agama.pw.main
      Timeout 500 seconds
      Configs conf
 Log "@info Start execution of the password validation flow."
+// Maximum login attempt
+Log "@info Maximum login attempt: %" conf.maxLoginAttempt
 //  Create json variable for UI feedback.
 uiFeedback = {}
 // Get an instance of PasswordService Class.
@@ -35,5 +37,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_arvcx = {success:false, error: "Password validation failed!"}
-Finish it_arvcx
+it_ujaym = {success:false, error: "Password validation failed!"}
+Finish it_ujaym
