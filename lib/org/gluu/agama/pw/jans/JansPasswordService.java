@@ -33,7 +33,7 @@ public class JansPasswordService extends PasswordService {
         logger.info("Flow config provided is  {}.", config);
         flowConfig = config;
         DEFAULT_MAX_LOGIN_ATTEMPT = flowConfig.get("maxLoginAttempt") != null ? flowConfig.get("maxLoginAttempt") : DEFAULT_MAX_LOGIN_ATTEMPT;
-        DEFAULT_LOCK_EXP_TIME = flowConfig.get("lockExpTime") != null ? Integer.parseInt(flowConfig.get("lockExpTime")) : DEFAULT_LOCK_EXP_TIME;
+        DEFAULT_LOCK_EXP_TIME = flowConfig.get("lockExpTime") != null ? flowConfig.get("lockExpTime") : DEFAULT_LOCK_EXP_TIME;
     }
 
     public JansPasswordService() {
