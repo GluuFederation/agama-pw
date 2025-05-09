@@ -845,7 +845,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Password must be at least 6 characters long and contain at least one special character\"",
+							"assignmentExpression": "\"Password must be between 12 and 24 characters in length and contain at least one special character/alphabet/digit.\"",
 							"assignedVariableName": "resetPassFormFeedback.errorMessage"
 						}
 					],
