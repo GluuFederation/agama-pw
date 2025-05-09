@@ -60,7 +60,7 @@ Repeat 3 times max
                                    resetPassFormFeedback.errorMessage = "Password doesn't match"
                          Otherwise
                               // Password Policy
-                              resetPassFormFeedback.errorMessage = "Password must be at least 6 characters long and contain at least one special character"
+                              resetPassFormFeedback.errorMessage = "Password must be between 12 and 24 characters in length and contain at least one special character/alphabet/digit."
                Otherwise
                     // OTP doesn't match
                     otpFormFeedback.errorMessage = "OTP doesn't match"

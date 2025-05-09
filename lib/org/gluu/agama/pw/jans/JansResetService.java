@@ -73,10 +73,16 @@ public class JansResetService extends ResetService{
 
     @Override
     public boolean passwordPolicyMatch(String userPassword) {
-        String regex = '''^(?=.*[!@#$^&*])[A-Za-z0-9!@#$^&*]{6,}$'''
-        Pattern pattern = Pattern.compile(regex);
-        return pattern.matcher(userPassword).matches();
-    }    
+    // Regex Explanation:
+    // - (?=.*[!-~&&[^ ]]) ensures at least one printable ASCII character except space (also helps exclude space)
+    // - (?=.*[!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~]) ensures at least one special character
+    // - (?=.*[A-Za-z]) ensures at least one letter
+    // - (?=.*\\d) ensures at least one digit
+    // - [!-~&&[^ ]] limits all characters to printable ASCII excluding space (ASCII 33–126)
+    String regex = '''^(?=.*[A-Za-z])(?=.*\\d)(?=.*[!"#$%&'()*+,-./:;<=>?@[\\\\]^_`{|}~])[!-~&&[^ ]]{12,24}$''';
+    Pattern pattern = Pattern.compile(regex);
+    return pattern.matcher(userPassword).matches();
+    }
 
     @Override
     public String updateUserPassword(String userPassword, String mail) throws Exception {
