@@ -102,12 +102,14 @@ public class JansResetService extends ResetService{
     @Override
     public String sendEmail(String to) {
 
+        LabelsService lbls = CdiUtil.bean(LabelsService.class);
+
         SmtpConfiguration smtpConfiguration = getSmtpConfiguration();
         IntStream digits = RAND.ints(OTP_LENGTH, 0, 10);
         String otp = digits.mapToObj(i -> "" + i).collect(Collectors.joining());
         String from = smtpConfiguration.getFromEmailAddress();
-        String subject = String.format(SUBJECT_TEMPLATE, otp);
-        String textBody = String.format(MSG_TEMPLATE_TEXT, otp);
+        String subject = lbls.get("mail.subjectTemplate", otp);
+        String textBody = lbls.get("mail.msgTemplateText", otp);
         String htmlBody = EmailTemplate.get(otp);
 
         MailService mailService = CdiUtil.bean(MailService.class);
