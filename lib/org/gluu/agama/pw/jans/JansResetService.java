@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 
 import org.gluu.agama.pw.ResetService;
 import org.gluu.agama.pw.jans.EmailTemplate;
+import io.jans.agama.engine.service.LabelsService;
 
 public class JansResetService extends ResetService{
 
