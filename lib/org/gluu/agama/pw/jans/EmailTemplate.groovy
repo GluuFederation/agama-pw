@@ -81,7 +81,7 @@ class EmailTemplate {
     <div class="email-container">
       
       <div class="logo">
-        <img src="https://storage.googleapis.com/email_template_staticfiles/Phi_logo320x132_Aug2024.png" alt="Phi Wallet" />
+        <img src="https://gluu.org/wp-content/uploads/elementor/thumbs/Logo-qbe8p4qgmufqni0becxda6fnfib6krzb65uihag270.png" alt="Gluu Inc." />
       </div>
       
       <div class="content">
