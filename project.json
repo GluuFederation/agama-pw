@@ -18,7 +18,11 @@
         "": {},
         "org.gluu.agama.pw.reset": {},
         "org.gluu.agama.pw.main.root": {},
-        "org.gluu.agama.pw.main": {}
+        "org.gluu.agama.pw.main": {
+            "maxLoginAttempt": 6,
+            "lockExpTime": 180,
+            "enableLock": true
+        }
     },
     "name": "agama-pw"
 }
