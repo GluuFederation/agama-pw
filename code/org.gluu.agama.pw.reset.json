@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-f8e2ba29-7878-4bd8-9eae-dd7743af9f56",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-f8e2ba29-7878-4bd8-9eae-dd7743af9f56",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "org.gluu.agama.pw.reset",
+          "displayName": "Reset password",
+          "creationDate": "22/07/2025",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
