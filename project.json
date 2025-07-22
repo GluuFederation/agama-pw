@@ -21,7 +21,8 @@
             "lockExpTime": 180,
             "enableLock": true
         },
-        "org.gluu.agama.pw.reset": {}
+        "org.gluu.agama.pw.reset": {},
+        "org.gluu.agama.pw.main.root": {}
     },
     "name": "agama-pw"
 }
