@@ -17,7 +17,8 @@
     "configs": {
         "": {},
         "org.gluu.agama.pw.reset": {},
-        "org.gluu.agama.pw.main.root": {}
+        "org.gluu.agama.pw.main.root": {},
+        "org.gluu.agama.pw.main": {}
     },
     "name": "agama-pw"
 }
