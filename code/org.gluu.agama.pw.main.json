@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "startNode-4f79c625-c1c1-4a76-9d87-0796323c7b70",
+      "type": "startNode",
+      "sourcePosition": "right",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "deletable": false,
+      "data": {
+        "id": "startNode-4f79c625-c1c1-4a76-9d87-0796323c7b70",
+        "type": "startNode",
+        "position": {
+          "x": 30,
+          "y": 40
+        },
+        "agamaData": {
+          "isTopLevelFlow": true,
+          "basepath": "",
+          "configParams": "{}",
+          "nodeIcon": "material-symbols:line-start-square",
+          "timeout": "",
+          "inputs": "",
+          "configs": "",
+          "flowname": "org.gluu.agama.pw.main",
+          "displayName": "Password validation flow",
+          "creationDate": "23/07/2025",
+          "hasComment": true,
+          "comment": ""
+        }
+      }
+    }
+  ]
+}
