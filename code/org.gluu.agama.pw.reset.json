@@ -846,7 +846,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Password must be at least 6 characters long and contain at least one special character\"",
+							"assignmentExpression": "\"Password must be at least 12 characters long and contain at least one upper, lower case, special character and digit\"",
 							"assignedVariableName": "resetPassFormFeedback.errorMessage"
 						}
 					],
@@ -863,7 +863,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "callNode-bf01c7fd-4842-4e76-b34d-570e815ede1c",
@@ -1906,8 +1906,8 @@
 		}
 	],
 	"viewport": {
-		"x": 3,
-		"y": 136,
+		"x": -4016,
+		"y": -906,
 		"zoom": 1
 	}
 }
