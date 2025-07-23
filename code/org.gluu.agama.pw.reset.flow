@@ -61,7 +61,7 @@ Repeat 3 times max
                                    resetPassFormFeedback.errorMessage = "Password doesn't match"
                          Otherwise
                               // Password Policy
-                              resetPassFormFeedback.errorMessage = "Password must be at least 6 characters long and contain at least one special character"
+                              resetPassFormFeedback.errorMessage = "Password must be at least 12 characters long and contain at least one upper, lower case, special character and digit"
                Otherwise
                     // OTP doesn't match
                     otpFormFeedback.errorMessage = "OTP doesn't match"
@@ -71,5 +71,5 @@ Repeat 3 times max
 // Max attampt reached
 Log "@info Max attampt reached"
 // Max attempts reached
-it_lfniq = {success:false, error: "Max attempts reached"}
-Finish it_lfniq
+it_bgtdw = {success:false, error: "Max attempts reached"}
+Finish it_bgtdw
