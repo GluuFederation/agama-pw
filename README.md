@@ -1,5 +1,5 @@
-<p align="center">
-  <img width="600" height="400" src="https://github.com/GluuFederation/agama-pw/assets/43112579/639a8ca4-7549-4167-a5eb-5fe19fad3ff5">
+<p align="left">
+  <img width="700" height="400" src="https://github.com/GluuFederation/agama-pw/assets/43112579/639a8ca4-7549-4167-a5eb-5fe19fad3ff5">
 </p>
 
 [![Contributors][contributors-shield]](contributors-url)
@@ -69,9 +69,9 @@ configuration parameters for the [flows contained in it](#flows-in-the-project):
  ```
 {
   "org.gluu.agama.pw.main": {
-    "MAX_LOGIN_ATTEMPT": "6",
-    "ENABLE_LOCK": "true",
-    "LOCK_EXP_TIME": "180"
+    "maxLoginAttempt": 6,
+    "enableLock": true,
+    "lockExpTime": 180
   }
 }
  ```
@@ -140,9 +140,9 @@ Browser->>website: callback
 
 #### Parameter Details
 
-- MAX_LOGIN_ATTEMPT: Is the maximum failed login attempt before the user account is locked
-- ENABLE_LOCK: true/false, enables or disables the Account Lock feature
-- LOCK_EXP_TIME: The time in seconds before a locked account is unlocked.
+- maxLoginAttempt: Is the maximum failed login attempt before the user account is locked
+- enableLock: true/false, enables or disables the Account Lock feature
+- lockExpTime: The time in seconds before a locked account is unlocked.
 
 
 
