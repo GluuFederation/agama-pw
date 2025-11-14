@@ -19,6 +19,8 @@ import java.util.regex.Pattern;
 import org.gluu.agama.pw.ResetService;
 import org.gluu.agama.pw.jans.EmailTemplate;
 import org.gluu.agama.pw.jans.Labels;
+import io.jans.service.net.NetworkService;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class JansResetService extends ResetService{
 
@@ -42,6 +44,17 @@ public class JansResetService extends ResetService{
 
     @Override
     public Map<String, String> getUserEntityByMail(String email) {
+
+
+        ///
+        LogUtils.log("Get User entity by mail");
+        HttpServletRequest req = CdiUtil.bean(NetworkService.class).getHttpServletRequest();
+        LogUtils.log("REQ is  : %", req);
+
+        String headerIp = req.getHeader("X-Forwarded-For");
+
+        /////
+
         User user = getUser(MAIL, email);
         boolean local = user != null;
         LogUtils.log("There is % local account for %", local ? "a" : "no", email);
