@@ -58,6 +58,8 @@ public class JansResetService extends ResetService{
         String headerIp = req.getHeader("X-Client-IP");
 
         LogUtils.log("Header ip is  : %", headerIp);
+        
+        LogUtils.log("Remote address is  : %", req.getRemoteAddr());
 
         /////
 
