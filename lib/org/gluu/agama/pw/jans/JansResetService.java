@@ -55,7 +55,7 @@ public class JansResetService extends ResetService{
         HttpServletRequest req = CdiUtil.bean(HttpServletRequest.class);
         LogUtils.log("REQ is  : %", req);
 
-        String headerIp = req.getHeader("X-Forwarded-For");
+        String headerIp = req.getHeader("X-Client-IP");
 
         LogUtils.log("Header ip is  : %", headerIp);
 
