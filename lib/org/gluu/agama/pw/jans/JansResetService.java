@@ -22,6 +22,8 @@ import org.gluu.agama.pw.jans.Labels;
 import io.jans.service.net.NetworkService;
 import jakarta.servlet.http.HttpServletRequest;
 
+import io.jans.as.server.util.ServerUtil;
+
 public class JansResetService extends ResetService{
 
     private String userPreferredLanguage;
@@ -55,12 +57,16 @@ public class JansResetService extends ResetService{
         HttpServletRequest req = CdiUtil.bean(HttpServletRequest.class);
         LogUtils.log("REQ is  : %", req);
 
-        String headerIp = req.getHeader("X-Client-IP");
+        String headerIp = req.getHeader("X-Forwarded-For");
 
         LogUtils.log("Header ip is  : %", headerIp);
         
         LogUtils.log("Remote address is  : %", req.getRemoteAddr());
 
+        ServerUtil serverUtil = CdiUtil.bean(ServerUtil.class);
+
+        String clientIp = serverUtil.getIpAddress(req);
+        LogUtils.log("Client Ip address is : %", clientIp);
         /////
 
         User user = getUser(MAIL, email);
