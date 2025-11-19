@@ -56,15 +56,6 @@
 			</div>
 		  </div>
 		</form>
-		<form method="post" class="my-8">
-		  <div class="space-y-9">
-			<div class="text-sm flex justify-center items-center">
-			  <button type="submit" id="forgetpass" name="forgetpass" value="continue" class="bg-transparent border-none p-0 m-0 text-green-600 hover:underline cursor-pointer">
-				Can't remember your password?
-			  </button>
-			</div>
-		  </div>
-		</form>
 	  </div>
 	</div>
   

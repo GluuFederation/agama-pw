@@ -56,6 +56,10 @@ public class JansPasswordService extends PasswordService {
     @Override
     public String lockAccount(String username) {
         User currentUser = userService.getUser(username);
+        if (currentUser == null) {
+            LogUtils.log("User % not found. Cannot lock account.", username);
+            return "Authenticaton failed";
+        }          
         int currentFailCount = 1;
         String invalidLoginCount = getCustomAttribute(currentUser, INVALID_LOGIN_COUNT_ATTRIBUTE);
         if (invalidLoginCount != null) {
