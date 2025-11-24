@@ -47,27 +47,6 @@ public class JansResetService extends ResetService{
     @Override
     public Map<String, String> getUserEntityByMail(String email) {
 
-        // SessionIdService sis = CdiUtil.bean(SessionIdService.class); 
-        // sis.getSessionId(CdiUtil.bean(HttpServletRequest.class));
-
-        ///
-        LogUtils.log("Get User entity by mail");
-        // HttpServletRequest req = CdiUtil.bean(NetworkService.class).getHttpServletRequest();
-
-        HttpServletRequest req = CdiUtil.bean(HttpServletRequest.class);
-        LogUtils.log("REQ is  : %", req);
-
-        String headerIp = req.getHeader("X-Forwarded-For");
-
-        LogUtils.log("Header ip is  : %", headerIp);
-        
-        LogUtils.log("Remote address is  : %", req.getRemoteAddr());
-
-        ServerUtil serverUtil = CdiUtil.bean(ServerUtil.class);
-
-        String clientIp = serverUtil.getIpAddress(req);
-        LogUtils.log("Client Ip address is : %", clientIp);
-        /////
 
         User user = getUser(MAIL, email);
         boolean local = user != null;
