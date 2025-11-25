@@ -47,7 +47,6 @@ public class JansResetService extends ResetService{
     @Override
     public Map<String, String> getUserEntityByMail(String email) {
 
-
         User user = getUser(MAIL, email);
         boolean local = user != null;
         LogUtils.log("There is % local account for %", local ? "a" : "no", email);
