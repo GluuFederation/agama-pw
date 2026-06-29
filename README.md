@@ -61,12 +61,11 @@ the `.gama` package.
 
 ### Configure The Project
 
-Agama project accepts configuration parameters in the JSON format. Every Agama 
-project comes with a basic sample configuration file for reference.
+The Agama project accepts configuration parameters in JSON format. Every Agama project comes with a sample configuration file for reference.
 
-Below is a typical configuration of the Agama-PW project. As show, it contains
-configuration parameters for the [flows contained in it](#flows-in-the-project):
- ```
+Below is a typical configuration for the Agama-PW project:
+
+```json
 {
   "org.gluu.agama.pw.main": {
     "maxLoginAttempt": 6,
@@ -74,9 +73,18 @@ configuration parameters for the [flows contained in it](#flows-in-the-project):
     "lockExpTime": 180
   }
 }
- ```
+```
 
-Check the flow detail section for details about configuration parameters.
+| Parameter         | Required | Description                                                                                                   | Example |
+| ----------------- | -------- | ------------------------------------------------------------------------------------------------------------- | ------- |
+| `maxLoginAttempt` | Yes      | Maximum number of consecutive failed login attempts allowed before the account is locked.                     | `6`     |
+| `enableLock`      | Yes      | Enables or disables the account lockout feature after the maximum number of failed login attempts is reached. | `true`  |
+| `lockExpTime`     | Yes      | Duration, in seconds, for which the account remains locked before it is automatically unlocked.               | `180`   |
+
+> **Note**
+>
+> If `enableLock` is set to `true`, users who exceed `maxLoginAttempt` consecutive failed login attempts will be locked out for the duration specified by `lockExpTime`. If `enableLock` is set to `false`, failed login attempts will not trigger account lockout regardless of the `maxLoginAttempt` value.
+
 
 ### Test The Flow
 
