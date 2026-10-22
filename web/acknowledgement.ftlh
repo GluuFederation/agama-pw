@@ -3,17 +3,9 @@
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Welcome
 	</title></head>
-<body>
-
-  
-	
-	
-	
-  
-  
-	<div align="center" class="registration-container shadow">
+<body><div align="center" class="registration-container shadow">
 	  <div class="flex">
-		<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" id="inh1m">
+		<img src="./gluu-logo.png" id="inh1m" alt="Gluu Logo" width="150">
 	  </div>
 	  <h1>WELCOME
 	  </h1>
