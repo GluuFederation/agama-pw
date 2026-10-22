@@ -7,7 +7,7 @@
 	  <div class="md:border md:border-gray-300 bg-white md:shadow-lg shadow-none rounded p-10 align-middle loginCard">
 		<div class="flex flex-col items-center space-y-3">
 		  <div class="flex">
-			    <img src="https://gluu.org/brand/gluu-logo.png" id="inh1m" alt="Gluu Logo" width="150" height="auto">
+			 <img src="gluu-logo.png" id="inh1m" alt="Gluu Logo" width="150">
 		  </div>
 		  <div class="inline-flex items-center justify-center w-full">
 			<hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700">
