@@ -3,22 +3,11 @@
 <html lang="en">
 <head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Basic login
 	</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" type="text/css"><link rel="stylesheet" href="style.css" type="text/css"></head>
-<body>
-
-  
-	
-	
-	
-	
-	
-	
-  
-  
-	<div class="md:h-screen bg-white relative flex flex-col justify-center items-center">
+<body><div class="md:h-screen bg-white relative flex flex-col justify-center items-center">
 	  <div class="md:border md:border-gray-300 bg-white md:shadow-lg shadow-none rounded p-10 align-middle loginCard">
 		<div class="flex flex-col items-center space-y-3">
 		  <div class="flex">
-			  <img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" id="inh1m">
+			<img src="./gluu-logo.png" id="inh1m" alt="Gluu Logo" width="150">
 		  </div>
 		  <div class="inline-flex items-center justify-center w-full">
 			<hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700">
